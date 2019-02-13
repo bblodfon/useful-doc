@@ -1,7 +1,24 @@
 # Useful Linux commands
 
-## Save many directories in one tar.gz file
+## Do something on many files in a dir
+
+*Something* can be: rendering notebooks to HTML or checking if the files are 
+the same as other files for example
+```bash
+#!/bin/bash
+
+files=`ls`
+dir="/somewhere/over/the/rainbow"
+rmd_files=`ls | grep Rmd
+
+for file in ${files}; do
+  diff -s $dir$file $file
+  Rscript -e "library(rmarkdown); rmarkdown::render(\"./$file\",\"html_document\")"
+done
 ```
+
+## Save many directories in one tar.gz file
+```bash
 #!/bin/bash
 
 saveDir="~/pathToSaveDir"
@@ -43,7 +60,7 @@ or use cloc: `apt-get install cloc`
 `SELECT CONCAT( 'DROP TABLE ', GROUP_CONCAT(table_name) , ';' ) AS statement FROM information_schema.tables WHERE table_name LIKE 'patternToMatch%';`
 
 ## MySQL: Count rows and size of MyISAM tables that have the date in their name
-```
+```bash
 #!/bin/bash
   
 date=`date -d 'Oct 13 14:00:00 2020' +%s` ;
