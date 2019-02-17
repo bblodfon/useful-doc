@@ -1,5 +1,7 @@
 {
+  "gitbook": "3.1.1",
   "structure": {
     "summary": "SUMMARY.md"
-  }
+  }, 
+  "plugins" : [ "bootstrap-callout" ]
 }

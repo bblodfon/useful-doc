@@ -1,3 +1,3 @@
 # Introduction
 
-A [documentation repo](https://bblodfon.github.io/usefuldoc/) with useful linux commands and other stuff.
+A [repo](https://bblodfon.github.io/usefuldoc/) with documentation about useful linux commands and other personal stuff as well.
