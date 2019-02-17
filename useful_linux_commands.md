@@ -54,10 +54,12 @@ gsettings set org.gnome.desktop.background show-desktop-icons false
 or use cloc: `apt-get install cloc`
 
 ## MySQL: Size of a MyISAM table in GB
-`ls /var/lib/mysql/database/tableName.* | xargs stat --format=%s | awk '{s+=$1} END {print s/(1024*1024*1024)}'`
+`ls /var/lib/mysql/database/tableName.* | xargs stat --format=%s | awk '{s+=$1} 
+END {print s/(1024*1024*1024)}'`
 
 ## MySQL: Drop many tables matching a pattern
-`SELECT CONCAT( 'DROP TABLE ', GROUP_CONCAT(table_name) , ';' ) AS statement FROM information_schema.tables WHERE table_name LIKE 'patternToMatch%';`
+`SELECT CONCAT( 'DROP TABLE ', GROUP_CONCAT(table_name) , ';' ) AS statement 
+FROM information_schema.tables WHERE table_name LIKE 'patternToMatch%';`
 
 ## MySQL: Count rows and size of MyISAM tables that have the date in their name
 ```bash
@@ -135,7 +137,8 @@ white | 1;37
 Light Grey | 0;37
 Black | 30
 Dark Grey | 1;30
-The first number is the style (1=bold), followed by a semicolon, and then the actual number of the color
+The first number is the style (1=bold), followed by a semicolon, and then the 
+actual number of the color
 
 ## Find number of CPUs and model
 ```
@@ -314,10 +317,14 @@ To remove this IP: `ifconfig br0 0.0.0.0`
 - Testing port 3306 (mysql-related): `telnet IPB 3306`
 - From all ports of **A** to a specific port on **B**: 
 	- **B**: `nc -l PortB`
-	- **A**: `nc -u IPB PortB` (-u tests udp, without it you test TCP connectivity) and write stuff there, you should see them on **B**... or you can do a trace on **B** to make sure you got the packets: `tshark -i any udp port portB`
+	- **A**: `nc -u IPB PortB` (-u tests udp, without it you test TCP connectivity) 
+	and write stuff there, you should see them on **B**... or you can do a trace 
+	on **B** to make sure you got the packets: `tshark -i any udp port portB`
 - From a specific port of **A** to a specific port on **B**:
 	- **B**: `nc -l portB`
-	- **A**: `nc -u IPB PortB -p PortA` (you should see them on **B**... or you can do a trace on **B** to make sure you got the packets: `tshark -i any udp port portB`)
+	- **A**: `nc -u IPB PortB -p PortA` (you should see them on **B**... or you 
+	can do a trace on **B** to make sure you got the packets: `tshark -i any udp 
+	port portB`)
 - From a specific port of **A** to a specific port on **B**:
 	- **B**: `nc -l portB`
 	- **A**: `nc -u IPB PortB -p PortA`
@@ -325,10 +332,14 @@ To remove this IP: `ifconfig br0 0.0.0.0`
 # Capture LTE and 2G3G traffic
   
 - LTE traffic (with VLAN)  
-`tcpdump -i any "ether[27]==0 and ((ether[49] < 0x26 and ether[49] > 0x1F) or (ether[49] < 0x65 and ether[49] > 0x62) or (ether[49] > 0xa9 and ether[49] < 0xac))" -w out.pcap`
+`tcpdump -i any "ether[27]==0 and ((ether[49] < 0x26 and ether[49] > 0x1F) or 
+(ether[49] < 0x65 and ether[49] > 0x62) or (ether[49] > 0xa9 and ether[49] < 
+0xac))" -w out.pcap`
 
 - LTE traffic (no VLAN)  
-`tcpdump -i any "ether[23]==0 and ((ether[45] < 0x26 and ether[45] > 0x1F) or (ether[45] < 0x65 and ether[45] > 0x62) or (ether[45] > 0xa9 and ether[45] < 0xac))" -w out.pcap`
+`tcpdump -i any "ether[23]==0 and ((ether[45] < 0x26 and ether[45] > 0x1F) or 
+(ether[45] < 0x65 and ether[45] > 0x62) or (ether[45] > 0xa9 and ether[45] < 
+0xac))" -w out.pcap`
 
 - 2G3G traffic (with VLAN)  
 `tshark -i any "ether[49] < 0x16 and ether[27]==0 and ether[49] > 0x0e" -w out.pcap`
@@ -339,7 +350,8 @@ To remove this IP: `ifconfig br0 0.0.0.0`
 # Useful network-capturing commands
 
 - Changing the content of `.pcap` files  
-`tcprewrite --enet-vlan=add --enet-vlan-tag=110 --enet-vlan-cfi=1 --enet-vlan-pri=4 --infile=GTPv1_noVLAN.pcap --outfile=GTPv1_withVLAN110.pcap`
+`tcprewrite --enet-vlan=add --enet-vlan-tag=110 --enet-vlan-cfi=1 
+--enet-vlan-pri=4 --infile=GTPv1_noVLAN.pcap --outfile=GTPv1_withVLAN110.pcap`
 
 - Use of `tcpreplay`  
 `tcpreplay -i eth2 -K -l0 --topspeed replayfiles/file.pcap`

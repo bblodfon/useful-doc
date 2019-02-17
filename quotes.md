@@ -12,6 +12,7 @@ Big man, big words.
 
 True that.
 
+> #### info::
 > You should never accept money you feel you haven't earned. If you do, you'll 
 start to always take the easy way out... Anyway, no good ever comes out of 
 drowning in wealth or power.  
