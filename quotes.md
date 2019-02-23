@@ -20,6 +20,12 @@ drowning in wealth or power.
 
 # Motivation
 
+> #### primary::
+> "Young man," he said to me, "do you imagine that everything in my life goes smoothly? Do you suppose I have no troubles, never hesitate and lose confidence in myself? Do you really think faith is always equally strong? All of us have difficult moments; but this is life. Hold up your head, and keep on your appointed path."  
+*Leo Tolstoy to Rachmaninoff*
+
+Rachmaninoff was in a depressed state of mind and hadn't composed anything during that period. These words should had help him get up on his feet, but work was just what Rachmaninoff was unable to do at that time.
+
 > #### info::
 > Success is the ability to go from failure to failure without losing your 
 enthusiasm  

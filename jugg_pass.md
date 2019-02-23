@@ -163,5 +163,6 @@ positioning). 2 balls are the zips and 1p here.
 
 ## 1 person
 - Table cascade
+- Chin cascade
 - Cascade together (holding each other backs - need for left-handed people)
 - The road to 3 ball cascade
