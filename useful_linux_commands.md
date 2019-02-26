@@ -223,6 +223,14 @@ Restart MySQL (if needed): `service mysql start`
 ## Service tag
 `dmidecode -t system`
 
+## Add 80-character colomn bar in vim
+```bash
+vim /etc/vim/vimrc
+
+# add line
+set colorcolumn=80
+```
+
 ## Change vim comment color
 Go to `/usr/share/vim/vim80/colors` and copy a file with a nice color scheme:
 `cp ron.vim zobo.vim`  
