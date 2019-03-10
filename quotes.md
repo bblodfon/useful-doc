@@ -18,6 +18,18 @@ start to always take the easy way out... Anyway, no good ever comes out of
 drowning in wealth or power.  
 *Arataka Reigen, Mob Psycho*
 
+# Science
+
+> #### info::                                                                   
+> Maybe we are not alone and have not been. “The click beetles in my backyard 
+don’t notice that they’re surrounded by intelligent beings — namely my 
+neighbors and me, but we’re here, nonetheless.”                 
+*Seth Shostak*
+
+Regarding the Fermi paradox, from an astronomer at the SETI institute. He 
+thinks that the answer to the Fermi paradox might lie not in something complex,
+like time and distance, but in *perception*.
+
 # Motivation
 
 > #### primary::
