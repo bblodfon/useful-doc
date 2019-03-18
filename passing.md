@@ -31,6 +31,7 @@ To enter from normal 2,3-counts, one juggler throws a crossing pass
 considerably worse :)
 - 3-count (doubles)
 - p3344 (5-count popcorn) - 78686 (good progress!)
+  - 53p3 (4-count popcorn) - 5 as double, single pass
 - p34 (french 3-count) - 786 (good progress!)
 - 4pp3p (funky bookends) - 77786
 - 88892 (nice with 441, but somewhat difficult)

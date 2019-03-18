@@ -1,5 +1,20 @@
 # Useful Linux commands
 
+## ssh linux server without password
+
+Usually you do: `ssh username@IP` and enter a password. We want to do just 
+`ssh IP` or `ssh name.com` (name.com translates to the global IP).
+
+```
+cd ~/.ssh
+# create public and private key
+ssh-keygen -o
+# your public key
+cat id_rsa.pub
+# copy it to the server
+cat id_rsa.pub | ssh username@IP 'cat >> .ssh/authorized_keys'
+```
+
 ## Do something on many files in a dir
 
 *Something* can be: rendering notebooks to HTML or checking if the files are 
@@ -9,7 +24,7 @@ the same as other files for example
 
 files=`ls`
 dir="/somewhere/over/the/rainbow"
-rmd_files=`ls | grep Rmd
+rmd_files=`ls | grep Rmd`
 
 for file in ${files}; do
   diff -s $dir$file $file

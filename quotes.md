@@ -18,6 +18,7 @@ start to always take the easy way out... Anyway, no good ever comes out of
 drowning in wealth or power.  
 *Arataka Reigen, Mob Psycho*
 
+---
 # Science
 
 > #### info::                                                                   
@@ -30,6 +31,7 @@ Regarding the Fermi paradox, from an astronomer at the SETI institute. He
 thinks that the answer to the Fermi paradox might lie not in something complex,
 like time and distance, but in *perception*.
 
+---
 # Motivation
 
 > #### primary::
@@ -49,7 +51,17 @@ Common pattern. Wins are hard gained (no pain, no gain philosophy).
 > I'd Rather Die Than Be A Loser  
 *Tom "The Golden Eagle" Platz*
 
-From the father of Squats.
+<!-- --> 
+> #### info::
+> There is always 5 more!  
+*Tom "The Golden Eagle" Platz*
+
+From the father of Squats, talking about reps.
+
+<!-- -->                                                                        
+> #### info::                                                                   
+> Be the change you want to see in the world                                                       
+*Gandhi* (maybe)
 
 ---
 
@@ -122,6 +134,23 @@ one’s work is terribly important.
 *Bertrand Russell*
 
 <!-- -->
+> #### info::                                                                   
+> As for the quality of the work, it is the same as ever with me in any work - 
+in the midst of it one thinks it well done, sometimes even very good, but as 
+soon as a little time passes, you see how almost completely unsuitable is 
+really is and how it would be better to change everything, even though I don't 
+how to do it any better.  
+*Rachmaninoff to Morozov (letter), July 6, 1905)*
+
+Case is with music composition but it applies to computer programming and
+others as well.
+
+<!-- -->                                                                        
+> #### info::                                                                   
+> As usual I work a lot and as usual everything comes to me in an extremely                         hard way...                                                                     
+*Rachmaninoff to Morozov (letter)*
+
+<!-- -->
 > #### info::
 > After writing about 20 R packages, I found I had accumulated several utility 
 functions that I used across different packages, so I decided to extract them 
@@ -141,5 +170,6 @@ Open source code, open science.
 
 <!-- -->
 > #### info::
-> Write one (abstract, generalized) function per day.  
+> Write one (abstract, generalized) function per day. Next day write a 
+tests for it!
 

@@ -164,12 +164,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3" data-path="windows.html">
+        <li class="chapter " data-level="1.3" data-path="juggling.html">
             
-                <a href="windows.html">
+                <a href="juggling.html">
             
                     
-                    Windows
+                    Juggling
             
                 </a>
             
@@ -178,12 +178,25 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.3.1" data-path="autohotkey.html">
+        <li class="chapter " data-level="1.3.1" data-path="train7.html">
             
-                <a href="autohotkey.html">
+                <a href="train7.html">
             
                     
-                    AutoHotKey
+                    7 Balls Train
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="passing.html">
+            
+                <a href="passing.html">
+            
+                    
+                    Passing
             
                 </a>
             
@@ -210,12 +223,12 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.4.1" data-path="quotes.html">
+        <li class="chapter " data-level="1.4.1" data-path="autohotkey.html">
             
-                <a href="quotes.html">
+                <a href="autohotkey.html">
             
                     
-                    Quotes
+                    AutoHotKey
             
                 </a>
             
@@ -262,12 +275,25 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.5" data-path="jugg_pass.html">
+        <li class="chapter " data-level="1.4.5" data-path="quotes.html">
             
-                <a href="jugg_pass.html">
+                <a href="quotes.html">
             
                     
-                    Passing
+                    Quotes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="biology_101.html">
+            
+                <a href="biology_101.html">
+            
+                    
+                    Biology
             
                 </a>
             
@@ -326,14 +352,24 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="useful-linux-commands">Useful Linux commands</h1>
-<h2 id="do-something-on-many-files-in-a-dir">Do something on many files in a dir</h2>
+<h2 id="ssh-linux-server-without-password">ssh linux server without password</h2>
+<p>Usually you do: <code>ssh username@IP</code> and enter a password. We want to do just 
+<code>ssh IP</code> or <code>ssh name.com</code> (name.com translates to the global IP).</p>
+<pre><code>cd ~/.ssh
+# create public and private key
+ssh-keygen -o
+# your public key
+cat id_rsa.pub
+# copy it to the server
+cat id_rsa.pub | ssh username@IP &apos;cat &gt;&gt; .ssh/authorized_keys&apos;
+</code></pre><h2 id="do-something-on-many-files-in-a-dir">Do something on many files in a dir</h2>
 <p><em>Something</em> can be: rendering notebooks to HTML or checking if the files are 
 the same as other files for example</p>
 <pre><code class="lang-bash"><span class="hljs-meta">#!/bin/bash
 </span>
 files=`ls`
 dir=<span class="hljs-string">&quot;/somewhere/over/the/rainbow&quot;</span>
-rmd_files=`ls | grep Rmd
+rmd_files=`ls | grep Rmd`
 
 <span class="hljs-keyword">for</span> file <span class="hljs-keyword">in</span> <span class="hljs-variable">${files}</span>; <span class="hljs-keyword">do</span>
   diff <span class="hljs-_">-s</span> <span class="hljs-variable">$dir</span><span class="hljs-variable">$file</span> <span class="hljs-variable">$file</span>
@@ -685,7 +721,7 @@ port portB</code>)</li>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Linux useful commands","level":"1.2.1","depth":2,"next":{"title":"Linux Filesystem Tuning","level":"1.2.2","depth":2,"path":"filesystem_tuning_commands.md","ref":"filesystem_tuning_commands.md","articles":[]},"previous":{"title":"Linux","level":"1.2","depth":1,"path":"linux.md","ref":"linux.md","articles":[{"title":"Linux useful commands","level":"1.2.1","depth":2,"path":"useful_linux_commands.md","ref":"useful_linux_commands.md","articles":[]},{"title":"Linux Filesystem Tuning","level":"1.2.2","depth":2,"path":"filesystem_tuning_commands.md","ref":"filesystem_tuning_commands.md","articles":[]},{"title":"CPUBenchmark","level":"1.2.3","depth":2,"path":"cpu_benchmarking.md","ref":"cpu_benchmarking.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"3.1.1","theme":"default","variables":{},"plugins":["bootstrap-callout"],"pluginsConfig":{"bootstrap-callout":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"useful_linux_commands.md","mtime":"2019-02-26T14:36:17.119Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2019-03-10T10:15:18.895Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Linux useful commands","level":"1.2.1","depth":2,"next":{"title":"Linux Filesystem Tuning","level":"1.2.2","depth":2,"path":"filesystem_tuning_commands.md","ref":"filesystem_tuning_commands.md","articles":[]},"previous":{"title":"Linux","level":"1.2","depth":1,"path":"linux.md","ref":"linux.md","articles":[{"title":"Linux useful commands","level":"1.2.1","depth":2,"path":"useful_linux_commands.md","ref":"useful_linux_commands.md","articles":[]},{"title":"Linux Filesystem Tuning","level":"1.2.2","depth":2,"path":"filesystem_tuning_commands.md","ref":"filesystem_tuning_commands.md","articles":[]},{"title":"CPUBenchmark","level":"1.2.3","depth":2,"path":"cpu_benchmarking.md","ref":"cpu_benchmarking.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"3.1.1","theme":"default","variables":{},"plugins":["bootstrap-callout"],"pluginsConfig":{"bootstrap-callout":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"useful_linux_commands.md","mtime":"2019-03-15T09:45:33.003Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2019-03-18T17:46:22.474Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

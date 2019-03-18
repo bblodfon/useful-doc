@@ -1,6 +1,6 @@
 # R packages
-- **[superheat](https://github.com/rlbarter/superheat)**: generate beautiful 
-and customizable heatmaps
+- **[ComplexHeatmap](https://github.com/jokergoo/ComplexHeatmap)**: generate 
+beautiful and customizable heatmaps
 - **[visNetwork](https://github.com/datastorm-open/visNetwork)**: R library for 
 network visualization
 - **[bookdown](https://github.com/rstudio/bookdown)**: author books and technical 
