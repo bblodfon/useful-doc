@@ -2,7 +2,7 @@
 <!DOCTYPE HTML>
 <html lang="" >
     <head>
-        <title>Ab Workout · GitBook</title>
+        <title>Ideas for PhD · GitBook</title>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
@@ -61,10 +61,10 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="software.html" />
+    <link rel="next" href="biology_101.html" />
     
     
-    <link rel="prev" href="autohotkey.html" />
+    <link rel="prev" href="quotes.html" />
     
 
     </head>
@@ -236,7 +236,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.4.2" data-path="abdominal_assault.html">
+        <li class="chapter " data-level="1.4.2" data-path="abdominal_assault.html">
             
                 <a href="abdominal_assault.html">
             
@@ -288,7 +288,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.6" data-path="ideas_phd.html">
+        <li class="chapter active" data-level="1.4.6" data-path="ideas_phd.html">
             
                 <a href="ideas_phd.html">
             
@@ -349,7 +349,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >Ab Workout</a>
+        <a href="." >Ideas for PhD</a>
     </h1>
 </div>
 
@@ -364,29 +364,98 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="nice-exercises-for-abdominal-workout">Nice exercises for abdominal workout</h1>
+                                <h1 id="phd-ideas">PhD ideas</h1>
+<h2 id="synergy">Synergy</h2>
+<p>Augment existing R package to include Wim&apos;s generalized Bliss method and the 
+mean synergy score by girl I met on ECCB! Test them, along with ZIP, bliss and
+Loewe against real experimetnal data.</p>
+<h2 id="compare-fixpoint-tools">Compare fixpoint tools</h2>
+<p>Compare different tools that calculate fixpoints for logical modeling.</p>
+<p>Models used for testing could be of different types:  </p>
 <ul>
-<li>Bicycles</li>
-<li>Iron Butterflies</li>
-<li>Hip Raises</li>
-<li>Toe Touches</li>
-<li>V Ups</li>
-<li>Flutter Kicks (+variations like Leg Spread)</li>
-<li>Reverse Crunches</li>
-<li>Heal touches</li>
+<li>self-contained</li>
+<li>varying the number of input nodes (1-n)</li>
+<li>small to large number of nodes</li>
+<li>small to large number of edges</li>
+<li>scale-free (boolnet generated) vs random (varying K connectivity)</li>
+<li>play with form of the boolean equations</li>
+<li>others ???</li>
 </ul>
-<hr>
+<p><strong>As a first step I want to support BioLQM in pipeline and compare it to full 
+BNReduction script.</strong></p>
+<p>Other things that can be done:</p>
 <ul>
-<li>Roman Twists</li>
-<li>Side Plank Dips</li>
-<li>Windmills</li>
-<li>Side Plank Twist</li>
+<li>support BNReduction data format by <a href="https://doi.org/10.1186/1471-2105-15-221" target="_blank">Veliz-Cuba</a> 
+in BioLQM</li>
+<li>add support for calculating the fixpoints using the Colomoto docker (python
+interface)</li>
+<li>comparison between <strong>BioLQM, Pint, MABOSS and BNReduction</strong> could be done then
+in a Jupiter colomoto-enabled notebook!</li>
 </ul>
-<hr>
+<p>Further extension/comparisons could be:</p>
 <ul>
-<li>Hold the Plank Position</li>
-<li>Mountain Climbers</li>
+<li>Tamura, 2009 - Integer programming method</li>
+<li>Dubrova, 2009 - SAT-based</li>
 </ul>
+<h2 id="use-logical-modeling-to-predict-single-drug-data">Use Logical modeling to predict single-drug data</h2>
+<p>Asmund project proposal: mechanistic drug response prediction analysis</p>
+<p>Automate drug target profile annotation from:  </p>
+<ul>
+<li>Klaeger publication 2017 Science</li>
+<li>mrc ppu</li>
+<li>Davis publication 2011 (nature biotechnology?)</li>
+</ul>
+<p>Omics data (rna, cnv etc):  </p>
+<ul>
+<li>COSMIC</li>
+<li>CCLE</li>
+</ul>
+<p>Drug scren data</p>
+<ul>
+<li>Single drug<ul>
+<li>COSMIC/GDSC</li>
+<li>CCLE</li>
+</ul>
+</li>
+<li>Combo<ul>
+<li>O&apos;Neil 2016 Molecular cancer therapeutics</li>
+<li>FDA Holbeck 2017 cancer research publication</li>
+</ul>
+</li>
+</ul>
+<p><strong>My idea</strong> is more like this:<br>Predict drug-response curves from drug combination datasets (GDSC, CCLE), 
+using logical modeling for singaling network analysis or translation from 
+logical to ODE modeling. Aslo try to predict drug combinations datasets 
+(dose-response matrices?). Pretty much what is done in this <a href="https://doi.org/10.1016/j.cels.2018.10.013" target="_blank">paper</a> with help from <a href="10.1186/1752-0509-3-98">this one</a> for converting 
+boolean models to continuous.</p>
+<h2 id="quantum-logic-formalism-instead-of-logic-boolean">Quantum logic formalism instead of logic (boolean)</h2>
+<p>The <strong>core idea</strong> makes sense: you don&apos;t know the state of a protein, but when 
+you measure it, only then you really know what it is.<br>May also be worth to look at a [game-theoritic approach] (10.1007/11885191_18)
+to find attractors and such.</p>
+<h2 id="harmony-search">Harmony Search</h2>
+<p>Use <a href="https://doi.org/10.1016/j.proeng.2016.07.510" target="_blank">this algorithm</a> for 
+optimizing the boolean equations for gitsbe?</p>
+<h2 id="druglogics-pipeline-related">Druglogics-Pipeline related</h2>
+<h4 id="train-models-to-cell-specific-proliferation">Train models to cell-specific proliferation</h4>
+<p>Concept is that random models predict a lot better than cell-specific ones: 
+main directive is <strong>proliferation</strong>, not just fitting to a steady state pattern.</p>
+<h4 id="a-bottom-up-model-building-for-drug-prediction">A bottom-up model building for drug prediction</h4>
+<p>Start with a model and some observed synergies. Build/train/produce models that
+predict the first observed synergy (using Harmony Search?), from them the next
+one, etc. You end up with many models that can predict all the observed 
+synergies or you try to find out why that cannot happen for example (e.g. 
+contrasting synergies?). Do the latest models&apos; stable states or attractors 
+correspond to activity of proteins from literature?</p>
+<h4 id="simulate-cancer-resistance">Simulate cancer resistance</h4>
+<p>For example, you have some models that predict some (observed) synergies or you
+just find some synergistic drug comibnations for these models or per model. 
+Then, you modify these models in order to be resistant to these drugs, simulating
+thus the cancer rewiring process! Then, you apply (n+1) drug combinations to
+win over the resistance (and you do this procedure at more levels to suggest 
+3-way, 4-way drug combos and why there might be cancer models that can &apos;win&apos; 
+over these models and continue the proliferation). You end up with super cancer
+resistant models and methods to achieve them or reasons why this cannot happen
+at all.</p>
 
                                 
                                 </section>
@@ -414,12 +483,12 @@
 
             
                 
-                <a href="autohotkey.html" class="navigation navigation-prev " aria-label="Previous page: AutoHotKey">
+                <a href="quotes.html" class="navigation navigation-prev " aria-label="Previous page: Quotes">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="software.html" class="navigation navigation-next " aria-label="Next page: Cool Software">
+                <a href="biology_101.html" class="navigation navigation-next " aria-label="Next page: Biology">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -430,7 +499,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Ab Workout","level":"1.4.2","depth":2,"next":{"title":"Cool Software","level":"1.4.3","depth":2,"path":"software.md","ref":"software.md","articles":[]},"previous":{"title":"AutoHotKey","level":"1.4.1","depth":2,"path":"autohotkey.md","ref":"autohotkey.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"3.1.1","theme":"default","variables":{},"plugins":["bootstrap-callout"],"pluginsConfig":{"bootstrap-callout":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"abdominal_assault.md","mtime":"2019-02-17T17:37:48.764Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2019-03-21T15:13:42.864Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Ideas for PhD","level":"1.4.6","depth":2,"next":{"title":"Biology","level":"1.4.7","depth":2,"path":"biology_101.md","ref":"biology_101.md","articles":[]},"previous":{"title":"Quotes","level":"1.4.5","depth":2,"path":"quotes.md","ref":"quotes.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"3.1.1","theme":"default","variables":{},"plugins":["bootstrap-callout"],"pluginsConfig":{"bootstrap-callout":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"ideas_phd.md","mtime":"2019-03-21T15:09:28.970Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2019-03-21T15:13:42.864Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
