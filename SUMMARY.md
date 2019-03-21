@@ -14,4 +14,5 @@
   * [Cool Software](software.md)
   * [My best Anime](fav_anime.md)
   * [Quotes](quotes.md)
+  * [Ideas for PhD](ideas_phd.md)
   * [Biology](biology_101.md)

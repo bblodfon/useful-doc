@@ -9,3 +9,6 @@ documents with R Markdown (gitbook based)
 of R Markdown with CSS for Print
 - **[pkgdown](https://github.com/r-lib/pkgdown)**: Generate static html 
 documentation for an R package
+
+# npm packages
+- **gitbook CLI** - not maintained anymore :(, so maybe step up for it!
