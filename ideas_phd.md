@@ -19,9 +19,6 @@ Models used for testing could be of different types:
 - play with form of the boolean equations
 - others ???
 
-**As a first step I want to support BioLQM in pipeline and compare it to full 
-BNReduction script.**
-
 Other things that can be done:
 - support BNReduction data format by [Veliz-Cuba](https://doi.org/10.1186/1471-2105-15-221) 
 in BioLQM
