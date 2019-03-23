@@ -2,7 +2,7 @@
 <!DOCTYPE HTML>
 <html lang="" >
     <head>
-        <title>Linux Filesystem Tuning · GitBook</title>
+        <title>6 Balls Train · GitBook</title>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
@@ -61,10 +61,10 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="cpu_benchmarking.html" />
+    <link rel="next" href="train7.html" />
     
     
-    <link rel="prev" href="useful_linux_commands.html" />
+    <link rel="prev" href="juggling.html" />
     
 
     </head>
@@ -133,7 +133,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2.2" data-path="filesystem_tuning_commands.html">
+        <li class="chapter " data-level="1.2.2" data-path="filesystem_tuning_commands.html">
             
                 <a href="filesystem_tuning_commands.html">
             
@@ -178,7 +178,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.3.1" data-path="train6.html">
+        <li class="chapter active" data-level="1.3.1" data-path="train6.html">
             
                 <a href="train6.html">
             
@@ -401,7 +401,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >Linux Filesystem Tuning</a>
+        <a href="." >6 Balls Train</a>
     </h1>
 </div>
 
@@ -416,26 +416,37 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="filesystem-tuning">Filesystem Tuning</h1>
-<p>This procedure was applied to the file system of some Linux servers (running 
-Ubuntu 12.04 LTS) back in 2013 to get better database writing speed performance.</p>
-<p>Let <code>/dev/sdXY</code> be the partition that you want to boost (usually the one that 
-has the database tables).</p>
-<p>Run:</p>
-<pre><code>tune2fs -o journal_data_writeback /dev/sdXY
-tune2fs -e remount-ro /dev/sdXY
-check the changes:
-tune2fs -l /dev/sdXY
-</code></pre><p><code>vim fstab</code> (go to line that references the partition <code>sdXY</code>) and change the 4th 
-column to: <code>defaults,noatime,data=writeback,barrier=0,errors=remount-ro</code></p>
-<p><code>vim /etc/default/grub</code> and add: <code>GRUB_CMDLINE_LINUX_DEFAULT=&quot;elevator=deadline 
-(quiet) (splash)&quot;</code><br>Put the (quiet) and (splash) options only if they existed before.</p>
-<p>Run:
-<code>update-grub</code></p>
-<p>Check that <code>/boot/grub/grub.cfg</code> that has &quot;elevator&quot; somewhere:<br><code>cat /boot/grub/grub.cfg | grep elevator</code></p>
-<p><strong>REBOOT</strong></p>
-<p>Afterwards check: the fstab options, the tune2fs options, and the I/O scheduler 
-using:<br><code>cat /sys/block/sdX/queue/scheduler</code></p>
+                                <h1 id="3-balls">3 balls</h1>
+<ul>
+<li>3|61611</li>
+</ul>
+<p><strong>3 balls in one hand</strong>  </p>
+<ul>
+<li>inward, outward</li>
+<li>cascade, reverse cascade</li>
+<li>columns</li>
+<li>8040 (hi-low var)</li>
+<li>80 (4 balls in one hand)</li>
+</ul>
+<h1 id="4-balls">4 balls</h1>
+<ul>
+<li>4 (high throws), 666600 (4up)</li>
+<li>5|66161, 5|6616162</li>
+<li>6461641</li>
+<li>5|6716161, 6|6716071</li>
+<li>6366151, 6366601</li>
+</ul>
+<h1 id="5-balls">5 balls</h1>
+<ul>
+<li>64</li>
+<li>666660</li>
+<li>66661</li>
+<li>6662(555)</li>
+</ul>
+<h1 id="6-balls">6 balls</h1>
+<ul>
+<li>6-fountain (~10 minutes or so)</li>
+</ul>
 
                                 
                                 </section>
@@ -463,12 +474,12 @@ using:<br><code>cat /sys/block/sdX/queue/scheduler</code></p>
 
             
                 
-                <a href="useful_linux_commands.html" class="navigation navigation-prev " aria-label="Previous page: Linux useful commands">
+                <a href="juggling.html" class="navigation navigation-prev " aria-label="Previous page: Juggling">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="cpu_benchmarking.html" class="navigation navigation-next " aria-label="Next page: CPUBenchmark">
+                <a href="train7.html" class="navigation navigation-next " aria-label="Next page: 7 Balls Train">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -479,7 +490,7 @@ using:<br><code>cat /sys/block/sdX/queue/scheduler</code></p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Linux Filesystem Tuning","level":"1.2.2","depth":2,"next":{"title":"CPUBenchmark","level":"1.2.3","depth":2,"path":"cpu_benchmarking.md","ref":"cpu_benchmarking.md","articles":[]},"previous":{"title":"Linux useful commands","level":"1.2.1","depth":2,"path":"useful_linux_commands.md","ref":"useful_linux_commands.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"3.1.1","theme":"default","variables":{},"plugins":["bootstrap-callout"],"pluginsConfig":{"bootstrap-callout":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"filesystem_tuning_commands.md","mtime":"2019-02-17T18:05:55.406Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2019-03-23T22:01:20.149Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"6 Balls Train","level":"1.3.1","depth":2,"next":{"title":"7 Balls Train","level":"1.3.2","depth":2,"path":"train7.md","ref":"train7.md","articles":[]},"previous":{"title":"Juggling","level":"1.3","depth":1,"path":"juggling.md","ref":"juggling.md","articles":[{"title":"6 Balls Train","level":"1.3.1","depth":2,"path":"train6.md","ref":"train6.md","articles":[]},{"title":"7 Balls Train","level":"1.3.2","depth":2,"path":"train7.md","ref":"train7.md","articles":[]},{"title":"My Siteswaps","level":"1.3.3","depth":2,"path":"siteswaps.md","ref":"siteswaps.md","articles":[]},{"title":"Mills Mess Siteswaps","level":"1.3.4","depth":2,"path":"mills_mess_ss.md","ref":"mills_mess_ss.md","articles":[]},{"title":"Passing","level":"1.3.5","depth":2,"path":"passing.md","ref":"passing.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"3.1.1","theme":"default","variables":{},"plugins":["bootstrap-callout"],"pluginsConfig":{"bootstrap-callout":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"train6.md","mtime":"2019-03-23T21:58:32.938Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2019-03-23T22:01:20.149Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
