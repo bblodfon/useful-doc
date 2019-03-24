@@ -1,4 +1,4 @@
 docs/
-.bookignore
 gulpfile.js
 package*
+README.md
