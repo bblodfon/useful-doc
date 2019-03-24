@@ -11,4 +11,4 @@ of R Markdown with CSS for Print
 documentation for an R package
 
 # npm packages
-- **gitbook CLI** - not maintained anymore :(, so maybe step up for it!
+- **gitbook CLI** - not maintained anymore - so maybe step up for it!
