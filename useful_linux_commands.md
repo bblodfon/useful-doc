@@ -1,5 +1,10 @@
 # Useful Linux commands
 
+## list tar.gz file contants with depth
+
+Download perl script: [treeify](https://github.com/grawity/code/blob/master/misc/treeifyi)
+and run: `tar -tf <file>.tar.gz | perl treeify -d 2`
+
 ## ssh linux server without password
 
 Usually you do: `ssh username@IP` and enter a password. We want to do just 
