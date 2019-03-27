@@ -63,6 +63,11 @@ From the father of Squats, talking about reps.
 > Be the change you want to see in the world                                                       
 *Gandhi* (maybe)
 
+<!-- -->
+> #### info::                                                                   
+> Be legendary                                    
+*Andreas Polimenis*
+
 ---
 
 # Talent vs Genius?
