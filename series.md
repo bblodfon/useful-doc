@@ -1,13 +1,19 @@
-# Watching passionately
+# Watching passionately now :)
 - Fargo
 - The Expanse
-- Silicon Valley (s06)
-- Better Call Saul (s05)
-- Mr Robot (2019 - s04)
-- Stranger Things (2019 - s03)
+
+### To Watch soon
 - Game of Thrones (2019 - s08)
 - True Detective (2019 - s03)
 - Cobra Cai (2019 - s02)
+
+### To Watch when they come out
+- Stranger Things (2019 - s03)
+- Better Call Saul (s05)
+- Mr Robot (2019 - s04)
+
+### Keep in track 
+- Silicon Valley (2020??? - s06)
 
 # To see in the future
 
