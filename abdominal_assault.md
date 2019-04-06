@@ -7,12 +7,11 @@
 - V Ups
 - Flutter Kicks (+variations like Leg Spread)
 - Reverse Crunches
-- Heal touches
 ---
+- Heel touches
 - Roman Twists
 - Side Plank Dips
 - Windmills
 - Side Plank Twist
 ---
 - Hold the Plank Position
-- Mountain Climbers
