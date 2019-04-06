@@ -1,16 +1,36 @@
-# PHD PLAN
+# PhD Plans
 
-## Steven/VSM
-- Make ontologies for genes and proteins known databases?
-- PubDictionaries
-- Dictionary Merger
+## Thesis                                                                       
+- Structure thesis/chapters (bookdown/online gitbook)?
 
 ## Pipeline
-- Finish Model analysis
-- Make R package for biomarker analysis and submit it (R, Bioinformatics)
-- Work on the pipeline
-  - Do comparison between Aurelien and M2 full
-  - Do all the stuff from the [dev_plan_doc](https://docs.google.com/document/d/1OUupR0b-28YB9pVAww77RMecnFN6A39MYjXMjljmvG4/edit?usp=sharing)
+- Finish Model analysis (for paper)
+  - Make R package for biomarker analysis and submit it (R, Bioinformatics)
+- Work on the pipeline modules (see the [dev_plan_doc](https://docs.google.com/document/d/1OUupR0b-28YB9pVAww77RMecnFN6A39MYjXMjljmvG4/edit?usp=sharing)). Most important:
+    - BioLQM support: exports
+    - BioLQM support: stable state calculation, trap spaces
+    - Do comparison between Aurelien's BioLQM stable state algorithm and 
+BNReduction using M2
 
-## Thesis 
-- Structure thesis/chapters (bookdown/online gitbook)?
+## VSM                                                                          
+- Make ontologies for genes and proteins known databases (Ensembl, Uniprot)     
+- PubDictionaries                                                               
+- Dictionary Merger/Combiner
+
+## PSICQUIC
+- Connect data taken from psicquic to atopo (enxtend atopo module to be 
+PSICQUIC-compatible - takes causality information and builds network of 
+interactions with available configuration on how to do so).
+- Help build [PSICQUIC 2.0](https://github.com/elixir-europe/BioHackathon/tree/master/interoperability/Prototyping%20the%20new%20PSICQUIC%202-0)
+
+## Synergy
+- Augment existing R package for calculating reference models to include Wim's 
+generalized Bliss method and the mean synergy score by Simone Laderer! Goal 
+is to test all the null reference models (Loewe, Bliss, ZIP, +2 new, others?) 
+on read dose-response matrix datasets and see which is best at finding the 
+synergies. R package to use:
+  - SynergyFinder from Finland group [code here](https://github.com/google/synergyfinderengineered/)
+  - Also see this software: [R package COMBIA](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5732778/)
+- Mathematical formulation of the volume-based synergy score general method to
+include (mine)?
+

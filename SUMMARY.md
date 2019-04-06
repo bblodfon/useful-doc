@@ -6,8 +6,9 @@
   * [CPU Benchmark](cpu_benchmarking.md)
 -----
 * [PhD](phd.md)
+  * [PhD Work Done](phd_work_done.md)
   * [PhD Plans](phd_plans.md)                                                     
-  * [Ideas for PhD](ideas_phd.md)
+  * [PhD Ideas](phd_ideas.md)
   * [Biology](biology_101.md)
 -----
 * [Personal](personal.md)

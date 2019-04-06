@@ -1,11 +1,5 @@
 # PhD ideas
 
-## Synergy
-
-Augment existing R package to include Wim's generalized Bliss method and the 
-mean synergy score by girl I met on ECCB! Test them, along with ZIP, bliss and
-Loewe against real experimetnal data.
-
 ## Compare fixpoint tools
 
 Compare different tools that calculate fixpoints for logical modeling.
@@ -56,14 +50,14 @@ Drug scren data
 Predict drug-response curves from drug combination datasets (GDSC, CCLE), 
 using logical modeling for singaling network analysis or translation from 
 logical to ODE modeling. Aslo try to predict drug combinations datasets 
-(dose-response matrices?). Pretty much what is done in this [paper](https://doi.org/10.1016/j.cels.2018.10.013) with help from [this one](10.1186/1752-0509-3-98) for converting 
-boolean models to continuous.
+(dose-response matrices?). Pretty much what is done in this [paper](https://doi.org/10.1016/j.cels.2018.10.013) with help from [this one](https://doi.org/10.1186/1752-0509-3-98) 
+for converting boolean models to continuous.
 
 ## Quantum logic formalism instead of logic (boolean)
 
 The **core idea** makes sense: you don't know the state of a protein, but when 
 you measure it, only then you really know what it is.  
-May also be worth to look at a [game-theoritic approach] (10.1007/11885191_18)
+May also be worth to look at a [game-theoritic approach](https://doi.org/10.1007/11885191_18)
 to find attractors and such.
 
 ## Harmony Search
