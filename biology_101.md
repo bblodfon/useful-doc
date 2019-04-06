@@ -8,6 +8,13 @@ DNA => mRNA => protein synthesis (one way, central dogma)
 
 ????
 
+## ChIP
+
+**Chromatin immunoprecipitation (ChIP)** is a experimental technique used to 
+investigate the interaction and map the association between **proteins** and 
+**specific genomic regions** such as transcription factors on promoters or 
+other DNA binding sites.
+
 ## -omics and -ome
 
 Examples: proteomics, metabolomics, genomics, transcriptomics, 
