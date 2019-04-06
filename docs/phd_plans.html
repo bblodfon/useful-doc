@@ -61,10 +61,10 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="ideas_phd.html" />
+    <link rel="next" href="phd_ideas.html" />
     
     
-    <link rel="prev" href="phd.html" />
+    <link rel="prev" href="phd_work_done.html" />
     
 
     </head>
@@ -172,7 +172,20 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="2.1.1" data-path="phd_plans.html">
+        <li class="chapter " data-level="2.1.1" data-path="phd_work_done.html">
+            
+                <a href="phd_work_done.html">
+            
+                    
+                    PhD Work Done
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.1.2" data-path="phd_plans.html">
             
                 <a href="phd_plans.html">
             
@@ -185,12 +198,12 @@
             
         </li>
     
-        <li class="chapter " data-level="2.1.2" data-path="ideas_phd.html">
+        <li class="chapter " data-level="2.1.3" data-path="phd_ideas.html">
             
-                <a href="ideas_phd.html">
+                <a href="phd_ideas.html">
             
                     
-                    Ideas for PhD
+                    PhD Ideas
             
                 </a>
             
@@ -198,7 +211,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.1.3" data-path="biology_101.html">
+        <li class="chapter " data-level="2.1.4" data-path="biology_101.html">
             
                 <a href="biology_101.html">
             
@@ -378,26 +391,51 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="phd-plan">PHD PLAN</h1>
-<h2 id="stevenvsm">Steven/VSM</h2>
-<ul>
-<li>Make ontologies for genes and proteins known databases?</li>
-<li>PubDictionaries</li>
-<li>Dictionary Merger</li>
-</ul>
-<h2 id="pipeline">Pipeline</h2>
-<ul>
-<li>Finish Model analysis</li>
-<li>Make R package for biomarker analysis and submit it (R, Bioinformatics)</li>
-<li>Work on the pipeline<ul>
-<li>Do comparison between Aurelien and M2 full</li>
-<li>Do all the stuff from the <a href="https://docs.google.com/document/d/1OUupR0b-28YB9pVAww77RMecnFN6A39MYjXMjljmvG4/edit?usp=sharing" target="_blank">dev_plan_doc</a></li>
-</ul>
-</li>
-</ul>
+                                <h1 id="phd-plans">PhD Plans</h1>
 <h2 id="thesis">Thesis</h2>
 <ul>
 <li>Structure thesis/chapters (bookdown/online gitbook)?</li>
+</ul>
+<h2 id="pipeline">Pipeline</h2>
+<ul>
+<li>Finish Model analysis (for paper)<ul>
+<li>Make R package for biomarker analysis and submit it (R, Bioinformatics)</li>
+</ul>
+</li>
+<li>Work on the pipeline modules (see the <a href="https://docs.google.com/document/d/1OUupR0b-28YB9pVAww77RMecnFN6A39MYjXMjljmvG4/edit?usp=sharing" target="_blank">dev_plan_doc</a>). Most important:<ul>
+<li>BioLQM support: exports</li>
+<li>BioLQM support: stable state calculation, trap spaces</li>
+<li>Do comparison between Aurelien&apos;s BioLQM stable state algorithm and 
+BNReduction using M2</li>
+</ul>
+</li>
+</ul>
+<h2 id="vsm">VSM</h2>
+<ul>
+<li>Make ontologies for genes and proteins known databases (Ensembl, Uniprot)     </li>
+<li>PubDictionaries                                                               </li>
+<li>Dictionary Merger/Combiner</li>
+</ul>
+<h2 id="psicquic">PSICQUIC</h2>
+<ul>
+<li>Connect data taken from psicquic to atopo (enxtend atopo module to be 
+PSICQUIC-compatible - takes causality information and builds network of 
+interactions with available configuration on how to do so).</li>
+<li>Help build <a href="https://github.com/elixir-europe/BioHackathon/tree/master/interoperability/Prototyping%20the%20new%20PSICQUIC%202-0" target="_blank">PSICQUIC 2.0</a></li>
+</ul>
+<h2 id="synergy">Synergy</h2>
+<ul>
+<li>Augment existing R package for calculating reference models to include Wim&apos;s 
+generalized Bliss method and the mean synergy score by Simone Laderer! Goal 
+is to test all the null reference models (Loewe, Bliss, ZIP, +2 new, others?) 
+on read dose-response matrix datasets and see which is best at finding the 
+synergies. R package to use:<ul>
+<li>SynergyFinder from Finland group <a href="https://github.com/google/synergyfinderengineered/" target="_blank">code here</a></li>
+<li>Also see this software: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5732778/" target="_blank">R package COMBIA</a></li>
+</ul>
+</li>
+<li>Mathematical formulation of the volume-based synergy score general method to
+include (mine)?</li>
 </ul>
 
                                 
@@ -426,12 +464,12 @@
 
             
                 
-                <a href="phd.html" class="navigation navigation-prev " aria-label="Previous page: PhD">
+                <a href="phd_work_done.html" class="navigation navigation-prev " aria-label="Previous page: PhD Work Done">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="ideas_phd.html" class="navigation navigation-next " aria-label="Next page: Ideas for PhD">
+                <a href="phd_ideas.html" class="navigation navigation-next " aria-label="Next page: PhD Ideas">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -442,7 +480,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"PhD Plans","level":"2.1.1","depth":2,"next":{"title":"Ideas for PhD","level":"2.1.2","depth":2,"path":"ideas_phd.md","ref":"ideas_phd.md","articles":[]},"previous":{"title":"PhD","level":"2.1","depth":1,"path":"phd.md","ref":"phd.md","articles":[{"title":"PhD Plans","level":"2.1.1","depth":2,"path":"phd_plans.md","ref":"phd_plans.md","articles":[]},{"title":"Ideas for PhD","level":"2.1.2","depth":2,"path":"ideas_phd.md","ref":"ideas_phd.md","articles":[]},{"title":"Biology","level":"2.1.3","depth":2,"path":"biology_101.md","ref":"biology_101.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"3.1.1","theme":"default","variables":{},"plugins":["bootstrap-callout"],"pluginsConfig":{"bootstrap-callout":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"linux.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"phd_plans.md","mtime":"2019-03-22T18:58:48.139Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2019-03-27T15:10:22.773Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"PhD Plans","level":"2.1.2","depth":2,"next":{"title":"PhD Ideas","level":"2.1.3","depth":2,"path":"phd_ideas.md","ref":"phd_ideas.md","articles":[]},"previous":{"title":"PhD Work Done","level":"2.1.1","depth":2,"path":"phd_work_done.md","ref":"phd_work_done.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"3.1.1","theme":"default","variables":{},"plugins":["bootstrap-callout"],"pluginsConfig":{"bootstrap-callout":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"linux.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"phd_plans.md","mtime":"2019-04-06T17:55:02.480Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2019-04-06T17:58:42.834Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
