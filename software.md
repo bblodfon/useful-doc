@@ -7,6 +7,8 @@ network visualization
 documents with R Markdown (gitbook based)
 - **[pagedown](https://github.com/rstudio/pagedown)**: Paginate the HTML Output 
 of R Markdown with CSS for Print
+- **[blogdown](https://bookdown.org/yihui/blogdown)**: Creating websites with 
+R Markdown
 - **[pkgdown](https://github.com/r-lib/pkgdown)**: Generate static html 
 documentation for an R package
 
