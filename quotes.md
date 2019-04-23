@@ -1,13 +1,15 @@
 # General
 
 > #### info::
-> History will be kind to me, for I intend to write it  
+> History will be kind to me, for I intend to write it
+
 *Winston Churchill*
 
 Big man, big words.
 
 > #### info::
-> Those who cannot remember the past are condemned to repeat it  
+> Those who cannot remember the past are condemned to repeat it
+
 *George Santayana*
 
 True that.
@@ -15,8 +17,31 @@ True that.
 > #### info::
 > You should never accept money you feel you haven't earned. If you do, you'll 
 start to always take the easy way out... Anyway, no good ever comes out of 
-drowning in wealth or power.  
+drowning in wealth or power.
+
 *Arataka Reigen, Mob Psycho*
+
+# Music
+
+> #### primary::                                                                
+> "Radio is not perfect enough really to do justice to good music," he said.
+"That is why I have steadily refused to play for it. But my chief objection is
+on other grounds.  
+"It makes listening to music too comfortable. You often hear people say, 'Why 
+should I pay for an uncomfortable seat at a concert when I can stay at home 
+and smoke my pipe and put my feet up and be perfectly comfortable?'  
+"I believe one shouldn't be too comfortable when listening to really great 
+music. To appreciate good music, one must be mentally alert and emotionally 
+receptive. You can't be that when you are sitting at home with your feet on a 
+chair.   
+"No, listening to music is more strenuous than that. **Music is like poetry;
+it is a passion and a problem**. You can't enjoy and understand it merely by 
+sitting still and letting it soak into your ears."
+
+*Rachmaninoff (from an interview in Paris, 1928)*
+
+Something that I also realized later in life: it's good to know that many share
+the same opinion.
 
 ---
 # Science
@@ -24,7 +49,8 @@ drowning in wealth or power.
 > #### info::                                                                   
 > Maybe we are not alone and have not been. “The click beetles in my backyard 
 don’t notice that they’re surrounded by intelligent beings — namely my 
-neighbors and me, but we’re here, nonetheless.”                 
+neighbors and me, but we’re here, nonetheless.”
+              
 *Seth Shostak*
 
 Regarding the Fermi paradox, from an astronomer at the SETI institute. He 
@@ -35,37 +61,49 @@ like time and distance, but in *perception*.
 # Motivation
 
 > #### primary::
-> "Young man," he said to me, "do you imagine that everything in my life goes smoothly? Do you suppose I have no troubles, never hesitate and lose confidence in myself? Do you really think faith is always equally strong? All of us have difficult moments; but this is life. Hold up your head, and keep on your appointed path."  
+> "Young man," he said to me, "do you imagine that everything in my life goes 
+smoothly? Do you suppose I have no troubles, never hesitate and lose confidence 
+in myself? Do you really think faith is always equally strong? All of us have 
+difficult moments; but this is life. Hold up your head, and keep on your 
+appointed path."
+
 *Leo Tolstoy to Rachmaninoff*
 
-Rachmaninoff was in a depressed state of mind and hadn't composed anything during that period. These words should had help him get up on his feet, but work was just what Rachmaninoff was unable to do at that time.
+Rachmaninoff was in a depressed state of mind and hadn't composed anything 
+during that period. These words should had help him get up on his feet, but 
+work was just what Rachmaninoff was unable to do at that time.
 
 > #### info::
 > Success is the ability to go from failure to failure without losing your 
-enthusiasm  
+enthusiasm
+
 *Winston Churchill*
 
 Common pattern. Wins are hard gained (no pain, no gain philosophy).
 
 > #### info::
-> I'd Rather Die Than Be A Loser  
+> I'd Rather Die Than Be A Loser
+
 *Tom "The Golden Eagle" Platz*
 
 <!-- --> 
 > #### info::
-> There is always 5 more!  
+> There is always 5 more!
+
 *Tom "The Golden Eagle" Platz*
 
 From the father of Squats, talking about reps.
 
 <!-- -->                                                                        
 > #### info::                                                                   
-> Be the change you want to see in the world                                                       
+> Be the change you want to see in the world
+
 *Gandhi* (maybe)
 
 <!-- -->
 > #### info::                                                                   
-> Be legendary                                    
+> Be legendary
+
 *Andreas Polimenis*
 
 ---
@@ -78,27 +116,31 @@ From the father of Squats, talking about reps.
 imagine these things, like I imagine. Of course! I was an ordinary person who 
 had studied hard. There are no miracle people. It just happen they got 
 interested in these things and they learned all these stuffs. There are just 
-people. There's no talent, special, miracle ability to understand quantum 
-mechanics or a miracle ability to imagine electromagnetic fields that comes 
+people. **There's no talent, special, miracle ability to understand quantum 
+mechanics** or a miracle ability to imagine electromagnetic fields that comes 
 without practicing and reading and learning and studying, so if you say it 
 take an ordinary person who's willing to devote a great deal of time and study 
-and work and thinking in mathematics, then he has become a scientist."  
+and work and thinking in mathematics, then he has become a scientist."
+
 *Richard Feynman*  
 
 <!-- -->
 > #### info::
-> I have no special talent. I am only passionately curious.  
+> I have no special talent. I am only passionately curious.
+
 *Albert Einstein*
 
 <!-- -->
 > #### info::
-> If others would think as hard as I did, then they would get similar results.  
+> If others would think as hard as I did, then they would get similar results.
+
 *Newton*
 
 <!-- -->
 > #### info::
 > Doing easily what others find difficult is talent; doing what is impossible 
-for talent is genius.  
+for talent is genius.
+
 *Henri Frederic Amiel*
 
 ---
@@ -110,32 +152,33 @@ for talent is genius.
 days, even well into his old age; and his tendency to show up on his colleagues' 
 doorsteps demanding they "open their minds" to mathematical dialogue — was one 
 of the most prolific mathematicians who ever lived, publishing more 
-peer-reviewed papers than any other mathematician in history.
-
-> His secret? According to him, amphetamines. Included here is an excerpt from a 
+peer-reviewed papers than any other mathematician in history.  
+His secret? According to him, amphetamines. Included here is an excerpt from a 
 book published in 1998 by Erdös' de factobiographer, science writer Paul Hoffman, 
-which explains Erdös' proclivity for amphetamine use: 
-
-> Like all of Erdös's friends, [fellow mathematician Ronald Graham] was concerned 
+which explains Erdös' proclivity for amphetamine use:  
+Like all of Erdös's friends, [fellow mathematician Ronald Graham] was concerned 
 about his drug-taking. In 1979, Graham bet Erdös $500 that he couldn't stop 
 taking amphetamines for a month. Erdös accepted the challenge, and went cold 
 turkey for thirty days. After Graham paid up — and wrote the $500 off as a 
 business expense — Erdös said, "You've showed me I'm not an addict. But I didn't 
 get any work done. I'd get up in the morning and stare at a blank piece of paper. 
 I'd have no ideas, just like an ordinary person. **You've set mathematics back a 
-month.**" He promptly resumed taking pills, and mathematics was the better for it.  
+month.**" He promptly resumed taking pills, and mathematics was the better for it.
+
 *Paul Erdös*
 
 <!-- -->
 > #### info::
-> To my wife Anne, without whose silence this book would never have been written.  
+> To my wife Anne, without whose silence this book would never have been written.
+
 *P. K. Dick, The Man in the High Castle*
 
 I really wonder what his wife said about that!
 
 > #### info::
 > One of the symptoms of an approaching nervous breakdown is the belief that 
-one’s work is terribly important.  
+one’s work is terribly important.
+
 *Bertrand Russell*
 
 <!-- -->
@@ -144,7 +187,8 @@ one’s work is terribly important.
 in the midst of it one thinks it well done, sometimes even very good, but as 
 soon as a little time passes, you see how almost completely unsuitable is 
 really is and how it would be better to change everything, even though I don't 
-how to do it any better.  
+how to do it any better.
+
 *Rachmaninoff to Morozov (letter), July 6, 1905)*
 
 Case is with music composition but it applies to computer programming and
@@ -152,7 +196,8 @@ others as well.
 
 <!-- -->                                                                        
 > #### info::                                                                   
-> As usual I work a lot and as usual everything comes to me in an extremely                         hard way...                                                                     
+> As usual I work a lot and as usual everything comes to me in an extremely                         hard way...
+
 *Rachmaninoff to Morozov (letter)*
 
 <!-- -->
@@ -162,7 +207,8 @@ functions that I used across different packages, so I decided to extract them
 into a separate package. Previously I had been using the evil triple-colon ::: 
 to access these internal utility functions. Now with xfun, these functions have 
 been exported, and more importantly, documented. It should be better to use them 
-**under the sun instead of in the dark**.  
+**under the sun instead of in the dark**.
+
 *Yihui Xie, Statistician & Data Scientist*
 
 Open source code, open science.
