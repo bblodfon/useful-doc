@@ -6,7 +6,12 @@ DNA => mRNA => protein synthesis (one way, central dogma)
 
 ## Exon
 
-????
+Following the central dogma, the mRNA is a series of nucleotides. There are 
+trios of nucleotides, called *codons* that will translate into an amino acid 
+and many amino acids will constitute a protein. **Exons** are exactly all those
+nucleotides that will be part of the amono acid that constitute the protein.  
+The rest of them (that are not used in the construction of the protein) are 
+called **introns** and are removed by *RNA splicing*.
 
 ## ChIP
 
