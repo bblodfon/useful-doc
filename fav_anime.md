@@ -6,13 +6,13 @@
 - Kuroko no Basket
 - Kenichi History's Strongest Disciple
 - One punch Man
+- Mob Psycho
 
 # GOOD
 
 - Dororo
 - Black Clover
 - Megalo Box
-- Mob Psycho
 - Boku no Hero Academia
 - Basilisk
 - Hakuouki
