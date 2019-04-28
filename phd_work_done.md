@@ -25,3 +25,8 @@ R shiny app
   - [miTab 2.8/causalTab paper ]( https://doi.org/10.1093/bioinformatics/btz132)
 - Update [JAMI](https://github.com/MICommunity/psi-jami) library to support 
 miTab 2.8 - results of the [BioHackathon 2018, Paris](http://bh2018paris.info/)
+and the [Marseille GREEKC hackathon event](https://github.com/GREEKC/hackathon-marseille/tree/master/project_descriptions/causal_psicquic).
+
+## Others
+
+- Java Client for RSAT tool [fetch-sequences](https://github.com/bblodfon/rsat-rest-java-clients)
