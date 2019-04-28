@@ -1,9 +1,9 @@
 # Watching passionately now :)
-- Fargo
-- The Expanse
+- Game of Thrones - last season
 
 ### To Watch soon
-- Game of Thrones (2019 - s08)
+- Fargo (s02)
+- The Punisher (s02)
 - True Detective (2019 - s03)
 - Cobra Cai (2019 - s02)
 
@@ -11,6 +11,7 @@
 - Stranger Things (2019 - s03)
 - Better Call Saul (s05)
 - Mr Robot (2019 - s04)
+- The Expanse (2019 - s04)
 
 ### Keep in track 
 - Silicon Valley (2020??? - s06)
