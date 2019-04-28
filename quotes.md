@@ -43,6 +43,39 @@ sitting still and letting it soak into your ears."
 Something that I also realized later in life: it's good to know that many share
 the same opinion.
 
+> #### primary::
+> "The poet Heine once said, **'What life takes away, music restores.'** He 
+would not be moved to say this if he could hear the music of today. For the 
+most part it gives nothing. **Music should bring relief**. It should 
+rehabilitate minds and souls, and modern music does not do this. If we are to 
+have great music we must return to **the fundamentals which made the music of 
+the past great**. Music cannot be just color and rhythm; it must reveal the 
+emotions of the heart."
+
+*Rachmaninoff (from an interview for The New York Times, 1932)*
+
+> #### primary::
+> **What is music!?** How can one define it? Music is a calm moonlight night, a 
+rustling of summer foliage. Music is the distant peal of bells at eventide! 
+**Music is born only in the heart** and it appeals only to the heart; it is 
+Love! The sister of Music is Poesy, and its mother is Sorrow!
+
+*Rachmanoninoff (1932)*
+
+> #### primary::
+> His value and power as a pianist and conductor reside in his imagination, in
+his inner perception of the original musical image. HIs performance is always
+creative, always as if the composer were playing it - and always as if it were
+**"for the first time". He seems to be improvising, making a song not heard
+before...**
+
+*Medtner to Rachmaninoff (1933)*
+
+One of the most important qualitites of piano playing: whenever you play 
+something that someone else wrote, play it like its the first time, like an 
+improvisation. I believe this is what distinguishes really good classical music 
+piano players.
+
 ---
 # Science
 
@@ -142,6 +175,14 @@ and work and thinking in mathematics, then he has become a scientist."
 for talent is genius.
 
 *Henri Frederic Amiel*
+
+> #### primary::
+> "I am inclined to believe that **heredity** and **training** and inseparable
+and indispensable in any ART achievement. I consider that a capacity for hard 
+work is also a Talent, and only those few artists who have inherited both 
+musical and working talents attain the highest peak of their profession."
+
+*Rachmaninoff (1937)*
 
 ---
 
