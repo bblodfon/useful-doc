@@ -8,7 +8,6 @@
   - Make R package for biomarker analysis and submit it (R, Bioinformatics)
 - Work on the pipeline modules (see the [dev_plan_doc](https://docs.google.com/document/d/1OUupR0b-28YB9pVAww77RMecnFN6A39MYjXMjljmvG4/edit?usp=sharing)). Most important:
     - Full Testing (Junit 5)
-    - BioLQM support: exports
     - BioLQM support: stable state calculation, trap spaces
     - Do comparison between Aurelien's BioLQM stable state algorithm and 
 BNReduction using M2

@@ -1,5 +1,12 @@
 # Cell Biology
 
+## General
+
+#### Nucleic Acid
+
+A complex organic substance present in living cells, especially DNA or RNA, 
+whose molecules consist of many nucleotides linked in a long chain.
+
 ## DNA, Genes, Proteins
 
 #### Central Dogma
@@ -202,6 +209,7 @@ response to infection.
 
 many ways to be activated
 - NF-kB/REL family of proteins
+- Nf-kB triggers inflammatory gene expression
 - Inhibitor molecule IkB plays role in singnaling cascade of NFkB, the 
 phoshorylation of IKK complex also important for the activation of NF-kB
 - activation of NF-kB is done by a wide range of signals
@@ -217,3 +225,23 @@ A broad and loose category of small proteins used in cell signaling. Cytokines
 have been shown to be involved in autocrine, paracrine and endocrine signaling 
 as **immunomodulating agents**.
 
+
+#### Autophagy 
+
+- recycle cytoplasmic components
+- activated by nutrient depravation, need to replace nutrients
+- a way to attack pathogens (microbes)
+- autophagy proteins impact multiple aspects of immunity (immune and adaptive)
+
+## Cell Death Singaling Pathways
+
+4 modes of death: autophagy, apoptosis (programmed cell death), cornification, necrosis
+
+#### Apoptosis
+
+- programmed cell death
+- pathway activated through activation Casp8
+- autophagy-dependent death, non-dependent
+- pyroptosis !!! (to kill intruders)
+
+RIPK1 and RIPK3 important for necrosis (MLKL proshorylated instead of Casp8)

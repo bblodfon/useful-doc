@@ -9,10 +9,15 @@ in bookdown soon).
 - First refactoring, bug fixing, source code documentation on Gitsbe, Drabme, 
 druglogics2 (druglogics-synergy) modules and most important parallel simulations 
 enabled (my first 2-3 months of my PhD)
-- Second refactoring, transport modules to maven packaging, added tests, support
-for many features (Ongoing work - see [dev_plan_doc](https://docs.google.com/document/d/1OUupR0b-28YB9pVAww77RMecnFN6A39MYjXMjljmvG4/edit?usp=sharing)). Most important things achieved:
+- Second refactoring, transport modules to maven packaging, added support
+for many features (Ongoing work - see [dev_plan_doc](https://docs.google.com/document/d/1OUupR0b-28YB9pVAww77RMecnFN6A39MYjXMjljmvG4/edit?usp=sharing)). 
+Most important things achieved:
+  - Added tests to modules Gitsbe, Drabme usign JUnit5, mockito, assertJ libraries
   - [druglogics-roc-generator](https://github.com/bblodfon/druglogics-roc-generator)
 R shiny app
+  - Export support using [BioLQM](https://github.com/colomoto/bioLQM): the 
+initial model + best generation models can now be exported through configuration 
+options to GINML, SBML-Qual and BoolNet community formats
 
 ## VSM
 
