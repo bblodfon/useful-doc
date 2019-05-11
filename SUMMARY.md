@@ -9,7 +9,6 @@
   * [PhD Work Done](phd_work_done.md)
   * [PhD Plans](phd_plans.md)                                                     
   * [PhD Ideas](phd_ideas.md)
-  * [Biology](biology_101.md)
 -----
 * [Personal](personal.md)
   * [Cool Software](software.md)
