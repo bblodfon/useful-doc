@@ -1,11 +1,11 @@
 # Watching passionately now :)
-- Game of Thrones - last season
+- Game of Thrones
+- Cobra Kai (s02)
 
 ### To Watch soon
 - Fargo (s02)
 - The Punisher (s02)
 - True Detective (2019 - s03)
-- Cobra Cai (2019 - s02)
 
 ### To Watch when they come out
 - Stranger Things (2019 - s03)
