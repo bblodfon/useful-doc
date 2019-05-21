@@ -1,6 +1,6 @@
 # Watching passionately now :)
-- Game of Thrones
-- Cobra Kai (s02)
+- Fargo (s02)
+- True Detective (2019 - s03)
 
 ### To Watch soon
 - Fargo (s02)
@@ -12,6 +12,7 @@
 - Better Call Saul (s05)
 - Mr Robot (2019 - s04)
 - The Expanse (2019 - s04)
+- Cobra Kai (2020 - s03)
 
 ### Keep in track 
 - Silicon Valley (2020??? - s06)
