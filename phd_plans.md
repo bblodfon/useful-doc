@@ -4,8 +4,16 @@
 - Structure thesis/chapters (bookdown/online gitbook)?
 
 ## Pipeline
-- Finish Model analysis (for paper)
-  - Make R package for biomarker analysis and submit it (R, Bioinformatics)
+- Ensemble Model biomarker analysis (part of this work is for automated pipeline
+paper). Roadmap:
+  - Make R package with general useful functions
+  - Make R package for biomarker analysis
+  - Make bookdown document for previous atopo-based analysis
+  - Redo the analysis on Cascade topology and for specific drug combinations (2)
+  - Feature importance/biomarker selection using ML methods (compare with what 
+you got with your own method, submit to the ML course to get the credits)
+  - Submit R packages to CRAN
+  - Small publication of the R package and ML methods perhaps?
 - Work on the pipeline modules (see the [dev_plan_doc](https://docs.google.com/document/d/1OUupR0b-28YB9pVAww77RMecnFN6A39MYjXMjljmvG4/edit?usp=sharing)). Most important:
     - Full Testing (Junit 5)
     - BioLQM support: stable state calculation, trap spaces

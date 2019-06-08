@@ -2,7 +2,7 @@
 <!DOCTYPE HTML>
 <html lang="" >
     <head>
-        <title>Linux useful commands · GitBook</title>
+        <title>Useful · GitBook</title>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
@@ -61,7 +61,7 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="filesystem_tuning_commands.html" />
+    <link rel="next" href="databases.html" />
     
     
     <link rel="prev" href="./" />
@@ -98,7 +98,7 @@
                 <a href="./">
             
                     
-                    Linux
+                    Linux commands
             
                 </a>
             
@@ -107,12 +107,12 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.1.1" data-path="useful_linux_commands.html">
+        <li class="chapter active" data-level="1.1.1" data-path="cmd_linux.html">
             
-                <a href="useful_linux_commands.html">
+                <a href="cmd_linux.html">
             
                     
-                    Linux useful commands
+                    Useful
             
                 </a>
             
@@ -120,12 +120,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.1.2" data-path="filesystem_tuning_commands.html">
+        <li class="chapter " data-level="1.1.2" data-path="databases.html">
             
-                <a href="filesystem_tuning_commands.html">
+                <a href="databases.html">
             
                     
-                    Linux Filesystem Tuning
+                    Database
             
                 </a>
             
@@ -133,12 +133,25 @@
             
         </li>
     
-        <li class="chapter " data-level="1.1.3" data-path="cpu_benchmarking.html">
+        <li class="chapter " data-level="1.1.3" data-path="network.html">
             
-                <a href="cpu_benchmarking.html">
+                <a href="network.html">
             
                     
-                    CPU Benchmark
+                    Network
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4" data-path="cpu_bench.html">
+            
+                <a href="cpu_bench.html">
+            
+                    
+                    CPU benchmark
             
                 </a>
             
@@ -263,9 +276,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.3" data-path="abdominal_assault.html">
+        <li class="chapter " data-level="3.1.3" data-path="abs.html">
             
-                <a href="abdominal_assault.html">
+                <a href="abs.html">
             
                     
                     Ab Workout
@@ -363,7 +376,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >Linux useful commands</a>
+        <a href="." >Useful</a>
     </h1>
 </div>
 
@@ -379,20 +392,10 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="useful-linux-commands">Useful Linux commands</h1>
-<h2 id="list-targz-file-contants-with-depth">list tar.gz file contants with depth</h2>
+<h2 id="list-targz-file-contents-with-depth">list tar.gz file contents with depth</h2>
 <p>Download perl script: <a href="https://github.com/grawity/code/blob/master/misc/treeifyi" target="_blank">treeify</a>
 and run: <code>tar -tf &lt;file&gt;.tar.gz | perl treeify -d 2</code></p>
-<h2 id="ssh-linux-server-without-password">ssh linux server without password</h2>
-<p>Usually you do: <code>ssh username@IP</code> and enter a password. We want to do just 
-<code>ssh IP</code> or <code>ssh name.com</code> (name.com translates to the global IP).</p>
-<pre><code>cd ~/.ssh
-# create public and private key
-ssh-keygen -o
-# your public key
-cat id_rsa.pub
-# copy it to the server
-cat id_rsa.pub | ssh username@IP &apos;cat &gt;&gt; .ssh/authorized_keys&apos;
-</code></pre><h2 id="do-something-on-many-files-in-a-dir">Do something on many files in a dir</h2>
+<h2 id="do-something-on-many-files-in-a-dir">Do something on many files in a dir</h2>
 <p><em>Something</em> can be: rendering notebooks to HTML or checking if the files are 
 the same as other files for example</p>
 <pre><code class="lang-bash"><span class="hljs-meta">#!/bin/bash
@@ -406,60 +409,12 @@ rmd_files=`ls | grep Rmd`
   Rscript <span class="hljs-_">-e</span> <span class="hljs-string">&quot;library(rmarkdown); rmarkdown::render(\&quot;./<span class="hljs-variable">$file</span>\&quot;,\&quot;html_document\&quot;)&quot;</span>
 <span class="hljs-keyword">done</span>
 </code></pre>
-<h2 id="save-many-directories-in-one-targz-file">Save many directories in one tar.gz file</h2>
-<pre><code class="lang-bash"><span class="hljs-meta">#!/bin/bash
-</span>
-saveDir=<span class="hljs-string">&quot;~/pathToSaveDir&quot;</span>
-dir=<span class="hljs-string">&quot;~/pathToDirThatHasManyOtherDirs&quot;</span>
-
-<span class="hljs-comment"># names of dirs you want to save</span>
-dir1=<span class="hljs-variable">$dir</span><span class="hljs-string">&quot;dir1&quot;</span>
-dir2=<span class="hljs-variable">$dir</span><span class="hljs-string">&quot;dir2&quot;</span>
-dir3=<span class="hljs-variable">$dir</span><span class="hljs-string">&quot;dir3&quot;</span>
-
-tarFileToSave=<span class="hljs-variable">$saveDir</span><span class="hljs-string">&quot;name.tar.gz&quot;</span>
-
-tarCommand=<span class="hljs-string">&quot;tar -zcvf <span class="hljs-variable">${tarFileToSave}</span> <span class="hljs-variable">${dir1}</span> <span class="hljs-variable">${dir2}</span> <span class="hljs-variable">${dir3}</span> &gt;/dev/null 2&gt;&amp;1&quot;</span>
-<span class="hljs-built_in">eval</span> <span class="hljs-variable">$tarCommand</span>
-
-<span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;Runned command:&quot;</span>
-<span class="hljs-built_in">echo</span> <span class="hljs-variable">$tarCommand</span>
-
-checkModificationTimeCommand=<span class="hljs-string">&quot;stat <span class="hljs-variable">${tarFileToSave}</span>&quot;</span>
-<span class="hljs-built_in">eval</span> <span class="hljs-variable">$checkModificationTimeCommand</span>
-</code></pre>
 <h2 id="make-desktop-icons-appear-and-disappear">Make desktop icons appear and disappear</h2>
 <pre><code>gsettings set org.gnome.desktop.background show-desktop-icons false
 </code></pre><h2 id="find-the-sum-in-mb-of-files-in-a-directory">Find the sum in MB of files in a directory</h2>
 <p><code>ls | xargs stat --format=%s | awk &apos;{s+=$1} END {print s/(1024*1024)}&apos;</code></p>
 <h2 id="count-lines-of-source-code">Count lines of source code</h2>
 <p><code>find . -name &apos;*.php&apos; | xargs wc -l</code><br>or use cloc: <code>apt-get install cloc</code></p>
-<h2 id="mysql-size-of-a-myisam-table-in-gb">MySQL: Size of a MyISAM table in GB</h2>
-<p><code>ls /var/lib/mysql/database/tableName.* | xargs stat --format=%s | awk &apos;{s+=$1} 
-END {print s/(1024*1024*1024)}&apos;</code></p>
-<h2 id="mysql-drop-many-tables-matching-a-pattern">MySQL: Drop many tables matching a pattern</h2>
-<p><code>SELECT CONCAT( &apos;DROP TABLE &apos;, GROUP_CONCAT(table_name) , &apos;;&apos; ) AS statement 
-FROM information_schema.tables WHERE table_name LIKE &apos;patternToMatch%&apos;;</code></p>
-<h2 id="mysql-count-rows-and-size-of-myisam-tables-that-have-the-date-in-their-name">MySQL: Count rows and size of MyISAM tables that have the date in their name</h2>
-<pre><code class="lang-bash"><span class="hljs-meta">#!/bin/bash
-</span>
-date=`date <span class="hljs-_">-d</span> <span class="hljs-string">&apos;Oct 13 14:00:00 2020&apos;</span> +%s` ;
-end_date=`date <span class="hljs-_">-d</span> <span class="hljs-string">&apos;Nov 27 00:00:00 2020&apos;</span> +%s`;
-
-<span class="hljs-keyword">while</span> [ <span class="hljs-variable">$date</span> <span class="hljs-_">-lt</span> <span class="hljs-variable">$end_date</span> ];
-  <span class="hljs-keyword">do</span> date <span class="hljs-_">-d</span> @<span class="hljs-variable">$date</span> +%Y%m%d;
-  date=$(expr <span class="hljs-variable">$date</span> + 86400) ;
-  <span class="hljs-keyword">done</span> |
-
-<span class="hljs-keyword">while</span> <span class="hljs-built_in">read</span> x ;
-<span class="hljs-keyword">do</span>
-        <span class="hljs-built_in">echo</span> quering count: <span class="hljs-variable">$x</span>
-        table=tableSuffix<span class="hljs-variable">$x</span>
-        rows=`mysql -u username -p password <span class="hljs-_">-e</span> <span class="hljs-string">&quot;select count(*) from <span class="hljs-variable">$table</span>\G&quot;</span>|tail -n 1|awk <span class="hljs-string">&apos;{print $2}&apos;</span>`
-        size=`du -ch /var/lib/mysql/databaseName/<span class="hljs-variable">$table</span>* | tail -n1 | awk <span class="hljs-string">&apos;{print $1}&apos;</span> | sed <span class="hljs-string">&apos;s/G//&apos;</span>`
-        <span class="hljs-built_in">echo</span> <span class="hljs-variable">$x</span>,<span class="hljs-variable">$rows</span>,<span class="hljs-variable">$size</span> &gt;&gt; output.txt
-<span class="hljs-keyword">done</span>
-</code></pre>
 <h2 id="delete-files-efficiently">Delete files efficiently</h2>
 <pre><code>find . -maxdepth 1 -name &quot;something*&quot; -print0 | xargs -0 rm
 </code></pre><h2 id="count-and-change-the-reserved-space-in-an-ext4-partition-online">Count and change the reserved space in an ext4 partition &apos;ONLINE&apos;</h2>
@@ -550,36 +505,10 @@ actual number of the color</p>
 lscpu
 nproc
 cat /proc/cpuinfo | grep name | tail -n1
-</code></pre><h2 id="allow-only-sftp-access-of-a-user-to-a-specific-folder">Allow only sftp access of a user to a specific folder</h2>
-<p>Check <a href="http://passingcuriosity.com/2014/openssh-restrict-to-sftp-chroot/" target="_blank">here</a></p>
-<pre><code>addgroup exchangefiles
-mkdir /home/exchangefiles/ (create also any subsequent folders)
-chgrp -R exchangefiles /home/exchangefiles/
-vim /etc/ssh/sshd_config
-</code></pre><p>Add in the end of the file:</p>
-<pre><code>Match Group exchangefiles
-  # Force the connection to use SFTP and chroot to the required directory.
-  ForceCommand internal-sftp
-  ChrootDirectory /home/exchangefiles
-  # Disable tunneling, authentication agent, TCP and X11 forwarding.
-  PermitTunnel no
-  AllowAgentForwarding no
-  AllowTcpForwarding no
-  X11Forwarding no
-</code></pre><pre><code>adduser --ingroup exchangefiles testfiles
-service ssh restart
-</code></pre><p>check:</p>
-<pre><code>sftp testfiles@serverIP (OK)
-ssh testfiles@serverIP (REFUSED)
-</code></pre><p>also <code>mount --bind /dir1 /dir2</code> is very usefull too</p>
-<h2 id="dynamic-linking">Dynamic linking</h2>
+</code></pre><h2 id="dynamic-linking">Dynamic linking</h2>
 <p><code>ldd &lt;executable_name&gt;</code><br>if you see <em>not found</em> for some library, put the <something>.so.x.x.x file in: 
 <code>/usr/local/lib</code><br><code>ln -s &lt;something&gt;.so.x.x.x &lt;something&gt;.so.x</code> (or whatever is needed)
 and do: <code>ldconfig -v</code><br>Then: <code>ldd &lt;executable_name&gt;</code> should be OK</something></p>
-<h2 id="manual-ntp">Manual NTP</h2>
-<p>First, run: <code>service ntp stop</code><br><code>vim /etc/ntp.conf</code></p>
-<p>Add line: <code>server &lt;host&gt;</code><br>Then execute:<br><code>sudo ntpdate &lt;host&gt;</code><br>Check connectivity with the server on udp ntp port 123 with:
-<code>nc -u &lt;host&gt; &lt;port&gt;</code><br><code>service ntp start</code></p>
 <h2 id="change-hostname">Change hostname</h2>
 <p>Stop MySQL if it is running: <code>service mysql stop</code></p>
 <pre><code>old hostname = &lt;old&gt;
@@ -615,100 +544,7 @@ cfdisk /dev/sdc
 mkfs.ext4 /dev/sdc1 
 mount -a
 df -h
-</code></pre><h2 id="dns-problem">DNS problem</h2>
-<p>Reproduce the problem:</p>
-<ul>
-<li>change/add the dns-nameservers x.x.x.x in <code>/etc/network/interfaces</code></li>
-<li><code>service networking restart</code> <strong>DOES NOT WORK</strong>, which means that:</li>
-<li><code>vim /etc/resolv.conf</code> doesn&apos;t have the new address: <code>nameserver x.x.x.x</code></li>
-</ul>
-<p>If the setup was something like this:</p>
-<pre><code>iface IIII FFFF static
-    address ...
-    ...
-    dns-nameservers X.X.X.X Y.Y.Y.Y
-    dns-search SSSS
-</code></pre><p>then do (the spaces are needed): </p>
-<pre><code>echo &quot;nameserver X.X.X.X
-nameserver Y.Y.Y.Y
-search SSSS&quot; | sudo resolvconf -a IIII.FFFF
-</code></pre><p>check the <code>/etc/resolv.conf</code>, the changes should have been applied there.</p>
-<h2 id="force-a-gateway-in-a-route-table">Force a Gateway in a route table</h2>
-<p><code>vim /etc/network/interfaces</code> and add:<br><code>up route add -net 204.16.0.0 netmask 255.255.0.0 (gw 62.133.78.129) dev eth12</code></p>
-<p>Using the terminal:</p>
-<pre><code>route add -net 3.3.3.0 netmask 255.255.255.0 dev eth13
-/etc/init.d/networking restart; ifup eth10
-</code></pre><p>(whichever ethX has the ip you have sshed&apos; to get to the machine)</p>
-<h2 id="get-the-fibre-ports">Get the FIBRE ports</h2>
-<p><code>lspci -v | grep 10-G -A8</code></p>
-<h2 id="check-all-ips-in-the-local-network-extremely-useful-">Check all IPs in the local network (extremely useful :)</h2>
-<p><code>nmap -sP 192.168.1.*</code></p>
-<h2 id="create-a-network-bridge-between-two-interfaces">Create a network bridge between two interfaces</h2>
-<pre><code>apt-get install bridge-utils
-
-brctl addbr br0
-brctl stp br0 on
-ifconfig eth0 0.0.0.0 down
-ifconfig eth1 0.0.0.0 down
-brctl addif br0 eth0
-brctl addif br0 eth1
-
-ifconfig eth0 up
-ifconfig eth1 up
-ifconfig br0 up
-</code></pre><p>For the bridge to have an IP also, run:
-<code>ifconfig br0 192.168.1.173</code><br>To remove this IP: <code>ifconfig br0 0.0.0.0</code></p>
-<h2 id="checking-firewall-rules-from-a-to-b">Checking Firewall Rules (from A to B):</h2>
-<p><strong>A (IPA, PortA) -----&gt; B (IPB, PortB)</strong></p>
-<ul>
-<li>Testing ssh (port 22): <code>ssh IPB</code></li>
-<li>Testing port 3306 (mysql-related): <code>telnet IPB 3306</code></li>
-<li>From all ports of <strong>A</strong> to a specific port on <strong>B</strong>: <ul>
-<li><strong>B</strong>: <code>nc -l PortB</code></li>
-<li><strong>A</strong>: <code>nc -u IPB PortB</code> (-u tests udp, without it you test TCP connectivity) 
-and write stuff there, you should see them on <strong>B</strong>... or you can do a trace 
-on <strong>B</strong> to make sure you got the packets: <code>tshark -i any udp port portB</code></li>
-</ul>
-</li>
-<li>From a specific port of <strong>A</strong> to a specific port on <strong>B</strong>:<ul>
-<li><strong>B</strong>: <code>nc -l portB</code></li>
-<li><strong>A</strong>: <code>nc -u IPB PortB -p PortA</code> (you should see them on <strong>B</strong>... or you 
-can do a trace on <strong>B</strong> to make sure you got the packets: <code>tshark -i any udp 
-port portB</code>)</li>
-</ul>
-</li>
-<li>From a specific port of <strong>A</strong> to a specific port on <strong>B</strong>:<ul>
-<li><strong>B</strong>: <code>nc -l portB</code></li>
-<li><strong>A</strong>: <code>nc -u IPB PortB -p PortA</code></li>
-</ul>
-</li>
-</ul>
-<h1 id="capture-lte-and-2g3g-traffic">Capture LTE and 2G3G traffic</h1>
-<ul>
-<li><p>LTE traffic (with VLAN)<br><code>tcpdump -i any &quot;ether[27]==0 and ((ether[49] &lt; 0x26 and ether[49] &gt; 0x1F) or 
-(ether[49] &lt; 0x65 and ether[49] &gt; 0x62) or (ether[49] &gt; 0xa9 and ether[49] &lt; 
-0xac))&quot; -w out.pcap</code></p>
-</li>
-<li><p>LTE traffic (no VLAN)<br><code>tcpdump -i any &quot;ether[23]==0 and ((ether[45] &lt; 0x26 and ether[45] &gt; 0x1F) or 
-(ether[45] &lt; 0x65 and ether[45] &gt; 0x62) or (ether[45] &gt; 0xa9 and ether[45] &lt; 
-0xac))&quot; -w out.pcap</code></p>
-</li>
-<li><p>2G3G traffic (with VLAN)<br><code>tshark -i any &quot;ether[49] &lt; 0x16 and ether[27]==0 and ether[49] &gt; 0x0e&quot; -w out.pcap</code></p>
-</li>
-<li><p>2G3G traffic (no VLAN)<br><code>tshark -i any &quot;ether[45] &lt; 0x16 and ether[23]==0 and ether[45] &gt; 0x0e&quot; -w out.pcap</code></p>
-</li>
-</ul>
-<h1 id="useful-network-capturing-commands">Useful network-capturing commands</h1>
-<ul>
-<li><p>Changing the content of <code>.pcap</code> files<br><code>tcprewrite --enet-vlan=add --enet-vlan-tag=110 --enet-vlan-cfi=1 
---enet-vlan-pri=4 --infile=GTPv1_noVLAN.pcap --outfile=GTPv1_withVLAN110.pcap</code></p>
-</li>
-<li><p>Use of <code>tcpreplay</code><br><code>tcpreplay -i eth2 -K -l0 --topspeed replayfiles/file.pcap</code></p>
-</li>
-<li><p>See the VLAN ids of the captured packets<br><code>tshark -i any -Tfields -e vlan.id</code></p>
-</li>
-</ul>
-
+</code></pre>
                                 
                                 </section>
                             
@@ -735,12 +571,12 @@ port portB</code>)</li>
 
             
                 
-                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Linux">
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Linux commands">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="filesystem_tuning_commands.html" class="navigation navigation-next " aria-label="Next page: Linux Filesystem Tuning">
+                <a href="databases.html" class="navigation navigation-next " aria-label="Next page: Database">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -751,7 +587,7 @@ port portB</code>)</li>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Linux useful commands","level":"1.1.1","depth":2,"next":{"title":"Linux Filesystem Tuning","level":"1.1.2","depth":2,"path":"filesystem_tuning_commands.md","ref":"filesystem_tuning_commands.md","articles":[]},"previous":{"title":"Linux","level":"1.1","depth":1,"path":"linux.md","ref":"linux.md","articles":[{"title":"Linux useful commands","level":"1.1.1","depth":2,"path":"useful_linux_commands.md","ref":"useful_linux_commands.md","articles":[]},{"title":"Linux Filesystem Tuning","level":"1.1.2","depth":2,"path":"filesystem_tuning_commands.md","ref":"filesystem_tuning_commands.md","articles":[]},{"title":"CPU Benchmark","level":"1.1.3","depth":2,"path":"cpu_benchmarking.md","ref":"cpu_benchmarking.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"3.1.1","theme":"default","variables":{},"plugins":["bootstrap-callout"],"pluginsConfig":{"bootstrap-callout":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"linux.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"useful_linux_commands.md","mtime":"2019-03-25T13:31:53.328Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2019-05-26T09:07:30.219Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Useful","level":"1.1.1","depth":2,"next":{"title":"Database","level":"1.1.2","depth":2,"path":"databases.md","ref":"databases.md","articles":[]},"previous":{"title":"Linux commands","level":"1.1","depth":1,"path":"linux.md","ref":"linux.md","articles":[{"title":"Useful","level":"1.1.1","depth":2,"path":"cmd_linux.md","ref":"cmd_linux.md","articles":[]},{"title":"Database","level":"1.1.2","depth":2,"path":"databases.md","ref":"databases.md","articles":[]},{"title":"Network","level":"1.1.3","depth":2,"path":"network.md","ref":"network.md","articles":[]},{"title":"CPU benchmark","level":"1.1.4","depth":2,"path":"cpu_bench.md","ref":"cpu_bench.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"3.1.1","theme":"default","variables":{},"plugins":["bootstrap-callout"],"pluginsConfig":{"bootstrap-callout":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"linux.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"cmd_linux.md","mtime":"2019-06-08T12:54:55.395Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2019-06-08T13:47:02.648Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

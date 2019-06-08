@@ -21,6 +21,35 @@ drowning in wealth or power.
 
 *Arataka Reigen, Mob Psycho*
 
+> #### info::
+> You are a sceptic!  
+Never!  
+What are you?  
+To define is to limit!
+
+*Lord Henry Wotton, from the "Picture of Dorian Grey"* 
+
+More of an epigram than a quote!
+
+> #### info::                                                                   
+> When I do good, I feel good. When I do bad, I feel bad. And that is my 
+religion.
+
+*Abraham Lincoln*
+
+Nice quote on altruism.
+
+> #### info::                                                                   
+> Go ahead, show me what you've got. But so you know, I'm not expecting much.
+
+*Saitama to Monster King Orochi, One Punch Man*
+
+This is what one feels (without actually saying it) when he is a master at 
+something and someone else comes and acts more knowledgable/better/stronger. 
+It can be generalized against anything, e.g. *life*: so me what you got, I 
+don't expect too much though! (meaning that whatever life throws at me, it is 
+not going to change
+
 # Music
 
 > #### primary::                                                                
@@ -262,6 +291,12 @@ Open source code, open science.
 
 <!-- -->
 > #### info::
-> Write one (abstract, generalized) function per day. Next day write a 
+> Aim to write one (abstract, generalized) function per day. Next day write a 
 tests for it!
+
+<!-- -->
+> #### info::
+> Push forward and hard.
+
+
 
