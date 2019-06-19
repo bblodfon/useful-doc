@@ -1,19 +1,19 @@
 # Watching passionately now :)
 - Fargo (s02)
-- True Detective (2019 - s03)
 
 ### To Watch soon
 - The Punisher (s02)
 
 ### To Watch when they come out
-- Stranger Things (2019 - s03)
-- Better Call Saul (s05)
+- Stranger Things (July 2019 - s03)
 - Mr Robot (2019 - s04)
 - The Expanse (2019 - s04)
 
 ### Keep in track 
 - Silicon Valley (2020 - s06)
 - Cobra Kai (2020 - s03)
+- Better Call Saul (2020 - s05)
+- True Detective (??? - s04)
 
 # To see in the future
 
