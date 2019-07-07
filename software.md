@@ -14,3 +14,7 @@ documentation for an R package
 
 # npm packages
 - **gitbook CLI** - not maintained anymore - so maybe step up for it!
+
+# Other
+- **[Swagger UI](https://swagger.io/tools/swagger-ui/)**: show your REST API in 
+a really nice format!
