@@ -50,6 +50,11 @@ It can be generalized against anything, e.g. *life*: so me what you got, I
 don't expect too much though! (meaning that whatever life throws at me, it is 
 not going to change
 
+> #### info::
+> Put people in the same room
+
+*Martin Kuiper, Professor of Systems Biology*
+
 # Music
 
 > #### primary::                                                                
