@@ -46,14 +46,24 @@ Nice quote on altruism.
 
 This is what one feels (without actually saying it) when he is a master at 
 something and someone else comes and acts more knowledgable/better/stronger. 
-It can be generalized against anything, e.g. *life*: so me what you got, I 
+It can be generalized against anything, e.g. *life*: show me what you got, I 
 don't expect too much though! (meaning that whatever life throws at me, it is 
-not going to change
+not going to change how I act)
 
 > #### info::
 > Put people in the same room
 
 *Martin Kuiper, Professor of Systems Biology*
+
+> #### info::
+> From -10 to +10, going to Mc Donald's, drinking mocha Frappuccino.
+
+*Asmund Flobak, Oncologist & Researcher*
+
+Asmund summarized here my state of mind at a certain point during my PhD. 
+It's actually a deeper quote than it sounds: it refers to these periods in
+someone's life where you have such good and bad moments at the same time, 
+everything seems so far away from normal, average days...
 
 # Music
 
