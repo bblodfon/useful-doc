@@ -65,6 +65,11 @@ It's actually a deeper quote than it sounds: it refers to these periods in
 someone's life where you have such good and bad moments at the same time, 
 everything seems so far away from normal, average days...
 
+> #### info::
+> You go into a river once
+
+*Asmund Flobak, Oncologist & Researcher*
+
 # Music
 
 > #### primary::                                                                
