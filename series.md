@@ -1,5 +1,6 @@
 # Watching now :)
 - Fargo (s02)
+- The Boys (s01) ???
 
 ### To Watch when they come out
 - Mr Robot (2019 - s04)

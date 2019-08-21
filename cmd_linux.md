@@ -97,7 +97,7 @@ ps aux | grep -v grep | grep -i patternToMatch | awk '{print $2}' | xargs kill -
 
 `vim ~/.bashrc` or `vim ~/.bash_aliases`  
 and add a line like this:  
-`alias fifa='ifconfig | grep ask`  
+`alias fifa='ifconfig | grep ask'`  
 Then save the file and run:  
 `. ~/.bash_aliases` or `. ~/.bashrc`
 
