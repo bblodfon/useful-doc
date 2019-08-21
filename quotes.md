@@ -66,9 +66,11 @@ someone's life where you have such good and bad moments at the same time,
 everything seems so far away from normal, average days...
 
 > #### info::
-> You go into a river once
+> You go into a river once (You can't stop into the same river twice!)
 
 *Asmund Flobak, Oncologist & Researcher*
+
+My take on this: don't do things twice, don't repeat mistakes, etc.
 
 # Music
 
