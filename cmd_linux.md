@@ -2,7 +2,7 @@
 
 ## take specific characters from each line in a file
 
-cut -c 1-30 <file-name>
+`cut -c 1-30 <file-name>`
 
 ## Render many Rmarkdown documents in a dir
 
