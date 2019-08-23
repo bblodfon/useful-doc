@@ -1,5 +1,9 @@
 # Useful Linux commands
 
+## extract one file from `tar.gz` file
+
+`tar -xf example.tar.gz <file-name>`
+
 ## take specific characters from each line in a file
 
 `cut -c 1-30 <file-name>`
