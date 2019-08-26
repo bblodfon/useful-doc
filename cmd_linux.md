@@ -1,5 +1,25 @@
 # Useful Linux commands
 
+## export pdf to png/svg with awesome quality
+
+Let's say you have a (1-page) pdf: `test.pdf` that contains an image or diagram
+and you want to put it in a presentation/article/word etc in an
+appropriate format and with decent quality.
+
+First crop it:
+```
+pdfcrop --margins 10 test.pdf test_crop.pdf
+```
+
+Then convert it to the format you like:
+```
+# PNG, 600 ppi
+pdftoppm -png -r 600 test_crop.pdf test.png
+
+# SVG
+pdf2svg test_crop.pdf test.svg
+```
+
 ## extract one file from `tar.gz` file
 
 `tar -xf example.tar.gz <file-name>`
