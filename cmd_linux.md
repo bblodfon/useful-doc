@@ -1,5 +1,11 @@
 # Useful Linux commands
 
+## change prompt look in terminal
+
+Add to `~/.bashrc` this line:
+
+`export PS1='\[\033[01;32m\]\u\[\033[00m\]:\[\033[01;34m\]~\[\033[00m\]\$ '`
+
 ## export pdf to png/svg with awesome quality
 
 Let's say you have a (1-page) pdf: `test.pdf` that contains an image or diagram
