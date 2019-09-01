@@ -1,6 +1,27 @@
 # General
 
 > #### info::
+> 'The world has moved on,' we say... we've always said. But it's moving on 
+faster now. Something has happened to time. It's softening.
+
+*Roland Deschain, The Dark Tower I*
+
+Such elegant choice of words that create a mysterious yet nice feeling! 
+Is Time really softening in our world today? Who is to say?!
+
+> #### info::
+> Trial of Humanity: The Defense rests. 
+
+*Sensui, Yu Yu Hakusho*
+
+This phrase brings up scenes from wars, etc. - so many people have fallen for 
+the stupidity of war and wrong ideals. I also kinda feel that I use this phrase
+when there is nothing more I can do or say to change a situation that has already
+happened. I *defended* as best as I could my opinion/position/whatever. Now I have 
+to *rest* and it's something that every human *goes through* (the trial). It's
+feels truly unescapable.
+
+> #### info::
 > History will be kind to me, for I intend to write it
 
 *Winston Churchill*

@@ -1,6 +1,5 @@
 # Watching now :)
 - Fargo (s02)
-- The Boys (s01) ???
 
 ### To Watch when they come out
 - Mr Robot (2019 - s04)
@@ -10,6 +9,7 @@
 - Silicon Valley (2019 - s06)
 - Cobra Kai (2020 - s03)
 - Better Call Saul (2020 - s05)
+- The Boys (2020 - s02)
 - True Detective (??? - s04)
 - Stranger Things (2021 - s04)
 
