@@ -1,5 +1,17 @@
 # Useful Linux commands
 
+## Git remove tag (local+remote)
+
+
+```
+# create
+git tag -a v1.0.2 -m "My new version!"
+
+# delete everywhere
+git tag -d v1.0.2
+git push origin :refs/tags/v1.0.2
+```
+
 ## change prompt look in terminal
 
 Add to `~/.bashrc` this line:
