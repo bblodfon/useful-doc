@@ -21,6 +21,17 @@ happened. I *defended* as best as I could my opinion/position/whatever. Now I ha
 to *rest* and it's something that every human *goes through* (the trial). It's
 feels truly unescapable.
 
+> #### info::                                                                   
+> Maybe we are not alone and have not been. “The click beetles in my backyard   
+don’t notice that they’re surrounded by intelligent beings — namely my          
+neighbors and me, but we’re here, nonetheless.”                                 
+                                                                                
+*Seth Shostak*                                                                  
+                                                                                
+Regarding the Fermi paradox, from an astronomer at the SETI institute. He       
+thinks that the answer to the Fermi paradox might lie not in something complex, 
+like time and distance, but in *perception*.
+
 > #### info::
 > History will be kind to me, for I intend to write it
 
@@ -93,6 +104,7 @@ everything seems so far away from normal, average days...
 
 My take on this: don't do things twice, don't repeat mistakes, etc.
 
+---
 # Music
 
 > #### primary::                                                                
@@ -147,20 +159,6 @@ One of the most important qualitites of piano playing: whenever you play
 something that someone else wrote, play it like its the first time, like an 
 improvisation. I believe this is what distinguishes really good classical music 
 piano players.
-
----
-# Science
-
-> #### info::                                                                   
-> Maybe we are not alone and have not been. “The click beetles in my backyard 
-don’t notice that they’re surrounded by intelligent beings — namely my 
-neighbors and me, but we’re here, nonetheless.”
-              
-*Seth Shostak*
-
-Regarding the Fermi paradox, from an astronomer at the SETI institute. He 
-thinks that the answer to the Fermi paradox might lie not in something complex,
-like time and distance, but in *perception*.
 
 ---
 # Motivation
@@ -260,6 +258,29 @@ musical and working talents attain the highest peak of their profession."
 
 # Work
 
+<!-- -->
+> #### info::
+> What I cannot create, I do not understand.
+
+*Richard Feynman*
+
+This was a nice argument for the *openWorm* project: we have to create a digital
+model of an organism in order to be able to say that we fully understand it 
+(its behaviour for example). A small step also for making a digital human/avatar.
+
+<!-- -->
+> #### info::
+> If you cannot explain something in simple terms, you don't understand it.
+
+*Richard Feynman*
+
+This should be the most prolific quote for science communication. A lot of 
+people do nice work in general, but if you cannot explain it in another 
+(intelligent human) being, then what is the purpose? How can you show your 
+passion to others about what you are doing without being able to express it 
+in relative simple terms/language?
+
+<!-- -->
 > #### primary::
 > Paul Erdös — well known for his hyperactivity and his habit of working 19-hour 
 days, even well into his old age; and his tendency to show up on his colleagues' 
@@ -341,5 +362,7 @@ tests for it!
 > #### info::
 > Push forward and hard.
 
-
+<!-- -->
+> #### info::
+> Trim that string. Always.
 
