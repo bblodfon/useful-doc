@@ -1,6 +1,22 @@
 # General
 
 > #### info::
+> Tomorrow we burn!
+
+*Emil Karlsen, a Norwegian scientist*
+
+Emil said that phrase at the Walkshop during the first dinner! (he meant that 
+we eat a lot now - dinner was a full 3-course meal - and that we will burn all 
+that fat tomorrow in the hike)
+
+> #### info::
+> Long days, pleasant nights
+
+*Roland Deschain, The Dark Tower I*
+
+No particular clever comment on this one, but it's a really nice phrase to use!
+
+> #### info::
 > 'The world has moved on,' we say... we've always said. But it's moving on 
 faster now. Something has happened to time. It's softening.
 
