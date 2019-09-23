@@ -1,12 +1,12 @@
 # Watching now :)
-- Fargo (s02)
+- Chernobyl (2019)
 
 ### To Watch when they come out
-- Mr Robot (2019 - s04)
-- The Expanse (2019 - s04)
+- Mr Robot (2019 Oct. - s04)
+- The Expanse (2019 Dec. - s04)
+- Silicon Valley (2019 Oct. - s06)
 
 ### Keep in track
-- Silicon Valley (2019 - s06)
 - Cobra Kai (2020 - s03)
 - Better Call Saul (2020 - s05)
 - The Boys (2020 - s02)
@@ -14,15 +14,11 @@
 - Stranger Things (2021 - s04)
 
 # To see in the future
-
-### New
-
-- Dark (2017) - 1 season
-- Altered Carbon - 1 season
+- Fargo (season 3)
+- Dark (2017) - 2 seasons
 - **Black Mirror** (nice - Bazik suggestion)
 - **House of Cards** (Spacey) - 6 seasons ended
 - 11.22.63 (8 episodes)
-- Homeland
 
 ### Old
 
