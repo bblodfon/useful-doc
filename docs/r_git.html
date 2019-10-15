@@ -2,7 +2,7 @@
 <!DOCTYPE HTML>
 <html lang="" >
     <head>
-        <title>CPU benchmark · GitBook</title>
+        <title>Git&R · GitBook</title>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
@@ -61,10 +61,10 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="personal.html" />
+    <link rel="next" href="databases.html" />
     
     
-    <link rel="prev" href="network.html" />
+    <link rel="prev" href="cmd_linux.html" />
     
 
     </head>
@@ -120,7 +120,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.1.2" data-path="r_git.html">
+        <li class="chapter active" data-level="1.1.2" data-path="r_git.html">
             
                 <a href="r_git.html">
             
@@ -159,7 +159,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.1.5" data-path="cpu_bench.html">
+        <li class="chapter " data-level="1.1.5" data-path="cpu_bench.html">
             
                 <a href="cpu_bench.html">
             
@@ -324,7 +324,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >CPU benchmark</a>
+        <a href="." >Git&R</a>
     </h1>
 </div>
 
@@ -339,36 +339,49 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="cpu-benchmarkingtesting-using-nbodyc">CPU Benchmarking/Testing using nbody.c</h1>
-<p><strong>Scenario:</strong> You want to test which CPU is better between some Linux machines.   </p>
-<p>Here&apos;s what you do: Download the (small) repository mini-nbody:<br><code>git clone https://github.com/harrism/mini-nbody</code></p>
-<p>or alternately, copy the <code>nbody.c</code> and and <code>timer.h</code> files 
-to the servers you want to test, inside e.g. <code>~/nbody-mini</code> directory.</p>
-<p>Change <code>nbody.c</code>:<br>add line: <code>printf(&quot;Total time: %0.3f secs\n&quot;, totalTime);</code><br>at the end of <code>main()</code> function  </p>
-<p>Also, <strong>IMPORTANT</strong>: 
-If you don&apos;t want this benchmark to stress all the CPUs - which is enabled by 
-default (e.g. a machine with 8 cores will show 800% in <em>top</em> command 
-if you run this program) you <strong>MUST COMMENT</strong>
-this line that uses the <em>OpenMP</em> standard as is below:<br><code>//  #pragma omp parallel for schedule(dynamic)</code></p>
-<p>Thus, with the above comment the nbody program will reach 100% (<strong>one core only 
-full utilization</strong>) and will not bring a production system to its knees by using 
-all the available CPUs!</p>
-<p>Run:</p>
-<pre><code>SRC=nbody.c
-EXE=nbody
-gcc -std=c99 -O3 -fopenmp -DSHMOO -o $EXE $SRC -lm
-./nbody
-</code></pre><p>Notes:</p>
-<ul>
-<li>By default <code>nbody.c</code> takes as an argument <code>nbodies=30000</code>, so if you want to 
-test for more time, use it as such:<br><code>./nbody 40000</code> (the larger the value of <code>nbodies</code>, more calculations are 
-needed, so more CPU time)</li>
-<li>Of course be careful to compare the same number of nbodies between different 
-servers with different CPUs.</li>
-</ul>
-<p><strong>Conclusion:</strong> less totalTime for one Core means better CPU (so you can safely 
-say which server is the faster one :)</p>
+                                <h1 id="useful-git-and-r-commands">Useful Git and R commands</h1>
+<h2 id="git-remove-tag-localremote">Git remove tag (local+remote)</h2>
+<pre><code># create                                                                        
+git tag -a v1.0.2 -m &quot;My new version!&quot;                                          
 
+# delete everywhere                                                             
+git tag -d v1.0.2                                                               
+git push origin :refs/tags/v1.0.2
+</code></pre><h2 id="r-benchmark-many-expressions">R benchmark many expressions</h2>
+<pre><code>rbenchmark::benchmark(&quot;prev&quot; = {a = 3*7}, &quot;new&quot; = {a = list()}, replications = 1000, columns = c(&quot;test&quot;, &quot;replications&quot;, &quot;elapsed&quot;, &quot;relative&quot;, &quot;user.self&quot;, &quot;sys.self&quot;))
+</code></pre><h2 id="render-rmarkdown-document">Render Rmarkdown document</h2>
+<pre><code>rmarkdown::render(input = &quot;./file.Rmd&quot;, output_format = &quot;html_document&quot;, output_dir = &quot;../../docs&quot;)
+</code></pre><h2 id="render-many-rmarkdown-documents-in-a-dir">Render many Rmarkdown documents in a dir</h2>
+<p>Use the below <code>render_to_HTML.sh</code> script:                                       </p>
+<pre><code>#!/bin/bash                                                                     
+
+# finds all R notenooks (.Rmd) in current dir                                   
+# and renders them to HTML                                                      
+
+if [ &quot;$#&quot; != 1 ]; then                                                          
+  echo &quot;Give one parameter: &apos;all&apos; or &apos;some&apos;!&quot;                                   
+  exit 1                                                                        
+else                                                                            
+  arg=$1                                                                        
+fi                                                                              
+
+if [ $arg == &quot;all&quot; ]; then                                                      
+  rmd_files=`ls | grep Rmd`                                                     
+elif [ $arg == &quot;some&quot; ]; then                                                   
+  # which ones to render?                                                       
+  rmd_files=`ls | grep Rmd | grep -v biomarker | grep -v data_prepro | grep -v consensus | grep -v fitness | grep -v prolif`
+else                                                                            
+  echo &quot;Write: &apos;all&apos; or &apos;some&apos;!&quot;                                                
+  exit 1                                                                        
+fi                                                                              
+
+echo $rmd_files                                                                 
+
+for file in ${rmd_files}; do                                                    
+  echo &quot;Rendering &quot;$file&quot;...&quot;                                                   
+  Rscript -e &quot;library(rmarkdown); rmarkdown::render(\&quot;./$file\&quot;,\&quot;html_document\&quot;)&quot;
+done
+</code></pre>
                                 
                                 </section>
                             
@@ -395,12 +408,12 @@ say which server is the faster one :)</p>
 
             
                 
-                <a href="network.html" class="navigation navigation-prev " aria-label="Previous page: Network">
+                <a href="cmd_linux.html" class="navigation navigation-prev " aria-label="Previous page: Linux">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="personal.html" class="navigation navigation-next " aria-label="Next page: Personal">
+                <a href="databases.html" class="navigation navigation-next " aria-label="Next page: Database">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -411,7 +424,7 @@ say which server is the faster one :)</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"CPU benchmark","level":"1.1.5","depth":2,"next":{"title":"Personal","level":"2.1","depth":1,"path":"personal.md","ref":"personal.md","articles":[{"title":"Series to Watch","level":"2.1.1","depth":2,"path":"series.md","ref":"series.md","articles":[]},{"title":"Favourite Animes","level":"2.1.2","depth":2,"path":"fav_anime.md","ref":"fav_anime.md","articles":[]},{"title":"Quotes","level":"2.1.3","depth":2,"path":"quotes.md","ref":"quotes.md","articles":[]},{"title":"Ab Workout","level":"2.1.4","depth":2,"path":"abs.md","ref":"abs.md","articles":[]},{"title":"Cool Software","level":"2.1.5","depth":2,"path":"software.md","ref":"software.md","articles":[]},{"title":"AutoHotKey","level":"2.1.6","depth":2,"path":"autohotkey.md","ref":"autohotkey.md","articles":[]},{"title":"Heroes","level":"2.1.7","depth":2,"path":"heroes.md","ref":"heroes.md","articles":[]}]},"previous":{"title":"Network","level":"1.1.4","depth":2,"path":"network.md","ref":"network.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"3.1.1","theme":"default","variables":{},"plugins":["bootstrap-callout"],"pluginsConfig":{"bootstrap-callout":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"use.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"cpu_bench.md","mtime":"2019-06-08T12:58:12.136Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2019-10-15T08:43:55.180Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Git&R","level":"1.1.2","depth":2,"next":{"title":"Database","level":"1.1.3","depth":2,"path":"databases.md","ref":"databases.md","articles":[]},"previous":{"title":"Linux","level":"1.1.1","depth":2,"path":"cmd_linux.md","ref":"cmd_linux.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"3.1.1","theme":"default","variables":{},"plugins":["bootstrap-callout"],"pluginsConfig":{"bootstrap-callout":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"use.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"r_git.md","mtime":"2019-10-15T08:39:17.175Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2019-10-15T08:43:55.180Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

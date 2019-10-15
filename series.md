@@ -1,5 +1,5 @@
 # Watching now :)
-- Chernobyl (2019)
+-
 
 ### To Watch when they come out
 - Mr Robot (2019 Oct. - s04)

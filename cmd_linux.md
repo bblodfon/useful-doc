@@ -1,17 +1,5 @@
 # Useful Linux commands
 
-## Git remove tag (local+remote)
-
-
-```
-# create
-git tag -a v1.0.2 -m "My new version!"
-
-# delete everywhere
-git tag -d v1.0.2
-git push origin :refs/tags/v1.0.2
-```
-
 ## change prompt look in terminal
 
 Add to `~/.bashrc` this line:
@@ -45,41 +33,6 @@ pdf2svg test_crop.pdf test.svg
 ## take specific characters from each line in a file
 
 `cut -c 1-30 <file-name>`
-
-## Render many Rmarkdown documents in a dir
-
-Use the below `render_to_HTML.sh` script:
-
-```
-#!/bin/bash                                                                     
-                                                                                
-# finds all R notenooks (.Rmd) in current dir                                   
-# and renders them to HTML                                                      
-                                                                                
-if [ "$#" != 1 ]; then                                                          
-  echo "Give one parameter: 'all' or 'some'!"                                   
-  exit 1                                                                        
-else                                                                            
-  arg=$1                                                                        
-fi                                                                              
-                                                                                
-if [ $arg == "all" ]; then                                                      
-  rmd_files=`ls | grep Rmd`                                                     
-elif [ $arg == "some" ]; then                                                   
-  # which ones to render?                                                         
-  rmd_files=`ls | grep Rmd | grep -v biomarker | grep -v data_prepro | grep -v consensus | grep -v fitness | grep -v prolif`
-else                                                                            
-  echo "Write: 'all' or 'some'!"                                                
-  exit 1                                                                        
-fi                                                                              
-                                                                                
-echo $rmd_files                                                                 
-                                                                                
-for file in ${rmd_files}; do                                                    
-  echo "Rendering "$file"..."                                                   
-  Rscript -e "library(rmarkdown); rmarkdown::render(\"./$file\",\"html_document\")"
-done
-```
 
 ## list tar.gz file contents with depth
 
