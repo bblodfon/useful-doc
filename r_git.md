@@ -1,5 +1,11 @@
 # Useful Git and R commands
 
+## Git show only files that changed on previous commit
+
+```
+git show --pretty="" --name-only
+```
+
 ## Git remove tag (local+remote)                                                                                                                    
 ```                                                                             
 # create                                                                        
