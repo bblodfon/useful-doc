@@ -3,10 +3,8 @@
 - Mr. Robot (last season)
 - Silicon Valley (last season)
 
-### To Watch when they come out
-- Silicon Valley (2019 Oct. - s06)
+# Keep in track
 
-### Keep in track
 - Cobra Kai (2020 - s03)
 - Better Call Saul (2020 - s05)
 - The Boys (2020 - s02)
@@ -14,13 +12,14 @@
 - Stranger Things (2021 - s04)
 
 # To see in the future
+
 - Fargo (season 3)
 - Dark (2017) - 2 seasons
 - **Black Mirror** (nice - Bazik suggestion)
 - **House of Cards** (Spacey) - 6 seasons ended
 - 11.22.63 (8 episodes)
 
-### Old
+# Old
 
 - Dekalog - 10 movies actually... ??????
 - Winter Sonata (Gyeoul yeonga) - 20 episodes
