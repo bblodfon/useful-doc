@@ -1,9 +1,9 @@
 # Watching now :)
--
+
+- Mr. Robot (last season)
+- Silicon Valley (last season)
 
 ### To Watch when they come out
-- Mr Robot (2019 Oct. - s04)
-- The Expanse (2019 Dec. - s04)
 - Silicon Valley (2019 Oct. - s06)
 
 ### Keep in track
