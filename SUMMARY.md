@@ -2,7 +2,7 @@
 
 * [Useful commands](use.md)
   * [Linux](cmd_linux.md)
-  * [Git&R](r_git.md)
+  * [Git&Code](code.md)
   * [Database](databases.md)
   * [Network](network.md)
   * [CPU benchmark](cpu_bench.md)

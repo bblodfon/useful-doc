@@ -1,4 +1,12 @@
-# Useful Git and R commands
+# Useful Git and Code commands
+
+## Maven remove logging info 
+
+In order to remove unwanted info like `META-INF/MANIFEST.MF already added, skipping` when running mvn commands, find the `/etc/maven/logging/simplelogger.properties` file (or one similar that maven uses and add the following line:
+
+```
+org.slf4j.simpleLogger.log.org.codehaus.plexus.archiver.jar.JarArchiver=warn
+```
 
 ## Git show only files that changed on previous commit
 

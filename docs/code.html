@@ -2,7 +2,7 @@
 <!DOCTYPE HTML>
 <html lang="" >
     <head>
-        <title>Git&R · GitBook</title>
+        <title>Git&Code · GitBook</title>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
@@ -120,12 +120,12 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.1.2" data-path="r_git.html">
+        <li class="chapter active" data-level="1.1.2" data-path="code.html">
             
-                <a href="r_git.html">
+                <a href="code.html">
             
                     
-                    Git&R
+                    Git&Code
             
                 </a>
             
@@ -324,7 +324,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >Git&R</a>
+        <a href="." >Git&Code</a>
     </h1>
 </div>
 
@@ -339,8 +339,11 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="useful-git-and-r-commands">Useful Git and R commands</h1>
-<h2 id="git-show-only-files-that-changed-on-previous-commit">Git show only files that changed on previous commit</h2>
+                                <h1 id="useful-git-and-code-commands">Useful Git and Code commands</h1>
+<h2 id="maven-remove-logging-info">Maven remove logging info</h2>
+<p>In order to remove unwanted info like <code>META-INF/MANIFEST.MF already added, skipping</code> when running mvn commands, find the <code>/etc/maven/logging/simplelogger.properties</code> file (or one similar that maven uses and add the following line:</p>
+<pre><code>org.slf4j.simpleLogger.log.org.codehaus.plexus.archiver.jar.JarArchiver=warn
+</code></pre><h2 id="git-show-only-files-that-changed-on-previous-commit">Git show only files that changed on previous commit</h2>
 <pre><code>git show --pretty=&quot;&quot; --name-only
 </code></pre><h2 id="git-remove-tag-localremote">Git remove tag (local+remote)</h2>
 <pre><code># create                                                                        
@@ -426,7 +429,7 @@ done
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Git&R","level":"1.1.2","depth":2,"next":{"title":"Database","level":"1.1.3","depth":2,"path":"databases.md","ref":"databases.md","articles":[]},"previous":{"title":"Linux","level":"1.1.1","depth":2,"path":"cmd_linux.md","ref":"cmd_linux.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"3.1.1","theme":"default","variables":{},"plugins":["bootstrap-callout"],"pluginsConfig":{"bootstrap-callout":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"use.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"r_git.md","mtime":"2019-10-18T12:19:59.081Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2019-11-13T21:49:02.462Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Git&Code","level":"1.1.2","depth":2,"next":{"title":"Database","level":"1.1.3","depth":2,"path":"databases.md","ref":"databases.md","articles":[]},"previous":{"title":"Linux","level":"1.1.1","depth":2,"path":"cmd_linux.md","ref":"cmd_linux.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"3.1.1","theme":"default","variables":{},"plugins":["bootstrap-callout"],"pluginsConfig":{"bootstrap-callout":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"use.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"code.md","mtime":"2019-11-23T20:56:07.189Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2019-11-23T20:56:44.209Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
