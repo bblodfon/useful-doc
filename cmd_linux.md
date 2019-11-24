@@ -1,5 +1,22 @@
 # Useful Linux commands
 
+## Nice bash aliases
+
+```
+function cd_up() {                                                              
+  cd $(printf "%0.s../" $(seq 1 $1 ));                                          
+}                                                                               
+
+alias 'cd..'='cd_up'                                                            
+                                                                                
+alias 'com'='git commit'                                                        
+alias 'cam'='git commit --amend'                                                
+alias 'l'='ls -ltrh'                                                            
+alias 'off'='sudo poweroff'                                                     
+```
+
+Navigate quickly directories like this: `cd.. 4`!
+
 ## change prompt look in terminal
 
 Add to `~/.bashrc` this line:
