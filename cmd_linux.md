@@ -1,5 +1,9 @@
 # Useful Linux commands
 
+## Archiving with tar
+
+`tar -czvf filename.tar.gz /path/to/dir1`
+
 ## Nice bash aliases
 
 ```
