@@ -1,5 +1,14 @@
 # Useful Linux commands
 
+## Change text-scaling-factor in Ubuntu 18.04 
+
+Make all text bigger/smaller: 
+
+```
+gsettings set org.gnome.desktop.interface text-scaling-factor 1.5 # big
+gsettings set org.gnome.desktop.interface text-scaling-factor 1.1 # small
+```
+
 ## Archiving with tar
 
 `tar -czvf filename.tar.gz /path/to/dir1`
