@@ -1,5 +1,15 @@
 # Useful Linux commands
 
+## bash terminal loops for counting
+
+To see an incremental counter:
+
+`i=0; while true; do sleep 1; echo $i; i=$((i+1)); done`
+
+To see dots (server connection awaiting!)
+
+`while true; do echo -n .; sleep 1; done`
+
 ## Change text-scaling-factor in Ubuntu 18.04 
 
 Make all text bigger/smaller: 
