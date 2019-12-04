@@ -1,5 +1,9 @@
 # Useful Linux commands
 
+## vim remove trailing whitespaces
+
+`:%s/\s\+$//e`
+
 ## bash terminal loops for counting
 
 To see an incremental counter:
