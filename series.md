@@ -1,10 +1,11 @@
 # Watching now :)
 
-- Mr. Robot (last season)
-- Silicon Valley (last season)
+- The Witcher
 
 # Keep in track
 
+- Rick and Morty (Season 4)
+- The Expanse (Season 4)
 - Cobra Kai (2020 - s03)
 - Better Call Saul (2020 - s05)
 - The Boys (2020 - s02)
@@ -13,7 +14,9 @@
 
 # To see in the future
 
-- Fargo (season 3)
+- The Mandalorian (2019, Star Wars)
+- Fargo (Season 3)
+- His Dark Materials (Season 1)
 - Dark (2017) - 2 seasons
 - **Black Mirror** (nice - Bazik suggestion)
 - **House of Cards** (Spacey) - 6 seasons ended
@@ -21,7 +24,7 @@
 
 # Old
 
-- Dekalog - 10 movies actually... ??????
+- Dekalog - 10 movies!
 - Winter Sonata (Gyeoul yeonga) - 20 episodes
 - Spartacus (3 seasons) - War of the Damned + Gods of the Arena (1 season)
 - **Six Feet Under** (gooood and oooold - 63 episodes in total - 5 seasons)
