@@ -9,7 +9,7 @@ EXEC_HOME=/usr/bin/my-exetutable
 export EXEC_HOME
 ```
 
-Then, with `echo $JAVA_HOME` it's gonna be known to the whole system!
+Then, with `echo $EXEC_HOME` it's gonna be known to the whole system!
 
 ## vim remove trailing whitespaces
 
