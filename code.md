@@ -61,37 +61,3 @@ Use the following command (in a bash script, e.g. `render.sh`):
 Rscript -e "rmarkdown::render(input = 'test.Rmd', output_dir = 'docs')"
 ```
 
-## Render many Rmarkdown documents in a dir                                     
-                                                                                
-Use the below `render_to_HTML.sh` script:                                       
-                                                                                
-```                                                                             
-#!/bin/bash                                                                     
-                                                                                
-# finds all R notenooks (.Rmd) in current dir                                   
-# and renders them to HTML                                                      
-                                                                                
-if [ "$#" != 1 ]; then                                                          
-  echo "Give one parameter: 'all' or 'some'!"                                   
-  exit 1                                                                        
-else                                                                            
-  arg=$1                                                                        
-fi                                                                              
-                                                                                
-if [ $arg == "all" ]; then                                                      
-  rmd_files=`ls | grep Rmd`                                                     
-elif [ $arg == "some" ]; then                                                   
-  # which ones to render?                                                       
-  rmd_files=`ls | grep Rmd | grep -v biomarker | grep -v data_prepro | grep -v consensus | grep -v fitness | grep -v prolif`
-else                                                                            
-  echo "Write: 'all' or 'some'!"                                                
-  exit 1                                                                        
-fi                                                                              
-                                                                                
-echo $rmd_files                                                                 
-                                                                                
-for file in ${rmd_files}; do                                                    
-  echo "Rendering "$file"..."                                                   
-  Rscript -e "library(rmarkdown); rmarkdown::render(\"./$file\",\"html_document\")"
-done                                                                            
-```

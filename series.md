@@ -1,25 +1,25 @@
 # Watching now :)
 
-- The Witcher
+- Black Mirror!
 
 # Keep in track
 
-- Rick and Morty (Season 4)
-- The Expanse (Season 4)
+- The Expanse (??? - s05)
 - Cobra Kai (2020 - s03)
 - Better Call Saul (2020 - s05)
 - The Boys (2020 - s02)
 - True Detective (??? - s04)
 - Stranger Things (2021 - s04)
+- The Witcher (2021 - s02)
 
 # To see in the future
 
+- **Black Mirror** (nice)
 - The Mandalorian (2019, Star Wars)
 - Fargo (Season 3)
+- **House of Cards** (Spacey) - 6 seasons ended
 - His Dark Materials (Season 1)
 - Dark (2017) - 2 seasons
-- **Black Mirror** (nice - Bazik suggestion)
-- **House of Cards** (Spacey) - 6 seasons ended
 - 11.22.63 (8 episodes)
 
 # Old

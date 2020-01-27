@@ -1,11 +1,11 @@
 # Summary
 
 * [Useful commands](use.md)
-  * [Linux](cmd_linux.md)
+  * [Linux](linux.md)
   * [Git&Code](code.md)
   * [Database](databases.md)
   * [Network](network.md)
-  * [CPU benchmark](cpu_bench.md)
+  * [CPU benchmark](cpu.md)
 -----
 * [Personal](personal.md)
   * [Series to Watch](series.md)                                                

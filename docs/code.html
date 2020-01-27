@@ -64,7 +64,7 @@
     <link rel="next" href="databases.html" />
     
     
-    <link rel="prev" href="cmd_linux.html" />
+    <link rel="prev" href="linux.html" />
     
 
     </head>
@@ -107,9 +107,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.1.1" data-path="cmd_linux.html">
+        <li class="chapter " data-level="1.1.1" data-path="linux.html">
             
-                <a href="cmd_linux.html">
+                <a href="linux.html">
             
                     
                     Linux
@@ -159,9 +159,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.1.5" data-path="cpu_bench.html">
+        <li class="chapter " data-level="1.1.5" data-path="cpu.html">
             
-                <a href="cpu_bench.html">
+                <a href="cpu.html">
             
                     
                     CPU benchmark
@@ -376,36 +376,6 @@ output:
 </code></pre><p>Now, you want to output the resulting <code>test.html</code> file in a <code>docs</code> dir.
 Use the following command (in a bash script, e.g. <code>render.sh</code>):</p>
 <pre><code>Rscript -e &quot;rmarkdown::render(input = &apos;test.Rmd&apos;, output_dir = &apos;docs&apos;)&quot;
-</code></pre><h2 id="render-many-rmarkdown-documents-in-a-dir">Render many Rmarkdown documents in a dir</h2>
-<p>Use the below <code>render_to_HTML.sh</code> script:                                       </p>
-<pre><code>#!/bin/bash                                                                     
-
-# finds all R notenooks (.Rmd) in current dir                                   
-# and renders them to HTML                                                      
-
-if [ &quot;$#&quot; != 1 ]; then                                                          
-  echo &quot;Give one parameter: &apos;all&apos; or &apos;some&apos;!&quot;                                   
-  exit 1                                                                        
-else                                                                            
-  arg=$1                                                                        
-fi                                                                              
-
-if [ $arg == &quot;all&quot; ]; then                                                      
-  rmd_files=`ls | grep Rmd`                                                     
-elif [ $arg == &quot;some&quot; ]; then                                                   
-  # which ones to render?                                                       
-  rmd_files=`ls | grep Rmd | grep -v biomarker | grep -v data_prepro | grep -v consensus | grep -v fitness | grep -v prolif`
-else                                                                            
-  echo &quot;Write: &apos;all&apos; or &apos;some&apos;!&quot;                                                
-  exit 1                                                                        
-fi                                                                              
-
-echo $rmd_files                                                                 
-
-for file in ${rmd_files}; do                                                    
-  echo &quot;Rendering &quot;$file&quot;...&quot;                                                   
-  Rscript -e &quot;library(rmarkdown); rmarkdown::render(\&quot;./$file\&quot;,\&quot;html_document\&quot;)&quot;
-done
 </code></pre>
                                 
                                 </section>
@@ -433,7 +403,7 @@ done
 
             
                 
-                <a href="cmd_linux.html" class="navigation navigation-prev " aria-label="Previous page: Linux">
+                <a href="linux.html" class="navigation navigation-prev " aria-label="Previous page: Linux">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
@@ -449,7 +419,7 @@ done
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Git&Code","level":"1.1.2","depth":2,"next":{"title":"Database","level":"1.1.3","depth":2,"path":"databases.md","ref":"databases.md","articles":[]},"previous":{"title":"Linux","level":"1.1.1","depth":2,"path":"cmd_linux.md","ref":"cmd_linux.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"3.1.1","theme":"default","variables":{},"plugins":["bootstrap-callout"],"pluginsConfig":{"bootstrap-callout":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"use.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"code.md","mtime":"2019-12-02T17:24:06.876Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2020-01-08T00:12:53.194Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Git&Code","level":"1.1.2","depth":2,"next":{"title":"Database","level":"1.1.3","depth":2,"path":"databases.md","ref":"databases.md","articles":[]},"previous":{"title":"Linux","level":"1.1.1","depth":2,"path":"linux.md","ref":"linux.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"3.1.1","theme":"default","variables":{},"plugins":["bootstrap-callout"],"pluginsConfig":{"bootstrap-callout":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"use.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"code.md","mtime":"2020-01-27T09:33:18.024Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2020-01-27T10:29:25.125Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

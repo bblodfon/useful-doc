@@ -1,5 +1,16 @@
 # Useful Linux commands
 
+## Add command path permanently
+
+Go to `/etc/profile.d` and create a `test.sh` file.
+Put inside something like this:
+```
+EXEC_HOME=/usr/bin/my-exetutable                                                         
+export EXEC_HOME
+```
+
+Then, with `echo $JAVA_HOME` it's gonna be known to the whole system!
+
 ## vim remove trailing whitespaces
 
 `:%s/\s\+$//e`
