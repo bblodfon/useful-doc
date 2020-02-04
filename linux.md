@@ -129,6 +129,14 @@ or use cloc: `apt-get install cloc`
 find . -maxdepth 1 -name "something*" -print0 | xargs -0 rm
 ```
 
+## List files in a dir efficiently
+
+Copy the [listdir.c](./listdir.c) file. Then:
+```
+gcc listdir.c -o listdir
+./listdir /dirWithTooManyFiles
+```
+
 ## Count and change the reserved space in an ext4 partition 'ONLINE'
 
 Change the reserved space to 1%: `tune2fs -m 1 /dev/sdb1`  

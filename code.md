@@ -8,6 +8,13 @@ In order to remove unwanted info like `META-INF/MANIFEST.MF already added, skipp
 org.slf4j.simpleLogger.log.org.codehaus.plexus.archiver.jar.JarArchiver=warn
 ```
 
+## Git delete local branch that is not "online" anymore
+
+```
+git branch -d <branch-name>
+git fetch origin --prune
+```
+
 ## Git show only files that changed on previous commit
 
 ```
