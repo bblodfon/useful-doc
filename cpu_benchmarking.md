@@ -27,7 +27,7 @@ Run:
 ```
 SRC=nbody.c
 EXE=nbody
-gcc -std=c99 -O3 -fopenmp -DSHMOO -o $EXE $SRC -lm
+gcc -std=c99 -O3 -fopenmp -DSHMOO -o $EXE $SRC -lm -D_DEFAULT_SOURCE
 ./nbody
 ```
 

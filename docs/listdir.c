@@ -38,7 +38,7 @@ int main(int argc, char *argv[]) {
                if (nread == 0)
                    break;
 
-               printf("--------------- nread=%d ---------------\n", nread);
+               //printf("--------------- nread=%d ---------------\n", nread);
                //printf("inode#    file type  d_reclen  d_off   d_name\n");
                for (bpos = 0; bpos < nread;) {
                    d = (struct linux_dirent *) (buf + bpos);
