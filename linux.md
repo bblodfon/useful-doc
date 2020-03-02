@@ -1,5 +1,16 @@
 # Useful Linux commands
 
+## mount external disk
+
+```
+sudo fdisk -l
+# usually it's on `/dev/sdb1` partition
+mkdir /media/disk
+sudo mount /dev/sdb1 /media/disk
+```
+
+After you are done, run: `umount /media/disk`
+
 ## Add command path permanently
 
 Go to `/etc/profile.d` and create a `test.sh` file.
