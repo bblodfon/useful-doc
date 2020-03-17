@@ -9,7 +9,7 @@ mkdir /media/disk
 sudo mount /dev/sdb1 /media/disk
 ```
 
-After you are done, run: `umount /media/disk`
+After you are done, run: `sudo umount /media/disk`
 
 ## Add command path permanently
 
@@ -91,6 +91,18 @@ pdftoppm -png -r 600 test_crop.pdf test.png
 # SVG
 pdf2svg test_crop.pdf test.svg
 ```
+
+## select pages from pdf
+
+`pdftk test.pdf cat 2-4 output out.pdf`
+
+## resize pdf
+
+`pdfjam --outfile out.pdf --papersize '{6.125in,9.250in}' in.pdf`
+
+## pdf info
+
+`pdfinfo .pdf`
 
 ## extract one file from `tar.gz` file
 

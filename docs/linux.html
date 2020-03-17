@@ -345,7 +345,7 @@
 # usually it&apos;s on `/dev/sdb1` partition
 mkdir /media/disk
 sudo mount /dev/sdb1 /media/disk
-</code></pre><p>After you are done, run: <code>umount /media/disk</code></p>
+</code></pre><p>After you are done, run: <code>sudo umount /media/disk</code></p>
 <h2 id="add-command-path-permanently">Add command path permanently</h2>
 <p>Go to <code>/etc/profile.d</code> and create a <code>test.sh</code> file.
 Put inside something like this:</p>
@@ -392,7 +392,13 @@ pdftoppm -png -r 600 test_crop.pdf test.png
 
 # SVG
 pdf2svg test_crop.pdf test.svg
-</code></pre><h2 id="extract-one-file-from-targz-file">extract one file from <code>tar.gz</code> file</h2>
+</code></pre><h2 id="select-pages-from-pdf">select pages from pdf</h2>
+<p><code>pdftk test.pdf cat 2-4 output out.pdf</code></p>
+<h2 id="resize-pdf">resize pdf</h2>
+<p><code>pdfjam --outfile out.pdf --papersize &apos;{6.125in,9.250in}&apos; in.pdf</code></p>
+<h2 id="pdf-info">pdf info</h2>
+<p><code>pdfinfo .pdf</code></p>
+<h2 id="extract-one-file-from-targz-file">extract one file from <code>tar.gz</code> file</h2>
 <p><code>tar -xf example.tar.gz &lt;file-name&gt;</code></p>
 <h2 id="take-specific-characters-from-each-line-in-a-file">take specific characters from each line in a file</h2>
 <p><code>cut -c 1-30 &lt;file-name&gt;</code></p>
@@ -595,7 +601,7 @@ df -h
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Linux","level":"1.1.1","depth":2,"next":{"title":"Git&Code","level":"1.1.2","depth":2,"path":"code.md","ref":"code.md","articles":[]},"previous":{"title":"Useful commands","level":"1.1","depth":1,"path":"use.md","ref":"use.md","articles":[{"title":"Linux","level":"1.1.1","depth":2,"path":"linux.md","ref":"linux.md","articles":[]},{"title":"Git&Code","level":"1.1.2","depth":2,"path":"code.md","ref":"code.md","articles":[]},{"title":"Database","level":"1.1.3","depth":2,"path":"databases.md","ref":"databases.md","articles":[]},{"title":"Network","level":"1.1.4","depth":2,"path":"network.md","ref":"network.md","articles":[]},{"title":"CPU benchmark","level":"1.1.5","depth":2,"path":"cpu.md","ref":"cpu.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"3.1.1","theme":"default","variables":{},"plugins":["bootstrap-callout"],"pluginsConfig":{"bootstrap-callout":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"use.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"linux.md","mtime":"2020-03-02T11:38:33.378Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2020-03-02T11:38:43.870Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Linux","level":"1.1.1","depth":2,"next":{"title":"Git&Code","level":"1.1.2","depth":2,"path":"code.md","ref":"code.md","articles":[]},"previous":{"title":"Useful commands","level":"1.1","depth":1,"path":"use.md","ref":"use.md","articles":[{"title":"Linux","level":"1.1.1","depth":2,"path":"linux.md","ref":"linux.md","articles":[]},{"title":"Git&Code","level":"1.1.2","depth":2,"path":"code.md","ref":"code.md","articles":[]},{"title":"Database","level":"1.1.3","depth":2,"path":"databases.md","ref":"databases.md","articles":[]},{"title":"Network","level":"1.1.4","depth":2,"path":"network.md","ref":"network.md","articles":[]},{"title":"CPU benchmark","level":"1.1.5","depth":2,"path":"cpu.md","ref":"cpu.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"3.1.1","theme":"default","variables":{},"plugins":["bootstrap-callout"],"pluginsConfig":{"bootstrap-callout":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"use.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"linux.md","mtime":"2020-03-17T10:54:17.808Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2020-03-17T11:06:29.428Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
