@@ -1,10 +1,7 @@
 const gulp = require('gulp');
 const del = require('del');
 const exec = require('child_process').exec;
-const gulpLoadPlugins = require('gulp-load-plugins');
 const argv = require('yargs').argv;
-
-const $ = gulpLoadPlugins();
 
 gulp.task('git_add', function (callback) {
   console.log('adding...');
