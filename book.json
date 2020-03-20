@@ -1,7 +1,7 @@
 {
   "gitbook": "3.1.1",
   "structure": {
-    "readme": "use.md",
+    "readme": "linux.md",
     "summary": "SUMMARY.md"
   }, 
   "plugins" : [ "bootstrap-callout" ]
