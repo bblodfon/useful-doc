@@ -3,6 +3,5 @@
   "structure": {
     "readme": "linux.md",
     "summary": "SUMMARY.md"
-  }, 
-  "plugins" : [ "bootstrap-callout" ]
+  } 
 }
