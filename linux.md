@@ -1,5 +1,11 @@
 # Useful Linux commands
 
+## on symbolic links
+
+Create a symbolic link: `ln -s /full_path_to/real_exe_file_target /full_path_to/link`
+
+Delete a symbolic link: `unlink /path_to/link`
+
 ## mount external disk
 
 ```
