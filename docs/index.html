@@ -198,7 +198,14 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="useful-linux-commands">Useful Linux commands</h1>
-<h2 id="on-symbolic-links">on symbolic links</h2>
+<h2 id="change-many-filenames">change many filenames</h2>
+<p>Let&apos;s say I have many filenames in a directory which have the substring <code>_rand_</code> and I wanna change that substring to <code>_whatever_</code>.
+Run inside the directory:</p>
+<pre><code>find . -type f -name &apos;*_rand_*&apos; | while read FILE ; do
+    newfile=&quot;$(echo ${FILE} |sed -e &apos;s/_rand_/_whatever_/&apos;)&quot;;
+    mv &quot;${FILE}&quot; &quot;${newfile}&quot;;
+done
+</code></pre><h2 id="on-symbolic-links">on symbolic links</h2>
 <p>Create a symbolic link: <code>ln -s /full_path_to/real_exe_file_target /full_path_to/link</code></p>
 <p>Delete a symbolic link: <code>unlink /path_to/link</code></p>
 <h2 id="mount-external-disk">mount external disk</h2>
@@ -458,7 +465,7 @@ df -h
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Linux","level":"1.1","depth":1,"next":{"title":"Git&Code","level":"1.2","depth":1,"path":"code.md","ref":"code.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"3.1.1","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"linux.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"linux.md","mtime":"2020-04-19T18:01:39.282Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2020-04-19T18:01:59.841Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Linux","level":"1.1","depth":1,"next":{"title":"Git&Code","level":"1.2","depth":1,"path":"code.md","ref":"code.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"3.1.1","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"linux.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"linux.md","mtime":"2020-05-11T14:18:55.889Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2020-05-11T14:19:03.876Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

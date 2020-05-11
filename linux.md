@@ -1,5 +1,17 @@
 # Useful Linux commands
 
+## change many filenames
+
+Let's say I have many filenames in a directory which have the substring `_rand_` and I wanna change that substring to `_whatever_`.
+Run inside the directory:
+
+```
+find . -type f -name '*_rand_*' | while read FILE ; do
+    newfile="$(echo ${FILE} |sed -e 's/_rand_/_whatever_/')";
+    mv "${FILE}" "${newfile}";
+done
+```
+
 ## on symbolic links
 
 Create a symbolic link: `ln -s /full_path_to/real_exe_file_target /full_path_to/link`
