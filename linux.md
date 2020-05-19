@@ -34,7 +34,7 @@ After you are done, run: `sudo umount /media/disk`
 Go to `/etc/profile.d` and create a `test.sh` file.
 Put inside something like this:
 ```
-EXEC_HOME=/usr/bin/my-exetutable                                                         
+EXEC_HOME=/usr/bin/my-exetutable
 export EXEC_HOME
 ```
 
@@ -54,9 +54,9 @@ To see dots (server connection awaiting!)
 
 `while true; do echo -n .; sleep 1; done`
 
-## Change text-scaling-factor in Ubuntu 18.04 
+## Change text-scaling-factor in Ubuntu 18.04
 
-Make all text bigger/smaller: 
+Make all text bigger/smaller:
 
 ```
 gsettings set org.gnome.desktop.interface text-scaling-factor 1.5 # big
@@ -67,19 +67,38 @@ gsettings set org.gnome.desktop.interface text-scaling-factor 1.1 # small
 
 `tar -czvf filename.tar.gz /path/to/dir1`
 
+## Extract with tar
+
+`tar -xzvf filename.tar.gz`
+
+To another directory:
+```
+mkdir new-dir
+tar -C new-dir -xzvf filename.tar.gz
+```
+
+## Extract one file from `tar.gz` file
+
+`tar -xf example.tar.gz <file-name>`
+
+## list tar.gz file contents with depth
+
+Download perl script: [treeify](https://github.com/grawity/code/blob/master/misc/treeifyi)
+and run: `tar -tf <file>.tar.gz | treeify -d 2`
+
 ## Nice bash aliases
 
 ```
-function cd_up() {                                                              
-  cd $(printf "%0.s../" $(seq 1 $1 ));                                          
-}                                                                               
+function cd_up() {
+  cd $(printf "%0.s../" $(seq 1 $1 ));
+}
 
-alias 'cd..'='cd_up'                                                            
-                                                                                
-alias 'com'='git commit'                                                        
-alias 'cam'='git commit --amend'                                                
-alias 'l'='ls -ltrh'                                                            
-alias 'off'='sudo poweroff'                                                     
+alias 'cd..'='cd_up'
+
+alias 'com'='git commit'
+alias 'cam'='git commit --amend'
+alias 'l'='ls -ltrh'
+alias 'off'='sudo poweroff'
 ```
 
 Navigate quickly directories like this: `cd.. 4`!
@@ -122,22 +141,13 @@ pdf2svg test_crop.pdf test.svg
 
 `pdfinfo .pdf`
 
-## extract one file from `tar.gz` file
-
-`tar -xf example.tar.gz <file-name>`
-
 ## take specific characters from each line in a file
 
 `cut -c 1-30 <file-name>`
 
-## list tar.gz file contents with depth
-
-Download perl script: [treeify](https://github.com/grawity/code/blob/master/misc/treeifyi)
-and run: `tar -tf <file>.tar.gz | treeify -d 2`
-
 ## Do something on many files in a dir
 
-*Something* can be: rendering notebooks to HTML or checking if the files are 
+*Something* can be: rendering notebooks to HTML or checking if the files are
 the same as other files for example
 ```bash
 #!/bin/bash
@@ -161,7 +171,7 @@ gsettings set org.gnome.desktop.background show-desktop-icons false
 `ls | xargs stat --format=%s | awk '{s+=$1} END {print s/(1024*1024)}'`
 
 ## Count lines of source code
-`find . -name '*.php' | xargs wc -l`  
+`find . -name '*.php' | xargs wc -l`
 or use cloc: `apt-get install cloc`
 
 ## Delete files efficiently
@@ -180,8 +190,8 @@ gcc listdir.c -o listdir
 
 ## Count and change the reserved space in an ext4 partition 'ONLINE'
 
-Change the reserved space to 1%: `tune2fs -m 1 /dev/sdb1`  
-Count the percentage:  
+Change the reserved space to 1%: `tune2fs -m 1 /dev/sdb1`
+Count the percentage:
 ```
 a=$(tune2fs -l /dev/sdb1 | grep -i 'Reserved block count' | awk '{ print $4 }')
 b=$(tune2fs -l /dev/sdb1 | grep 'Block count' | awk  '{ print $3 }')
@@ -198,13 +208,13 @@ ps aux | grep -v grep | grep -i patternToMatch | awk '{print $2}' | xargs kill -
 
 ## Add permanent bash alias
 
-`vim ~/.bashrc` or `vim ~/.bash_aliases`  
-and add a line like this:  
-`alias fifa='ifconfig | grep ask'`  
-Then save the file and run:  
+`vim ~/.bashrc` or `vim ~/.bash_aliases`
+and add a line like this:
+`alias fifa='ifconfig | grep ask'`
+Then save the file and run:
 `. ~/.bash_aliases` or `. ~/.bashrc`
 
-- So, to change directory coloring for example run:  
+- So, to change directory coloring for example run:
 `echo "LS_COLORS=$LS_COLORS:'di=0;36:' ; export LS_COLORS" >> ~/.bash_aliases`
 
 - Best values:
@@ -227,7 +237,7 @@ white | 1;37
 Light Grey | 0;37
 Black | 30
 Dark Grey | 1;30
-The first number is the style (1=bold), followed by a semicolon, and then the 
+The first number is the style (1=bold), followed by a semicolon, and then the
 actual number of the color
 
 ## Find number of CPUs and model
@@ -240,11 +250,11 @@ cat /proc/cpuinfo | grep name | tail -n1
 
 ## Dynamic linking
 
-`ldd <executable_name>`  
-if you see *not found* for some library, put the <something>.so.x.x.x file in: 
-`/usr/local/lib`  
+`ldd <executable_name>`
+if you see *not found* for some library, put the <something>.so.x.x.x file in:
+`/usr/local/lib`
 `ln -s <something>.so.x.x.x <something>.so.x` (or whatever is needed)
-and do: `ldconfig -v`  
+and do: `ldconfig -v`
 Then: `ldd <executable_name>` should be OK
 
 ## Change hostname
@@ -279,12 +289,12 @@ set colorcolumn=80
 
 ## Change vim comment color
 Go to `/usr/share/vim/vim80/colors` and copy a file with a nice color scheme:
-`cp ron.vim zobo.vim`  
-Then: `vim zobo.vim` and change lines:  
-`let g:colors_name = "zobo"`  
-`hi comment ctermfg=green guifg=green`  
+`cp ron.vim zobo.vim`
+Then: `vim zobo.vim` and change lines:
+`let g:colors_name = "zobo"`
+`hi comment ctermfg=green guifg=green`
 Then:
-`vim /etc/vim/vimrc`  
+`vim /etc/vim/vimrc`
 Add line somewhere: `color zobo`
 
 ## See cached files info in the pwd
@@ -293,12 +303,12 @@ Add line somewhere: `color zobo`
 ## Clean cached memory (extremely useful :)
 `sync && echo 3 | tee /proc/sys/vm/drop_caches`
 
-## Build a specific filesystem on a disk partition 
+## Build a specific filesystem on a disk partition
 ```
 cat /etc/fstab
 fdisk -l
 cfdisk /dev/sdc
-mkfs.ext4 /dev/sdc1 
+mkfs.ext4 /dev/sdc1
 mount -a
 df -h
 ```

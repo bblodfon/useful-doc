@@ -217,7 +217,7 @@ sudo mount /dev/sdb1 /media/disk
 <h2 id="add-command-path-permanently">Add command path permanently</h2>
 <p>Go to <code>/etc/profile.d</code> and create a <code>test.sh</code> file.
 Put inside something like this:</p>
-<pre><code>EXEC_HOME=/usr/bin/my-exetutable                                                         
+<pre><code>EXEC_HOME=/usr/bin/my-exetutable
 export EXEC_HOME
 </code></pre><p>Then, with <code>echo $EXEC_HOME</code> it&apos;s gonna be known to the whole system!</p>
 <h2 id="vim-remove-trailing-whitespaces">vim remove trailing whitespaces</h2>
@@ -228,21 +228,31 @@ export EXEC_HOME
 <p>To see dots (server connection awaiting!)</p>
 <p><code>while true; do echo -n .; sleep 1; done</code></p>
 <h2 id="change-text-scaling-factor-in-ubuntu-1804">Change text-scaling-factor in Ubuntu 18.04</h2>
-<p>Make all text bigger/smaller: </p>
+<p>Make all text bigger/smaller:</p>
 <pre><code>gsettings set org.gnome.desktop.interface text-scaling-factor 1.5 # big
 gsettings set org.gnome.desktop.interface text-scaling-factor 1.1 # small
 </code></pre><h2 id="archiving-with-tar">Archiving with tar</h2>
 <p><code>tar -czvf filename.tar.gz /path/to/dir1</code></p>
+<h2 id="extract-with-tar">Extract with tar</h2>
+<p><code>tar -xzvf filename.tar.gz</code></p>
+<p>To another directory:</p>
+<pre><code>mkdir new-dir
+tar -C new-dir -xzvf filename.tar.gz
+</code></pre><h2 id="extract-one-file-from-targz-file">Extract one file from <code>tar.gz</code> file</h2>
+<p><code>tar -xf example.tar.gz &lt;file-name&gt;</code></p>
+<h2 id="list-targz-file-contents-with-depth">list tar.gz file contents with depth</h2>
+<p>Download perl script: <a href="https://github.com/grawity/code/blob/master/misc/treeifyi" target="_blank">treeify</a>
+and run: <code>tar -tf &lt;file&gt;.tar.gz | treeify -d 2</code></p>
 <h2 id="nice-bash-aliases">Nice bash aliases</h2>
-<pre><code>function cd_up() {                                                              
-  cd $(printf &quot;%0.s../&quot; $(seq 1 $1 ));                                          
-}                                                                               
+<pre><code>function cd_up() {
+  cd $(printf &quot;%0.s../&quot; $(seq 1 $1 ));
+}
 
-alias &apos;cd..&apos;=&apos;cd_up&apos;                                                            
+alias &apos;cd..&apos;=&apos;cd_up&apos;
 
-alias &apos;com&apos;=&apos;git commit&apos;                                                        
-alias &apos;cam&apos;=&apos;git commit --amend&apos;                                                
-alias &apos;l&apos;=&apos;ls -ltrh&apos;                                                            
+alias &apos;com&apos;=&apos;git commit&apos;
+alias &apos;cam&apos;=&apos;git commit --amend&apos;
+alias &apos;l&apos;=&apos;ls -ltrh&apos;
 alias &apos;off&apos;=&apos;sudo poweroff&apos;
 </code></pre><p>Navigate quickly directories like this: <code>cd.. 4</code>!</p>
 <h2 id="change-prompt-look-in-terminal">change prompt look in terminal</h2>
@@ -266,15 +276,10 @@ pdf2svg test_crop.pdf test.svg
 <p><code>pdfjam --outfile out.pdf --papersize &apos;{6.125in,9.250in}&apos; in.pdf</code></p>
 <h2 id="pdf-info">pdf info</h2>
 <p><code>pdfinfo .pdf</code></p>
-<h2 id="extract-one-file-from-targz-file">extract one file from <code>tar.gz</code> file</h2>
-<p><code>tar -xf example.tar.gz &lt;file-name&gt;</code></p>
 <h2 id="take-specific-characters-from-each-line-in-a-file">take specific characters from each line in a file</h2>
 <p><code>cut -c 1-30 &lt;file-name&gt;</code></p>
-<h2 id="list-targz-file-contents-with-depth">list tar.gz file contents with depth</h2>
-<p>Download perl script: <a href="https://github.com/grawity/code/blob/master/misc/treeifyi" target="_blank">treeify</a>
-and run: <code>tar -tf &lt;file&gt;.tar.gz | treeify -d 2</code></p>
 <h2 id="do-something-on-many-files-in-a-dir">Do something on many files in a dir</h2>
-<p><em>Something</em> can be: rendering notebooks to HTML or checking if the files are 
+<p><em>Something</em> can be: rendering notebooks to HTML or checking if the files are
 the same as other files for example</p>
 <pre><code class="lang-bash"><span class="hljs-meta">#!/bin/bash
 </span>
@@ -292,7 +297,8 @@ rmd_files=`ls | grep Rmd`
 </code></pre><h2 id="find-the-sum-in-mb-of-files-in-a-directory">Find the sum in MB of files in a directory</h2>
 <p><code>ls | xargs stat --format=%s | awk &apos;{s+=$1} END {print s/(1024*1024)}&apos;</code></p>
 <h2 id="count-lines-of-source-code">Count lines of source code</h2>
-<p><code>find . -name &apos;*.php&apos; | xargs wc -l</code><br>or use cloc: <code>apt-get install cloc</code></p>
+<p><code>find . -name &apos;*.php&apos; | xargs wc -l</code>
+or use cloc: <code>apt-get install cloc</code></p>
 <h2 id="delete-files-efficiently">Delete files efficiently</h2>
 <pre><code>find . -maxdepth 1 -name &quot;something*&quot; -print0 | xargs -0 rm
 </code></pre><h2 id="list-files-in-a-dir-efficiently">List files in a dir efficiently</h2>
@@ -300,7 +306,8 @@ rmd_files=`ls | grep Rmd`
 <pre><code>gcc listdir.c -o listdir
 ./listdir /dirWithTooManyFiles
 </code></pre><h2 id="count-and-change-the-reserved-space-in-an-ext4-partition-online">Count and change the reserved space in an ext4 partition &apos;ONLINE&apos;</h2>
-<p>Change the reserved space to 1%: <code>tune2fs -m 1 /dev/sdb1</code><br>Count the percentage:  </p>
+<p>Change the reserved space to 1%: <code>tune2fs -m 1 /dev/sdb1</code>
+Count the percentage:</p>
 <pre><code>a=$(tune2fs -l /dev/sdb1 | grep -i &apos;Reserved block count&apos; | awk &apos;{ print $4 }&apos;)
 b=$(tune2fs -l /dev/sdb1 | grep &apos;Block count&apos; | awk  &apos;{ print $3 }&apos;)
 echo &quot;scale=5; ($a/$b)*100&quot; | bc # this is the precentage of the reserved space
@@ -309,9 +316,14 @@ echo &quot;scale=5; ($a/$b)*100&quot; | bc # this is the precentage of the reser
 </code></pre><h2 id="problem-after-deleting-many-files-the-space-is-not-freed-and-you-need-to-delete-the-file-descriptors">Problem: After deleting many files, the space is not freed and you need to delete the file descriptors</h2>
 <p><code>find /proc/*/fd -ls 2&gt; /dev/null | awk &apos;/deleted/ {print $11}&apos; | xargs -p -n 1 truncate -s 0</code></p>
 <h2 id="add-permanent-bash-alias">Add permanent bash alias</h2>
-<p><code>vim ~/.bashrc</code> or <code>vim ~/.bash_aliases</code><br>and add a line like this:<br><code>alias fifa=&apos;ifconfig | grep ask&apos;</code><br>Then save the file and run:<br><code>. ~/.bash_aliases</code> or <code>. ~/.bashrc</code></p>
+<p><code>vim ~/.bashrc</code> or <code>vim ~/.bash_aliases</code>
+and add a line like this:
+<code>alias fifa=&apos;ifconfig | grep ask&apos;</code>
+Then save the file and run:
+<code>. ~/.bash_aliases</code> or <code>. ~/.bashrc</code></p>
 <ul>
-<li><p>So, to change directory coloring for example run:<br><code>echo &quot;LS_COLORS=$LS_COLORS:&apos;di=0;36:&apos; ; export LS_COLORS&quot; &gt;&gt; ~/.bash_aliases</code></p>
+<li><p>So, to change directory coloring for example run:
+<code>echo &quot;LS_COLORS=$LS_COLORS:&apos;di=0;36:&apos; ; export LS_COLORS&quot; &gt;&gt; ~/.bash_aliases</code></p>
 </li>
 <li><p>Best values:</p>
 <ul>
@@ -380,7 +392,7 @@ echo &quot;scale=5; ($a/$b)*100&quot; | bc # this is the precentage of the reser
 </tr>
 </tbody>
 </table>
-<p>The first number is the style (1=bold), followed by a semicolon, and then the 
+<p>The first number is the style (1=bold), followed by a semicolon, and then the
 actual number of the color</p>
 <h2 id="find-number-of-cpus-and-model">Find number of CPUs and model</h2>
 <pre><code>grep -c processor /proc/cpuinfo
@@ -388,9 +400,12 @@ lscpu
 nproc
 cat /proc/cpuinfo | grep name | tail -n1
 </code></pre><h2 id="dynamic-linking">Dynamic linking</h2>
-<p><code>ldd &lt;executable_name&gt;</code><br>if you see <em>not found</em> for some library, put the <something>.so.x.x.x file in: 
-<code>/usr/local/lib</code><br><code>ln -s &lt;something&gt;.so.x.x.x &lt;something&gt;.so.x</code> (or whatever is needed)
-and do: <code>ldconfig -v</code><br>Then: <code>ldd &lt;executable_name&gt;</code> should be OK</something></p>
+<p><code>ldd &lt;executable_name&gt;</code>
+if you see <em>not found</em> for some library, put the <something>.so.x.x.x file in:
+<code>/usr/local/lib</code>
+<code>ln -s &lt;something&gt;.so.x.x.x &lt;something&gt;.so.x</code> (or whatever is needed)
+and do: <code>ldconfig -v</code>
+Then: <code>ldd &lt;executable_name&gt;</code> should be OK</something></p>
 <h2 id="change-hostname">Change hostname</h2>
 <p>Stop MySQL if it is running: <code>service mysql stop</code></p>
 <pre><code>old hostname = &lt;old&gt;
@@ -413,8 +428,13 @@ Then check:
 </code></pre>
 <h2 id="change-vim-comment-color">Change vim comment color</h2>
 <p>Go to <code>/usr/share/vim/vim80/colors</code> and copy a file with a nice color scheme:
-<code>cp ron.vim zobo.vim</code><br>Then: <code>vim zobo.vim</code> and change lines:<br><code>let g:colors_name = &quot;zobo&quot;</code><br><code>hi comment ctermfg=green guifg=green</code><br>Then:
-<code>vim /etc/vim/vimrc</code><br>Add line somewhere: <code>color zobo</code></p>
+<code>cp ron.vim zobo.vim</code>
+Then: <code>vim zobo.vim</code> and change lines:
+<code>let g:colors_name = &quot;zobo&quot;</code>
+<code>hi comment ctermfg=green guifg=green</code>
+Then:
+<code>vim /etc/vim/vimrc</code>
+Add line somewhere: <code>color zobo</code></p>
 <h2 id="see-cached-files-info-in-the-pwd">See cached files info in the pwd</h2>
 <p><code>linux-fincore --pages=false --summarize --only-cached *</code></p>
 <h2 id="clean-cached-memory-extremely-useful-">Clean cached memory (extremely useful :)</h2>
@@ -423,7 +443,7 @@ Then check:
 <pre><code>cat /etc/fstab
 fdisk -l
 cfdisk /dev/sdc
-mkfs.ext4 /dev/sdc1 
+mkfs.ext4 /dev/sdc1
 mount -a
 df -h
 </code></pre>
@@ -465,7 +485,7 @@ df -h
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Linux","level":"1.1","depth":1,"next":{"title":"Git&Code","level":"1.2","depth":1,"path":"code.md","ref":"code.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"3.1.1","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"linux.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"linux.md","mtime":"2020-05-11T14:18:55.889Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2020-05-11T14:19:03.876Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Linux","level":"1.1","depth":1,"next":{"title":"Git&Code","level":"1.2","depth":1,"path":"code.md","ref":"code.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"3.1.1","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"linux.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"linux.md","mtime":"2020-05-19T11:58:16.324Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2020-05-19T11:59:14.018Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
