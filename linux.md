@@ -83,7 +83,7 @@ tar -C new-dir -xzvf filename.tar.gz
 
 ## list tar.gz file contents with depth
 
-Download perl script: [treeify](https://github.com/grawity/code/blob/master/misc/treeifyi)
+Download perl script: [treeify](https://github.com/grawity/code/blob/master/misc/treeify)
 and run: `tar -tf <file>.tar.gz | treeify -d 2`
 
 ## Nice bash aliases
