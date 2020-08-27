@@ -301,6 +301,9 @@ Add line somewhere: `color zobo`
 `linux-fincore --pages=false --summarize --only-cached *`
 
 ## Clean cached memory (extremely useful :)
+
+`sudo sysctl vm.drop_caches=3`
+
 `sync && echo 3 | tee /proc/sys/vm/drop_caches`
 
 ## Build a specific filesystem on a disk partition
