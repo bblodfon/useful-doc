@@ -141,6 +141,10 @@ pdf2svg test_crop.pdf test.svg
 
 `pdfinfo .pdf`
 
+## merge 2 or more pdfs
+
+`pdftk file1.pdf file2.pdf cat output mergedfile.pdf`
+
 ## take specific characters from each line in a file
 
 `cut -c 1-30 <file-name>`
