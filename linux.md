@@ -1,5 +1,13 @@
 # Useful Linux commands
 
+## Recursively search in directories and cat files
+
+E.g. my current directory has mutliple directories that each one has multiple
+files which I want to `cat` and find a pattern:
+```
+find . -type f -exec cat {} + | grep stable | wc -l
+```
+
 ## change many filenames
 
 Let's say I have many filenames in a directory which have the substring `_rand_` and I wanna change that substring to `_whatever_`.
