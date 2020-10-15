@@ -131,7 +131,7 @@ pdfcrop --margins 10 test.pdf test_crop.pdf
 Then convert it to the format you like:
 ```
 # PNG, 600 ppi
-pdftoppm -png -r 600 test_crop.pdf test.png
+pdftoppm -png -r 600 test_crop.pdf test
 
 # SVG
 pdf2svg test_crop.pdf test.svg
