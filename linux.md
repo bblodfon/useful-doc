@@ -1,5 +1,12 @@
 # Useful Linux commands
 
+## grep pattern in many files and get back also the file name
+
+Find in all *.html* files inside a directory, the mentions of string 'xaxa'
+```
+find . -name \*.html -print0 | xargs -0 grep -n -H xaxa
+```
+
 ## Recursively search in directories and cat files
 
 E.g. my current directory has mutliple directories that each one has multiple

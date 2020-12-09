@@ -198,7 +198,10 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="useful-linux-commands">Useful Linux commands</h1>
-<h2 id="recursively-search-in-directories-and-cat-files">Recursively search in directories and cat files</h2>
+<h2 id="grep-pattern-in-many-files-and-get-back-also-the-file-name">grep pattern in many files and get back also the file name</h2>
+<p>Find in all <em>.html</em> files inside a directory, the mentions of string &apos;xaxa&apos;</p>
+<pre><code>find . -name \*.html -print0 | xargs -0 grep -n -H xaxa
+</code></pre><h2 id="recursively-search-in-directories-and-cat-files">Recursively search in directories and cat files</h2>
 <p>E.g. my current directory has mutliple directories that each one has multiple
 files which I want to <code>cat</code> and find a pattern:</p>
 <pre><code>find . -type f -exec cat {} + | grep stable | wc -l
@@ -492,7 +495,7 @@ df -h
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Linux","level":"1.1","depth":1,"next":{"title":"Git&Code","level":"1.2","depth":1,"path":"code.md","ref":"code.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"3.1.1","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"linux.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"linux.md","mtime":"2020-10-15T14:31:54.076Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2020-10-15T14:35:52.238Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Linux","level":"1.1","depth":1,"next":{"title":"Git&Code","level":"1.2","depth":1,"path":"code.md","ref":"code.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"3.1.1","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"linux.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"linux.md","mtime":"2020-12-09T13:58:22.550Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2020-12-09T13:58:31.368Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
