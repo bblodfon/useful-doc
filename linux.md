@@ -1,5 +1,9 @@
 # Useful Linux commands
 
+## find start time of a long-running process
+
+`ps -eo pid,lstart,cmd | grep process_name`
+
 ## grep pattern in many files and get back also the file name
 
 Find in all *.html* files inside a directory, the mentions of string 'xaxa'
