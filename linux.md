@@ -148,6 +148,19 @@ pdftoppm -png -r 600 test_crop.pdf test
 pdf2svg test_crop.pdf test.svg
 ```
 
+## convert jpg images to a single pdf
+
+`convert ticket_1.jpg ticket_2.jpg ticket.pdf`
+
+## reduce size of scanned pdf
+
+```
+pdf2ps input.pdf output.ps
+ps2pdf output.ps -dPDFSETTINGS=/ebook output.pdf
+```
+
+See also this [askubuntu question](https://askubuntu.com/questions/113544/how-can-i-reduce-the-file-size-of-a-scanned-pdf-file/256449#256449) for more pdf options.
+
 ## select pages from pdf
 
 `pdftk test.pdf cat 2-4 output out.pdf`

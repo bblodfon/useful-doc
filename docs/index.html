@@ -279,7 +279,13 @@ pdftoppm -png -r 600 test_crop.pdf test
 
 # SVG
 pdf2svg test_crop.pdf test.svg
-</code></pre><h2 id="select-pages-from-pdf">select pages from pdf</h2>
+</code></pre><h2 id="convert-jpg-images-to-a-single-pdf">convert jpg images to a single pdf</h2>
+<p><code>convert ticket_1.jpg ticket_2.jpg ticket.pdf</code></p>
+<h2 id="reduce-size-of-scanned-pdf">reduce size of scanned pdf</h2>
+<pre><code>pdf2ps input.pdf output.ps
+ps2pdf output.ps -dPDFSETTINGS=/ebook output.pdf
+</code></pre><p>See also this <a href="https://askubuntu.com/questions/113544/how-can-i-reduce-the-file-size-of-a-scanned-pdf-file/256449#256449" target="_blank">askubuntu question</a> for more pdf options.</p>
+<h2 id="select-pages-from-pdf">select pages from pdf</h2>
 <p><code>pdftk test.pdf cat 2-4 output out.pdf</code></p>
 <h2 id="resize-pdf">resize pdf</h2>
 <p><code>pdfjam --outfile out.pdf --papersize &apos;{6.125in,9.250in}&apos; in.pdf</code></p>
@@ -497,7 +503,7 @@ df -h
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Linux","level":"1.1","depth":1,"next":{"title":"Git&Code","level":"1.2","depth":1,"path":"code.md","ref":"code.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"3.1.1","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"linux.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"linux.md","mtime":"2020-12-14T13:44:26.188Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2020-12-14T13:44:34.665Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Linux","level":"1.1","depth":1,"next":{"title":"Git&Code","level":"1.2","depth":1,"path":"code.md","ref":"code.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"3.1.1","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"linux.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"linux.md","mtime":"2021-01-08T06:45:10.453Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2021-01-08T06:46:49.483Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
