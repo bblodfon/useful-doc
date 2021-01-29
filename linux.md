@@ -161,6 +161,10 @@ ps2pdf output.ps -dPDFSETTINGS=/ebook output.pdf
 
 See also this [askubuntu question](https://askubuntu.com/questions/113544/how-can-i-reduce-the-file-size-of-a-scanned-pdf-file/256449#256449) for more pdf options.
 
+## Decrypt password-protected pdf
+
+`qpdf --decrypt in.pdf out.pdf`
+
 ## select pages from pdf
 
 `pdftk test.pdf cat 2-4 output out.pdf`
