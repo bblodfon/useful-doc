@@ -31,6 +31,12 @@ find . -type f -name '*_rand_*' | while read FILE ; do
 done
 ```
 
+Another way (one liner):
+
+```
+for file in `ls | grep "_rand_"`; do mv "$file" "${file/_rand_/_whatever_}"; done
+```
+
 ## on symbolic links
 
 Create a symbolic link: `ln -s /full_path_to/real_exe_file_target /full_path_to/link`
