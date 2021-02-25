@@ -1,5 +1,11 @@
 # Useful Linux commands
 
+## Markdown to HTML (pandoc)
+
+```
+pandoc test.md -f markdown -t html -s -o test.html
+```
+
 ## find start time of a long-running process
 
 `ps -eo pid,lstart,cmd | grep process_name`
