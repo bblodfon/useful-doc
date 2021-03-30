@@ -1,12 +1,4 @@
-# Useful Git and Code commands
-
-## Maven remove logging info 
-
-In order to remove unwanted info like `META-INF/MANIFEST.MF already added, skipping` when running mvn commands, find the `/etc/maven/logging/simplelogger.properties` file (or one similar that maven uses and add the following line:
-
-```
-org.slf4j.simpleLogger.log.org.codehaus.plexus.archiver.jar.JarArchiver=warn
-```
+# Useful Git Commands
 
 ## Git delete local branch that is not "online" anymore
 
@@ -45,14 +37,3 @@ Otherwise, if you want to just **not type the username** change the line:
 `url = https://github.com/<USERNAME>/<REPONAME>.git`, to:  
 `url = https://<USERNAME>@github.com/<USERNAME>/<REPONAME>.git`
 
-## R benchmark many expressions
-
-```
-rbenchmark::benchmark("prev" = {a = 3*7}, "new" = {a = list()}, replications = 1000, columns = c("test", "replications", "elapsed", "relative", "user.self", "sys.self"))
-```
-
-## R render document
-
-```
-Rscript -e "rmarkdown::render(input = 'test.Rmd', output_format = 'html_document', output_dir = 'docs')"
-```
