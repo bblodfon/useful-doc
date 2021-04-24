@@ -140,6 +140,10 @@ Add to `~/.bashrc` this line:
 
 `export PS1='\[\033[01;32m\]\u\[\033[00m\]:\[\033[01;34m\]~\[\033[00m\]\$ '`
 
+## shrink pdf
+
+http://www.alfredklomp.com/programming/shrinkpdf/
+
 ## export pdf to png/svg with awesome quality
 
 Let's say you have a (1-page) pdf: `test.pdf` that contains an image or diagram
