@@ -144,6 +144,14 @@ Add to `~/.bashrc` this line:
 
 http://www.alfredklomp.com/programming/shrinkpdf/
 
+## crop pdf
+
+Remember, margins are (left, right, top, bottom).
+The next command will leave only the top-right part of the input pdf:
+```
+pdfcrop --margins '-280 0 0 -600' in.pdf out.pdf
+```
+
 ## export pdf to png/svg with awesome quality
 
 Let's say you have a (1-page) pdf: `test.pdf` that contains an image or diagram

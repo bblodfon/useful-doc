@@ -273,7 +273,11 @@ alias &apos;off&apos;=&apos;sudo poweroff&apos;
 <p><code>export PS1=&apos;\[\033[01;32m\]\u\[\033[00m\]:\[\033[01;34m\]~\[\033[00m\]\$ &apos;</code></p>
 <h2 id="shrink-pdf">shrink pdf</h2>
 <p><a href="http://www.alfredklomp.com/programming/shrinkpdf/" target="_blank">http://www.alfredklomp.com/programming/shrinkpdf/</a></p>
-<h2 id="export-pdf-to-pngsvg-with-awesome-quality">export pdf to png/svg with awesome quality</h2>
+<h2 id="crop-pdf">crop pdf</h2>
+<p>Remember, margins are (left, right, top, bottom).
+The next command will leave only the top-right part of the input pdf:</p>
+<pre><code>pdfcrop --margins &apos;-280 0 0 -600&apos; in.pdf out.pdf
+</code></pre><h2 id="export-pdf-to-pngsvg-with-awesome-quality">export pdf to png/svg with awesome quality</h2>
 <p>Let&apos;s say you have a (1-page) pdf: <code>test.pdf</code> that contains an image or diagram
 and you want to put it in a presentation/article/word etc in an
 appropriate format and with decent quality.</p>
@@ -511,7 +515,7 @@ df -h
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Linux","level":"1.1","depth":1,"next":{"title":"Git","level":"1.2","depth":1,"path":"git.md","ref":"git.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"3.1.1","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"linux.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"linux.md","mtime":"2021-04-24T23:08:16.923Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2021-04-24T23:08:25.964Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Linux","level":"1.1","depth":1,"next":{"title":"Git","level":"1.2","depth":1,"path":"git.md","ref":"git.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"3.1.1","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"linux.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"linux.md","mtime":"2021-05-03T19:22:35.332Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2021-05-03T19:22:43.639Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
