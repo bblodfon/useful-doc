@@ -152,7 +152,13 @@ The next command will leave only the top-right part of the input pdf:
 pdfcrop --margins '-280 0 0 -600' in.pdf out.pdf
 ```
 
-## export pdf to png/svg with awesome quality
+## svg to pdf
+
+```
+cairosvg in.svg -o out.pdf
+```
+
+## pdf to png/svg with awesome quality
 
 Let's say you have a (1-page) pdf: `test.pdf` that contains an image or diagram
 and you want to put it in a presentation/article/word etc in an
@@ -172,7 +178,7 @@ pdftoppm -png -r 600 test_crop.pdf test
 pdf2svg test_crop.pdf test.svg
 ```
 
-## convert jpg images to a single pdf
+## jpg to pdf
 
 `convert ticket_1.jpg ticket_2.jpg ticket.pdf`
 
