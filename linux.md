@@ -140,9 +140,18 @@ Add to `~/.bashrc` this line:
 
 `export PS1='\[\033[01;32m\]\u\[\033[00m\]:\[\033[01;34m\]~\[\033[00m\]\$ '`
 
-## shrink pdf
+## shrink/optimize pdf
 
-http://www.alfredklomp.com/programming/shrinkpdf/
+- Using a script: http://www.alfredklomp.com/programming/shrinkpdf/
+- Using `ps2pdf`: `ps2pdf -dPDFSETTINGS=/printer ags.pdf out.pdf`
+
+```
+-dPDFSETTINGS=/screen   (screen-view-only quality, 72 dpi images)
+-dPDFSETTINGS=/ebook    (low quality, 150 dpi images)
+-dPDFSETTINGS=/printer  (high quality, 300 dpi images)
+-dPDFSETTINGS=/prepress (high quality, color preserving, 300 dpi imgs)
+-dPDFSETTINGS=/default  (almost identical to /screen)
+```
 
 ## crop pdf
 

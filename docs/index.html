@@ -271,9 +271,17 @@ alias &apos;off&apos;=&apos;sudo poweroff&apos;
 <h2 id="change-prompt-look-in-terminal">change prompt look in terminal</h2>
 <p>Add to <code>~/.bashrc</code> this line:</p>
 <p><code>export PS1=&apos;\[\033[01;32m\]\u\[\033[00m\]:\[\033[01;34m\]~\[\033[00m\]\$ &apos;</code></p>
-<h2 id="shrink-pdf">shrink pdf</h2>
-<p><a href="http://www.alfredklomp.com/programming/shrinkpdf/" target="_blank">http://www.alfredklomp.com/programming/shrinkpdf/</a></p>
-<h2 id="crop-pdf">crop pdf</h2>
+<h2 id="shrinkoptimize-pdf">shrink/optimize pdf</h2>
+<ul>
+<li>Using a script: <a href="http://www.alfredklomp.com/programming/shrinkpdf/" target="_blank">http://www.alfredklomp.com/programming/shrinkpdf/</a></li>
+<li>Using <code>ps2pdf</code>: <code>ps2pdf -dPDFSETTINGS=/printer ags.pdf out.pdf</code></li>
+</ul>
+<pre><code>-dPDFSETTINGS=/screen   (screen-view-only quality, 72 dpi images)
+-dPDFSETTINGS=/ebook    (low quality, 150 dpi images)
+-dPDFSETTINGS=/printer  (high quality, 300 dpi images)
+-dPDFSETTINGS=/prepress (high quality, color preserving, 300 dpi imgs)
+-dPDFSETTINGS=/default  (almost identical to /screen)
+</code></pre><h2 id="crop-pdf">crop pdf</h2>
 <p>Remember, margins are (left, right, top, bottom).
 The next command will leave only the top-right part of the input pdf:</p>
 <pre><code>pdfcrop --margins &apos;-280 0 0 -600&apos; in.pdf out.pdf
@@ -517,7 +525,7 @@ df -h
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Linux","level":"1.1","depth":1,"next":{"title":"Git","level":"1.2","depth":1,"path":"git.md","ref":"git.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"3.1.1","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"linux.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"linux.md","mtime":"2021-05-13T09:42:36.817Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2021-05-13T09:42:49.502Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Linux","level":"1.1","depth":1,"next":{"title":"Git","level":"1.2","depth":1,"path":"git.md","ref":"git.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"3.1.1","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"linux.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"linux.md","mtime":"2021-05-22T20:16:00.468Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2021-05-22T20:17:10.328Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
