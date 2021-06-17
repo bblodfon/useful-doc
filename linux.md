@@ -1,9 +1,10 @@
 # Useful Linux commands
 
-## Markdown to HTML (pandoc)
+## Markdown to HTML/DOCX (pandoc)
 
 ```
 pandoc test.md -f markdown -t html -s -o test.html
+pandoc test.md -f markdown -t docx -o test.docx
 ```
 
 ## find start time of a long-running process
