@@ -1,5 +1,12 @@
 # Useful Linux commands
 
+## Break paragraph to multiple sentences, each in a new line
+
+Paragraph is like: `AAaa. Bbbbb. Cccc.`.
+What you get is: `AAaa.\nBbbbb.\nCccc.`
+
+`sed -i 's/\. /\.\n/g' test.txt`
+
 ## Markdown to HTML/DOCX (pandoc)
 
 ```
