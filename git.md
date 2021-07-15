@@ -1,5 +1,9 @@
 # Useful Git Commands
 
+## View git history for greping
+
+`git log --format="%h (%an, %cs): %s"`
+
 ## Git delete local branch that is not "online" anymore
 
 ```
