@@ -14,6 +14,15 @@ pandoc test.md -f markdown -t html -s -o test.html
 pandoc test.md -f markdown -t docx -o test.docx
 ```
 
+## Latex to MathJax for HTML use
+
+
+`math.text` has equations like `$a=b+c$`
+
+```
+pandoc math.text -s --mathjax -o mathMathJax.htm
+```
+
 ## find start time of a long-running process
 
 `ps -eo pid,lstart,cmd | grep process_name`
