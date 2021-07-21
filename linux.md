@@ -243,7 +243,8 @@ files=`ls`
 dir="/somewhere/over/the/rainbow"
 rmd_files=`ls | grep Rmd`
 
-for file in ${files}; do
+for file in ${rmd_files}; do
+  filename_no_extension="$(basename "${file}" .Rmd)"
   diff -s $dir$file $file
   Rscript -e "library(rmarkdown); rmarkdown::render(\"./$file\",\"html_document\")"
 done
