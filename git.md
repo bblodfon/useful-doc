@@ -1,8 +1,10 @@
 # Useful Git Commands
 
-## View git history for greping
+## View **git log** history for greping
 
-`git log --format="%h (%an, %cs): %s"`
+
+- Commit-id,name,date,descr: `git log --format="%h (%an, %cs): %s"`
+- Filenames: `git log --name-only --oneline`
 
 ## Git delete local branch that is not "online" anymore
 
