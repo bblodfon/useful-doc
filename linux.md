@@ -170,6 +170,12 @@ Add to `~/.bashrc` this line:
 -dPDFSETTINGS=/default  (almost identical to /screen)
 ```
 
+## rotate pdf
+
+```
+qpdf in.pdf out.pdf --rotate=90
+```
+
 ## crop pdf
 
 Remember, margins are (left, right, top, bottom).
