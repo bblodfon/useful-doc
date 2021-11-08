@@ -380,9 +380,19 @@ Then check:
 Restart MySQL (if needed): `service mysql start`
 
 ## Service tag
+
 `dmidecode -t system`
 
-## Add 80-character colomn bar in vim
+## VIM: remove everything after first tab
+
+`:%s/\t.*//`
+
+## VIM: remove everything up to first comma
+
+`:%s/^[^,]*,//`
+
+## VIM: add 80-character colomn bar
+
 ```bash
 vim /etc/vim/vimrc
 
@@ -391,6 +401,7 @@ set colorcolumn=80
 ```
 
 ## Change vim comment color
+
 Go to `/usr/share/vim/vim80/colors` and copy a file with a nice color scheme:
 `cp ron.vim zobo.vim`
 Then: `vim zobo.vim` and change lines:
@@ -401,6 +412,7 @@ Then:
 Add line somewhere: `color zobo`
 
 ## See cached files info in the pwd
+
 `linux-fincore --pages=false --summarize --only-cached *`
 
 ## Clean cached memory (extremely useful :)
@@ -410,6 +422,7 @@ Add line somewhere: `color zobo`
 `sync && echo 3 | tee /proc/sys/vm/drop_caches`
 
 ## Build a specific filesystem on a disk partition
+
 ```
 cat /etc/fstab
 fdisk -l
@@ -418,3 +431,4 @@ mkfs.ext4 /dev/sdc1
 mount -a
 df -h
 ```
+
