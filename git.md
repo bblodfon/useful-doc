@@ -1,5 +1,13 @@
 # Useful Git Commands
 
+## Fast-forward issue
+
+Message: "fatal: Not possible to fast-forward, aborting."
+
+```
+git pull --rebase
+```
+
 ## View **git log** history for greping
 
 
