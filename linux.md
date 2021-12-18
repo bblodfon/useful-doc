@@ -1,5 +1,12 @@
 # Useful Linux commands
 
+## Find monitor model
+
+```
+sudo apt-get install read-edid
+sudo get-edid | parse-edid
+```
+
 ## Break paragraph to multiple sentences, each in a new line
 
 Paragraph is like: `AAaa. Bbbbb. Cccc.`.
