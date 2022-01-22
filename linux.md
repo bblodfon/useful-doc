@@ -1,5 +1,28 @@
 # Useful Linux commands
 
+## WiFi commands
+
+Local network-related devices status:
+```
+nmcli dev status
+```
+
+Is WiFi on? Turn it on (or off)!
+```
+nmcli radio wifi
+nmcli radio wifi on
+```
+
+Available WiFi networks:
+```
+nmcli dev wifi list
+```
+
+Connect to a specific WiFi:
+```
+sudo nmcli dev wifi connect <network-ssid>
+```
+
 ## Find monitor model
 
 ```
