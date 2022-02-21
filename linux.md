@@ -187,6 +187,22 @@ Add to `~/.bashrc` this line:
 
 `export PS1='\[\033[01;32m\]\u\[\033[00m\]:\[\033[01;34m\]~\[\033[00m\]\$ '`
 
+## Convert many PDF files to EPS                                                
+
+```
+#!/bin/bash                                                                     
+                                                                                
+pdf_files=`ls | grep pdf`                                                       
+                                                                                
+for file in ${pdf_files}; do                                                    
+  name="$(basename "${file}" .pdf)"                                             
+  echo $name                                                                    
+  #gs -q -dNOCACHE -dNOPAUSE -dBATCH -dSAFER -sDEVICE=eps2write -sOutputFile=$name.eps $file
+  # better quality                                                              
+  inkscape $file --export-eps=$name.eps                                         
+done 
+```
+
 ## shrink/optimize pdf
 
 - Using a script: http://www.alfredklomp.com/programming/shrinkpdf/

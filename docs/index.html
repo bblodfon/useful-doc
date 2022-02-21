@@ -292,7 +292,19 @@ alias &apos;off&apos;=&apos;sudo poweroff&apos;
 <h2 id="change-prompt-look-in-terminal">change prompt look in terminal</h2>
 <p>Add to <code>~/.bashrc</code> this line:</p>
 <p><code>export PS1=&apos;\[\033[01;32m\]\u\[\033[00m\]:\[\033[01;34m\]~\[\033[00m\]\$ &apos;</code></p>
-<h2 id="shrinkoptimize-pdf">shrink/optimize pdf</h2>
+<h2 id="convert-many-pdf-files-to-eps">Convert many PDF files to EPS</h2>
+<pre><code>#!/bin/bash                                                                     
+
+pdf_files=`ls | grep pdf`                                                       
+
+for file in ${pdf_files}; do                                                    
+  name=&quot;$(basename &quot;${file}&quot; .pdf)&quot;                                             
+  echo $name                                                                    
+  #gs -q -dNOCACHE -dNOPAUSE -dBATCH -dSAFER -sDEVICE=eps2write -sOutputFile=$name.eps $file
+  # better quality                                                              
+  inkscape $file --export-eps=$name.eps                                         
+done
+</code></pre><h2 id="shrinkoptimize-pdf">shrink/optimize pdf</h2>
 <ul>
 <li>Using a script: <a href="http://www.alfredklomp.com/programming/shrinkpdf/" target="_blank">http://www.alfredklomp.com/programming/shrinkpdf/</a></li>
 <li>Using <code>ps2pdf</code>: <code>ps2pdf -dPDFSETTINGS=/printer ags.pdf out.pdf</code></li>
@@ -553,7 +565,7 @@ df -h
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Linux","level":"1.1","depth":1,"next":{"title":"Git","level":"1.2","depth":1,"path":"git.md","ref":"git.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"3.1.1","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"linux.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"linux.md","mtime":"2022-01-22T12:15:31.564Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2022-01-22T12:15:43.396Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Linux","level":"1.1","depth":1,"next":{"title":"Git","level":"1.2","depth":1,"path":"git.md","ref":"git.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"3.1.1","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"linux.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"linux.md","mtime":"2022-02-21T21:38:16.944Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2022-02-21T21:38:41.948Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
