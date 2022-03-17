@@ -120,7 +120,10 @@ Then, with `echo $EXEC_HOME` it's gonna be known to the whole system!
 
 ## vim remove trailing whitespaces
 
-`:%s/\s\+$//e`
+```
+:%s/\v\s+$//
+:%s/\s\+$//e
+```
 
 ## bash terminal loops for counting
 
