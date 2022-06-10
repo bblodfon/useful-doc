@@ -1,5 +1,11 @@
 # Useful Linux commands
 
+## CPU average usage (top)
+
+```
+top -b -n1 -u `whoami` | sed 1,7d | awk '{i +=  $9} END {print i/100}'
+```
+
 ## WiFi commands
 
 Local network-related devices status:
