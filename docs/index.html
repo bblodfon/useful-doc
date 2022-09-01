@@ -256,10 +256,7 @@ Put inside something like this:</p>
 <pre><code>EXEC_HOME=/usr/bin/my-exetutable
 export EXEC_HOME
 </code></pre><p>Then, with <code>echo $EXEC_HOME</code> it&apos;s gonna be known to the whole system!</p>
-<h2 id="vim-remove-trailing-whitespaces">vim remove trailing whitespaces</h2>
-<pre><code>:%s/\v\s+$//
-:%s/\s\+$//e
-</code></pre><h2 id="bash-terminal-loops-for-counting">bash terminal loops for counting</h2>
+<h2 id="bash-terminal---counting-dots-loop">bash terminal - counting dots loop</h2>
 <p>To see an incremental counter:</p>
 <p><code>i=0; while true; do sleep 1; echo $i; i=$((i+1)); done</code></p>
 <p>To see dots (server connection awaiting!)</p>
@@ -296,16 +293,16 @@ alias &apos;off&apos;=&apos;sudo poweroff&apos;
 <p>Add to <code>~/.bashrc</code> this line:</p>
 <p><code>export PS1=&apos;\[\033[01;32m\]\u\[\033[00m\]:\[\033[01;34m\]~\[\033[00m\]\$ &apos;</code></p>
 <h2 id="convert-many-pdf-files-to-eps">Convert many PDF files to EPS</h2>
-<pre><code>#!/bin/bash                                                                     
+<pre><code>#!/bin/bash
 
-pdf_files=`ls | grep pdf`                                                       
+pdf_files=`ls | grep pdf`
 
-for file in ${pdf_files}; do                                                    
-  name=&quot;$(basename &quot;${file}&quot; .pdf)&quot;                                             
-  echo $name                                                                    
+for file in ${pdf_files}; do
+  name=&quot;$(basename &quot;${file}&quot; .pdf)&quot;
+  echo $name
   #gs -q -dNOCACHE -dNOPAUSE -dBATCH -dSAFER -sDEVICE=eps2write -sOutputFile=$name.eps $file
-  # better quality                                                              
-  inkscape $file --export-eps=$name.eps                                         
+  # better quality
+  inkscape $file --export-eps=$name.eps
 done
 </code></pre><h2 id="shrinkoptimize-pdf">shrink/optimize pdf</h2>
 <ul>
@@ -498,7 +495,10 @@ Then check:
 <p>Restart MySQL (if needed): <code>service mysql start</code></p>
 <h2 id="service-tag">Service tag</h2>
 <p><code>dmidecode -t system</code></p>
-<h2 id="vim-remove-everything-after-first-tab">VIM: remove everything after first tab</h2>
+<h2 id="vim-remove-trailing-whitespaces">VIM: remove trailing whitespaces</h2>
+<pre><code>:%s/\v\s+$//
+:%s/\s\+$//e
+</code></pre><h2 id="vim-remove-everything-after-first-tab">VIM: remove everything after first tab</h2>
 <p><code>:%s/\t.*//</code></p>
 <h2 id="vim-remove-everything-up-to-first-comma">VIM: remove everything up to first comma</h2>
 <p><code>:%s/^[^,]*,//</code></p>
@@ -508,7 +508,7 @@ Then check:
 <span class="hljs-comment"># add line</span>
 <span class="hljs-built_in">set</span> colorcolumn=80
 </code></pre>
-<h2 id="change-vim-comment-color">Change vim comment color</h2>
+<h2 id="vim-change-comment-color">VIM: change comment color</h2>
 <p>Go to <code>/usr/share/vim/vim80/colors</code> and copy a file with a nice color scheme:
 <code>cp ron.vim zobo.vim</code>
 Then: <code>vim zobo.vim</code> and change lines:
@@ -568,7 +568,7 @@ df -h
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Linux","level":"1.1","depth":1,"next":{"title":"Git","level":"1.2","depth":1,"path":"git.md","ref":"git.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"3.1.1","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"linux.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"linux.md","mtime":"2022-06-10T14:11:34.990Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2022-06-10T14:11:39.621Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Linux","level":"1.1","depth":1,"next":{"title":"Git","level":"1.2","depth":1,"path":"git.md","ref":"git.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"3.1.1","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"linux.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"linux.md","mtime":"2022-09-01T14:20:37.939Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2022-09-01T14:24:07.948Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
