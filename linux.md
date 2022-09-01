@@ -124,14 +124,7 @@ export EXEC_HOME
 
 Then, with `echo $EXEC_HOME` it's gonna be known to the whole system!
 
-## vim remove trailing whitespaces
-
-```
-:%s/\v\s+$//
-:%s/\s\+$//e
-```
-
-## bash terminal loops for counting
+## bash terminal - counting dots loop
 
 To see an incremental counter:
 
@@ -196,20 +189,20 @@ Add to `~/.bashrc` this line:
 
 `export PS1='\[\033[01;32m\]\u\[\033[00m\]:\[\033[01;34m\]~\[\033[00m\]\$ '`
 
-## Convert many PDF files to EPS                                                
+## Convert many PDF files to EPS
 
 ```
-#!/bin/bash                                                                     
-                                                                                
-pdf_files=`ls | grep pdf`                                                       
-                                                                                
-for file in ${pdf_files}; do                                                    
-  name="$(basename "${file}" .pdf)"                                             
-  echo $name                                                                    
+#!/bin/bash
+
+pdf_files=`ls | grep pdf`
+
+for file in ${pdf_files}; do
+  name="$(basename "${file}" .pdf)"
+  echo $name
   #gs -q -dNOCACHE -dNOPAUSE -dBATCH -dSAFER -sDEVICE=eps2write -sOutputFile=$name.eps $file
-  # better quality                                                              
-  inkscape $file --export-eps=$name.eps                                         
-done 
+  # better quality
+  inkscape $file --export-eps=$name.eps
+done
 ```
 
 ## shrink/optimize pdf
@@ -438,6 +431,13 @@ Restart MySQL (if needed): `service mysql start`
 
 `dmidecode -t system`
 
+## VIM: remove trailing whitespaces
+
+```
+:%s/\v\s+$//
+:%s/\s\+$//e
+```
+
 ## VIM: remove everything after first tab
 
 `:%s/\t.*//`
@@ -455,7 +455,7 @@ vim /etc/vim/vimrc
 set colorcolumn=80
 ```
 
-## Change vim comment color
+## VIM: change comment color
 
 Go to `/usr/share/vim/vim80/colors` and copy a file with a nice color scheme:
 `cp ron.vim zobo.vim`
