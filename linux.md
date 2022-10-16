@@ -240,6 +240,8 @@ cairosvg in.svg -o out.pdf
 
 ## pdf to png/svg with awesome quality
 
+See [pdf2png file](https://github.com/bblodfon/useful-doc/blob/master/pdf2png) for all following commands in one script.
+
 Let's say you have a (1-page) pdf: `test.pdf` that contains an image or diagram
 and you want to put it in a presentation/article/word etc in an
 appropriate format and with decent quality.

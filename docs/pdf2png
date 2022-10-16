@@ -1,0 +1,18 @@
+#!/bin/bash
+
+input_file=$1
+
+filename="$(basename "${input_file}" .pdf)"
+
+# Crop
+pdfcrop --margins 5 $input_file out.pdf
+
+# PNG, 600 ppi
+pdftoppm -png -r 600 out.pdf $filename
+
+# remove '-1' that pdftoppm creates
+mv $filename-1.png $filename.png
+
+# remove residual file
+rm out.pdf
+
