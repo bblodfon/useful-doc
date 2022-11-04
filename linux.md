@@ -238,6 +238,10 @@ pdfcrop --margins '-280 0 0 -600' in.pdf out.pdf
 cairosvg in.svg -o out.pdf
 ```
 
+## svg to png
+
+See [svg2pdf file](https://github.com/bblodfon/useful-doc/blob/master/svg2png).
+
 ## pdf to png/svg with awesome quality
 
 See [pdf2png file](https://github.com/bblodfon/useful-doc/blob/master/pdf2png) for all following commands in one script.
