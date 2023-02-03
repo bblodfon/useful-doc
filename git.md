@@ -1,5 +1,12 @@
 # Useful Git Commands
 
+## Uncommit last commit
+
+Files remain unstaged:
+```
+git reset HEAD^
+```
+
 ## Fast-forward issue
 
 Message: "fatal: Not possible to fast-forward, aborting."
