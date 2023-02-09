@@ -198,7 +198,18 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="useful-linux-commands">Useful Linux commands</h1>
-<h2 id="cpu-average-usage-top">CPU average usage (top)</h2>
+<h2 id="encryptdecrypt-files">Encrypt/Decrypt files</h2>
+<pre><code>gpg -c filename
+gpg -d filename.gpg
+</code></pre><p>Don&apos;t ever cache the password:</p>
+<pre><code>vim ~/.gnupg/gpg-agent.conf
+
+# copy-paste following two lines
+default-cache-ttl 1
+max-cache-ttl 1
+
+echo RELOADAGENT | gpg-connect-agent
+</code></pre><h2 id="cpu-average-usage-top">CPU average usage (top)</h2>
 <pre><code>top -b -n1 -u `whoami` | sed 1,7d | awk &apos;{i +=  $9} END {print i/100}&apos;
 </code></pre><h2 id="wifi-commands">WiFi commands</h2>
 <p>Local network-related devices status:</p>
@@ -571,7 +582,7 @@ df -h
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Linux","level":"1.1","depth":1,"next":{"title":"Git","level":"1.2","depth":1,"path":"git.md","ref":"git.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"3.1.1","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"linux.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"linux.md","mtime":"2023-01-04T04:51:34.878Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2023-02-03T15:47:39.877Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Linux","level":"1.1","depth":1,"next":{"title":"Git","level":"1.2","depth":1,"path":"git.md","ref":"git.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"3.1.1","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"linux.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"linux.md","mtime":"2023-02-08T19:19:17.482Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2023-02-09T13:51:13.330Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

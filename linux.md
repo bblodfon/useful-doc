@@ -1,5 +1,23 @@
 # Useful Linux commands
 
+## Encrypt/Decrypt files
+
+```
+gpg -c filename
+gpg -d filename.gpg
+```
+
+Don't ever cache the password:
+```
+vim ~/.gnupg/gpg-agent.conf
+
+# copy-paste following two lines
+default-cache-ttl 1
+max-cache-ttl 1
+
+echo RELOADAGENT | gpg-connect-agent
+```
+
 ## CPU average usage (top)
 
 ```
