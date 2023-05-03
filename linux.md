@@ -207,6 +207,15 @@ Add to `~/.bashrc` this line:
 
 `export PS1='\[\033[01;32m\]\u\[\033[00m\]:\[\033[01;34m\]~\[\033[00m\]\$ '`
 
+or this one that includes the name of the current working dir:
+
+`export PS1='\[\033[01;32m\]\u\[\033[00m\]:\[\033[01;36m\][\W]\[\033[00m\]\$ '`
+
+Notes:
+
+- 32m => green, 00m => white, 34m => blue, 36m => Cyan
+- \u => user, \W => working dir
+
 ## Convert many PDF files to EPS
 
 ```

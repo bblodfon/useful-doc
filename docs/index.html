@@ -303,6 +303,13 @@ alias &apos;off&apos;=&apos;sudo poweroff&apos;
 <h2 id="change-prompt-look-in-terminal">change prompt look in terminal</h2>
 <p>Add to <code>~/.bashrc</code> this line:</p>
 <p><code>export PS1=&apos;\[\033[01;32m\]\u\[\033[00m\]:\[\033[01;34m\]~\[\033[00m\]\$ &apos;</code></p>
+<p>or this one that includes the name of the current working dir:</p>
+<p><code>export PS1=&apos;\[\033[01;32m\]\u\[\033[00m\]:\[\033[01;36m\][\W]\[\033[00m\]\$ &apos;</code></p>
+<p>Notes:</p>
+<ul>
+<li>32m =&gt; green, 00m =&gt; white, 34m =&gt; blue, 36m =&gt; Cyan</li>
+<li>\u =&gt; user, \W =&gt; working dir</li>
+</ul>
 <h2 id="convert-many-pdf-files-to-eps">Convert many PDF files to EPS</h2>
 <pre><code>#!/bin/bash
 
@@ -582,7 +589,7 @@ df -h
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Linux","level":"1.1","depth":1,"next":{"title":"Git","level":"1.2","depth":1,"path":"git.md","ref":"git.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"3.1.1","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"linux.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"linux.md","mtime":"2023-02-08T19:19:17.482Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2023-02-09T13:51:13.330Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Linux","level":"1.1","depth":1,"next":{"title":"Git","level":"1.2","depth":1,"path":"git.md","ref":"git.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"3.1.1","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"linux.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"linux.md","mtime":"2023-05-03T18:00:19.634Z","type":"markdown"},"gitbook":{"version":"3.1.1","time":"2023-05-03T18:00:54.952Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
