@@ -1,5 +1,11 @@
 # Useful Linux commands
 
+## Increase swap space
+
+```
+https://askubuntu.com/questions/178712/how-to-increase-swap-space
+```
+
 ## Encrypt/Decrypt files
 
 ```
