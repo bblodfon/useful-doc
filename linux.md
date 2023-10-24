@@ -1,5 +1,9 @@
 # Useful Linux commands
 
+## Rstudio theme
+
+See [file](https://github.com/bblodfon/useful-doc/blob/master/john.tmTheme).
+
 ## Increase swap space
 
 ```
