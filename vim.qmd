@@ -1,0 +1,46 @@
+# VIM
+
+## Remove trailing whitespaces
+
+```bash
+:%s/\v\s+$//
+:%s/\s\+$//e
+```
+
+## Remove everything after first tab
+
+```bash
+:%s/\t.*//
+```
+
+## Remove everything up to first comma
+
+```bash
+:%s/^[^,]*,//
+```
+
+## Add 80-character colomn bar
+
+```bash
+vim /etc/vim/vimrc
+
+# add line
+set colorcolumn=80
+```
+
+## Change comment color
+
+```bash
+cd /usr/share/vim/vim80/colors
+# copy a file with a nice color scheme
+cp ron.vim zobo.vim
+
+vim zobo.vim 
+# change lines:
+let g:colors_name = "zobo"
+hi comment ctermfg=green guifg=green
+
+vim /etc/vim/vimrc
+# add line somewhere
+color zobo
+```

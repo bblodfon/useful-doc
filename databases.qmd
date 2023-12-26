@@ -1,14 +1,21 @@
-# Database-related commands
+# MySQL
 
-## MySQL: Size of a MyISAM table in GB
-`ls /var/lib/mysql/database/tableName.* | xargs stat --format=%s | awk '{s+=$1}
-END {print s/(1024*1024*1024)}'`
+## Size of a MyISAM table in GB
 
-## MySQL: Drop many tables matching a pattern
-`SELECT CONCAT( 'DROP TABLE ', GROUP_CONCAT(table_name) , ';' ) AS statement
-FROM information_schema.tables WHERE table_name LIKE 'patternToMatch%';`
+```bash
+ls /var/lib/mysql/database/tableName.* | xargs stat --format=%s | awk '{s+=$1}
+END {print s/(1024*1024*1024)}'
+```
 
-## MySQL: Count rows and size of MyISAM tables that have the date in their name
+## Drop many tables matching a pattern
+
+```bash
+SELECT CONCAT( 'DROP TABLE ', GROUP_CONCAT(table_name) , ';' ) AS statement
+FROM information_schema.tables WHERE table_name LIKE 'patternToMatch%';
+```
+
+## Count rows and size of MyISAM tables that have the date in their name
+
 ```bash
 #!/bin/bash
 

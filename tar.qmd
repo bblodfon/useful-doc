@@ -1,0 +1,34 @@
+# TAR
+
+## Archiving
+
+```bash
+tar -czvf filename.tar.gz /path/to/dir1
+```
+
+## Extracting
+
+```bash
+tar -xzvf filename.tar.gz
+```
+
+## Extract to another dir
+
+```bash
+mkdir new-dir
+tar -C new-dir -xzvf filename.tar.gz
+```
+
+## Extract one file only
+
+```bash
+tar -xf example.tar.gz <file-name>
+```
+
+## List file contents with depth
+
+Download perl script: [treeify](https://github.com/grawity/code/blob/main/misc/treeify)
+and run: 
+```bash
+tar -tf <file>.tar.gz | treeify -d 2
+```

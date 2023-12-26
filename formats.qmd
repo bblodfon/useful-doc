@@ -1,0 +1,142 @@
+# File Formats
+
+## Convert many PDF files to EPS
+
+```bash
+#!/bin/bash
+
+pdf_files=`ls | grep pdf`
+
+for file in ${pdf_files}; do
+  name="$(basename "${file}" .pdf)"
+  echo $name
+  #gs -q -dNOCACHE -dNOPAUSE -dBATCH -dSAFER -sDEVICE=eps2write -sOutputFile=$name.eps $file
+  # better quality
+  inkscape $file --export-eps=$name.eps
+done
+```
+
+## Shrink/optimize PDF
+
+- Using a script: http://www.alfredklomp.com/programming/shrinkpdf/
+- Using `ps2pdf`:
+
+```bash
+ps2pdf -dPDFSETTINGS=/printer ags.pdf out.pdf
+```
+
+Various pdf settings for different output qualities:
+```bash
+-dPDFSETTINGS=/screen   (screen-view-only quality, 72 dpi images)
+-dPDFSETTINGS=/ebook    (low quality, 150 dpi images)
+-dPDFSETTINGS=/printer  (high quality, 300 dpi images)
+-dPDFSETTINGS=/prepress (high quality, color preserving, 300 dpi imgs)
+-dPDFSETTINGS=/default  (almost identical to /screen)
+```
+
+## Rotate PDF
+
+```bash
+qpdf in.pdf out.pdf --rotate=90
+```
+
+## Crop PDF
+
+Remember, margins are (left, right, top, bottom).
+The next command will leave only the top-right part of the input pdf:
+```bash
+pdfcrop --margins '-280 0 0 -600' in.pdf out.pdf
+```
+
+## SVG to PDF
+
+```bash
+cairosvg in.svg -o out.pdf
+```
+
+## SVG to PNG
+
+See [svg2png file](https://github.com/bblodfon/useful-doc/blob/main/assets/svg2png).
+
+## PDF to PNG/SVG
+
+See [pdf2png file](https://github.com/bblodfon/useful-doc/blob/main/assets/pdf2png) for all following commands in one script.
+
+Let's say you have a (1-page) pdf: `test.pdf` that contains an image or diagram
+and you want to put it in a presentation/article/word etc in an
+appropriate format and with decent quality.
+
+First crop it:
+```bash
+pdfcrop --margins 10 test.pdf test_crop.pdf
+```
+
+Then convert it to the format you like:
+```bash
+# PNG, 600 ppi
+pdftoppm -png -r 600 test_crop.pdf test
+
+# SVG
+pdf2svg test_crop.pdf test.svg
+```
+
+## JPG to PDF
+
+```bash
+convert ticket_1.jpg ticket_2.jpg ticket.pdf
+```
+
+## Reduce size of scanned PDF
+
+```bash
+pdf2ps input.pdf output.ps
+ps2pdf output.ps -dPDFSETTINGS=/ebook output.pdf
+```
+
+See also this [askubuntu question](https://askubuntu.com/questions/113544/how-can-i-reduce-the-file-size-of-a-scanned-pdf-file/256449#256449) for more pdf options.
+
+## Decrypt PDF
+
+File `in.pdf` is password-protected:
+```bash
+qpdf --decrypt in.pdf out.pdf
+```
+
+## Select pages from PDF
+
+```bash
+pdftk test.pdf cat 2-4 output out.pdf
+```
+
+## Resize PDF
+
+```bash
+pdfjam --outfile out.pdf --papersize '{6.125in,9.250in}' in.pdf
+```
+
+## Get PDF info
+
+```bash
+pdfinfo .pdf
+```
+
+## Merge 2 or more PDFs
+
+```bash
+pdftk file1.pdf file2.pdf cat output mergedfile.pdf
+```
+
+## Markdown to HTML/DOCX (pandoc)
+
+```bash
+pandoc test.md -f markdown -t html -s -o test.html
+pandoc test.md -f markdown -t docx -o test.docx
+```
+
+## Latex to MathJax for HTML use
+
+`math.text` file has equations like `$a=b+c$`
+
+```bash
+pandoc math.text -s --mathjax -o mathMathJax.html
+```

@@ -1,11 +1,41 @@
-# Network commands
+# Network
+
+## WiFi commands
+
+Local network-related devices status:
+```bash
+nmcli dev status
+```
+
+Is WiFi on? Turn it on (or off)!
+```bash
+nmcli radio wifi
+nmcli radio wifi on
+```
+
+Available WiFi networks:
+```bash
+nmcli dev wifi list
+```
+
+Connect to a specific WiFi:
+```bash
+sudo nmcli dev wifi connect <network-ssid>
+```
+
+## Find monitor model
+
+```bash
+sudo apt-get install read-edid
+sudo get-edid | parse-edid
+```
 
 ## ssh linux server without password
 
-Usually you do: `ssh username@IP` and enter a password. We want to do just
-`ssh IP` or `ssh name.com` (name.com translates to the global IP).
+Usually you do: `ssh username@IP` and enter a password. 
+We want to do just `ssh IP` or `ssh name.com` (`name.com` translates to the global IP).
 
-```
+```bash
 cd ~/.ssh
 # create public and private key
 ssh-keygen -o
@@ -15,17 +45,18 @@ cat id_rsa.pub
 cat id_rsa.pub | ssh username@IP 'cat >> .ssh/authorized_keys'
 ```
 
-## Allow only sftp access of a user to a specific folder
+## Allow only sftp user access to a specific dir
 
 Check [here](http://passingcuriosity.com/2014/openssh-restrict-to-sftp-chroot/)
-```
+```bash
 addgroup exchangefiles
 mkdir /home/exchangefiles/ (create also any subsequent folders)
 chgrp -R exchangefiles /home/exchangefiles/
 vim /etc/ssh/sshd_config
 ```
+
 Add in the end of the file:
-```
+```bash
 Match Group exchangefiles
   # Force the connection to use SFTP and chroot to the required directory.
   ForceCommand internal-sftp
@@ -36,39 +67,53 @@ Match Group exchangefiles
   AllowTcpForwarding no
   X11Forwarding no
 ```
-```
+
+```bash
 adduser --ingroup exchangefiles testfiles
 service ssh restart
 ```
-check:
-```
+
+Check:
+```bash
 sftp testfiles@serverIP (OK)
 ssh testfiles@serverIP (REFUSED)
 ```
-also `mount --bind /dir1 /dir2` is very usefull too
 
 ## Manual NTP
 
-First, run: `service ntp stop`
-`vim /etc/ntp.conf`
+First, execute
+```bash
+service ntp stop
+```
 
-Add line: `server <host>`
+Open file:
+```bash
+vim /etc/ntp.conf
+# add line
+server <host>
+```
+
 Then execute:
-`sudo ntpdate <host>`
+```bash
+sudo ntpdate <host>
+```
+
 Check connectivity with the server on udp ntp port 123 with:
-`nc -u <host> <port>`
-`service ntp start`
+```bash
+nc -u <host> <port>
+service ntp start
+```
 
 ## DNS problem
 
 Reproduce the problem:
-- change/add the dns-nameservers x.x.x.x in `/etc/network/interfaces`
+
+- Change/add the dns-nameservers x.x.x.x in `/etc/network/interfaces`
 - `service networking restart` **DOES NOT WORK**, which means that:
 - `vim /etc/resolv.conf` doesn't have the new address: `nameserver x.x.x.x`
 
-
 If the setup was something like this:
-```
+```bash
 iface IIII FFFF static
     address ...
     ...
@@ -76,32 +121,43 @@ iface IIII FFFF static
     dns-search SSSS
 ```
 then do (the spaces are needed):
-```
+```bash
 echo "nameserver X.X.X.X
 nameserver Y.Y.Y.Y
 search SSSS" | sudo resolvconf -a IIII.FFFF
 ```
-check the `/etc/resolv.conf`, the changes should have been applied there.
+check the `/etc/resolv.conf`, the changes must have been applied there.
 
 ## Force a Gateway in a route table
-`vim /etc/network/interfaces` and add:
-`up route add -net 204.16.0.0 netmask 255.255.0.0 (gw 62.133.78.129) dev eth12`
+
+```bash
+vim /etc/network/interfaces
+# add line
+up route add -net 204.16.0.0 netmask 255.255.0.0 (gw 62.133.78.129) dev eth12
+```
 
 Using the terminal:
-```
+```bash
 route add -net 3.3.3.0 netmask 255.255.255.0 dev eth13
 /etc/init.d/networking restart; ifup eth10
 ```
-(whichever ethX has the ip you have sshed' to get to the machine)
+(whichever `ethX` has the ip address you have sshed' to get to the machine)
 
-## Get the FIBRE ports
-`lspci -v | grep 10-G -A8`
+## List FIBRE ports
 
-## Check all IPs in the local network (extremely useful :)
-`nmap -sP 192.168.1.*`
+```bash
+lspci -v | grep 10-G -A8
+```
+
+## Check all IPs in the local network
+
+```bash
+nmap -sP 192.168.1.*
+```
 
 ## Create a network bridge between two interfaces
-```
+
+```bash
 apt-get install bridge-utils
 
 brctl addbr br0
@@ -115,11 +171,15 @@ ifconfig eth0 up
 ifconfig eth1 up
 ifconfig br0 up
 ```
-For the bridge to have an IP also, run:
-`ifconfig br0 192.168.1.173`
-To remove this IP: `ifconfig br0 0.0.0.0`
 
-## Checking Firewall Rules (from A to B):
+For the bridge to have an IP also, run:
+```bash
+ifconfig br0 192.168.1.173
+# to remove this IP
+ifconfig br0 0.0.0.0
+```
+
+## Checking Firewall Rules (from A to B)
 
 **A (IPA, PortA) -----> B (IPB, PortB)**
 
@@ -142,29 +202,48 @@ To remove this IP: `ifconfig br0 0.0.0.0`
 ## Capture LTE and 2G3G traffic
 
 - LTE traffic (with VLAN)
-`tcpdump -i any "ether[27]==0 and ((ether[49] < 0x26 and ether[49] > 0x1F) or
+
+```bash
+tcpdump -i any "ether[27]==0 and ((ether[49] < 0x26 and ether[49] > 0x1F) or
 (ether[49] < 0x65 and ether[49] > 0x62) or (ether[49] > 0xa9 and ether[49] <
-0xac))" -w out.pcap`
+0xac))" -w out.pcap
+```
 
 - LTE traffic (no VLAN)
-`tcpdump -i any "ether[23]==0 and ((ether[45] < 0x26 and ether[45] > 0x1F) or
+
+```bash
+tcpdump -i any "ether[23]==0 and ((ether[45] < 0x26 and ether[45] > 0x1F) or
 (ether[45] < 0x65 and ether[45] > 0x62) or (ether[45] > 0xa9 and ether[45] <
-0xac))" -w out.pcap`
+0xac))" -w out.pcap
+```
 
 - 2G3G traffic (with VLAN)
-`tshark -i any "ether[49] < 0x16 and ether[27]==0 and ether[49] > 0x0e" -w out.pcap`
+
+```bash
+tshark -i any "ether[49] < 0x16 and ether[27]==0 and ether[49] > 0x0e" -w out.pcap
+```
 
 - 2G3G traffic (no VLAN)
-`tshark -i any "ether[45] < 0x16 and ether[23]==0 and ether[45] > 0x0e" -w out.pcap`
 
-## Useful network-capturing commands
+```bash
+tshark -i any "ether[45] < 0x16 and ether[23]==0 and ether[45] > 0x0e" -w out.pcap
+```
 
-- Changing the content of `.pcap` files
-`tcprewrite --enet-vlan=add --enet-vlan-tag=110 --enet-vlan-cfi=1
---enet-vlan-pri=4 --infile=GTPv1_noVLAN.pcap --outfile=GTPv1_withVLAN110.pcap`
+## Change `.pcap` files content
 
-- Use of `tcpreplay`
-`tcpreplay -i eth2 -K -l0 --topspeed replayfiles/file.pcap`
+```bash
+tcprewrite --enet-vlan=add --enet-vlan-tag=110 --enet-vlan-cfi=1
+--enet-vlan-pri=4 --infile=GTPv1_noVLAN.pcap --outfile=GTPv1_withVLAN110.pcap
+```
 
-- See the VLAN ids of the captured packets
-`tshark -i any -Tfields -e vlan.id`
+## Use `tcpreplay`
+
+```bash
+tcpreplay -i eth2 -K -l0 --topspeed replayfiles/file.pcap
+```
+
+## VLAN ids of the captured packets
+
+```bash
+tshark -i any -Tfields -e vlan.id
+```

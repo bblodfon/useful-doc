@@ -1,4 +1,3 @@
 # Preface {-}
 
-Varius coding stuff :)
-
+Various coding stuff :)
