@@ -33,14 +33,14 @@ git fetch origin --prune
 git show --pretty="" --name-only
 ```
 
-## Git remove tag (local+remote)                                                                                                                    
-```                                                                             
-# create                                                                        
-git tag -a v1.0.2 -m "My new version!"                                          
-                                                                                
-# delete everywhere                                                             
-git tag -d v1.0.2                                                               
-git push origin :refs/tags/v1.0.2                                               
+## Git remove tag (local+remote)
+```
+# create
+git tag -a v1.0.2 -m "My new version!"
+
+# delete everywhere
+git tag -d v1.0.2
+git push origin :refs/tags/v1.0.2
 ```
 
 ## Git no pass or username
@@ -54,6 +54,6 @@ url = git+ssh://git@github.com/<USERNAME>/<REPONAME>.git
 
 Otherwise, if you want to just **not type the username** change the line:
 
-`url = https://github.com/<USERNAME>/<REPONAME>.git`, to:  
+`url = https://github.com/<USERNAME>/<REPONAME>.git`, to:
 `url = https://<USERNAME>@github.com/<USERNAME>/<REPONAME>.git`
 
