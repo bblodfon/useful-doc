@@ -1,5 +1,11 @@
 # Useful Linux commands
 
+## Remove trailing whitespaces in `vim`
+
+```
+:%s/\s\+$//e
+```
+
 ## Rstudio theme
 
 See [file](https://github.com/bblodfon/useful-doc/blob/master/john.tmTheme).

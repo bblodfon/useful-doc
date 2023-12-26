@@ -17,7 +17,6 @@ git pull --rebase
 
 ## View **git log** history for greping
 
-
 - Commit-id,name,date,descr: `git log --format="%h (%an, %cs): %s"`
 - Filenames: `git log --name-only --oneline`
 
