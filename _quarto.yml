@@ -1,0 +1,25 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+  title: "Useful CMD Commands"
+  author: "[John Zobolas](https://github.com/bblodfon)"
+  date: last-modified
+  repo-url: https://github.com/bblodfon/useful-doc/
+  repo-branch: main
+  chapters:
+    - index.qmd
+    - git.qmd
+    - linux.qmd
+    - formats.qmd
+    - vim.qmd
+    - tar.qmd
+    - databases.qmd
+    - network.qmd
+    - cpu.qmd
+
+format:
+  html:
+    page-layout: full
+    number-sections: false
