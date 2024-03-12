@@ -116,7 +116,7 @@
     "href": "linux.html#symbolic-links",
     "title": "Linux",
     "section": "Symbolic links",
-    "text": "Symbolic links\n# Create symbolic link\nln -s /full_path_to/real_exe_file_target /full_path_to/link\n\n# Delete a symbolic link\nunlink /path_to/link`"
+    "text": "Symbolic links\n# Create symbolic link\nln -s /full_path_to/real_exe_file_target /full_path_to/link\n\n# Delete a symbolic link\nunlink /path_to/link"
   },
   {
     "objectID": "linux.html#mount-external-disk",
