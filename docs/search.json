@@ -392,6 +392,13 @@
     "text": "Latex to MathJax for HTML use\nmath.text file has equations like $a=b+c$\npandoc math.text -s --mathjax -o mathMathJax.html"
   },
   {
+    "objectID": "vim.html#go-to-dir-listing-after-quiting-file-in-vim",
+    "href": "vim.html#go-to-dir-listing-after-quiting-file-in-vim",
+    "title": "VIM",
+    "section": "Go to dir listing after ‘quiting’ file in vim",
+    "text": "Go to dir listing after ‘quiting’ file in vim\n:b#"
+  },
+  {
     "objectID": "vim.html#remove-trailing-whitespaces",
     "href": "vim.html#remove-trailing-whitespaces",
     "title": "VIM",

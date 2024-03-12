@@ -1,5 +1,11 @@
 # VIM
 
+## Go to dir listing after 'quiting' file in vim
+
+```bash
+:b#
+```
+
 ## Remove trailing whitespaces
 
 ```bash
