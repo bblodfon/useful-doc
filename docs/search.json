@@ -11,7 +11,7 @@
     "href": "git.html#checkout-locally-someones-pr",
     "title": "Git",
     "section": "checkout locally someones PR",
-    "text": "checkout locally someones PR\ngit fetch origin pull/ID/head:BRANCH_NAME\ngit switch BRANCH_NAME\ngit push origin BRANCH_NAME"
+    "text": "checkout locally someones PR\ngit fetch origin pull/ID/head:BRANCH_NAME\ngit switch BRANCH_NAME\ngit push origin BRANCH_NAME\nor simple:\ngh pr checkout &lt;ID&gt;"
   },
   {
     "objectID": "git.html#revert-last-commit",

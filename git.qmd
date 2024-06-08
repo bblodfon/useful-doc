@@ -8,6 +8,12 @@ git switch BRANCH_NAME
 git push origin BRANCH_NAME
 ```
 
+or simple:
+
+```bash
+gh pr checkout <ID>
+```
+
 ## Revert last commit
 
 ```bash
