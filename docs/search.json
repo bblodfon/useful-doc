@@ -7,6 +7,13 @@
     "text": "Preface\nVarious coding stuff :)"
   },
   {
+    "objectID": "git.html#checkout-locally-someones-pr",
+    "href": "git.html#checkout-locally-someones-pr",
+    "title": "Git",
+    "section": "checkout locally someones PR",
+    "text": "checkout locally someones PR\ngit fetch origin pull/ID/head:BRANCH_NAME\ngit switch BRANCH_NAME\ngit push origin BRANCH_NAME"
+  },
+  {
     "objectID": "git.html#revert-last-commit",
     "href": "git.html#revert-last-commit",
     "title": "Git",
@@ -21,11 +28,11 @@
     "text": "Fast-forward issue\nMessage: “fatal: Not possible to fast-forward, aborting.”\ngit pull --rebase"
   },
   {
-    "objectID": "git.html#view-git-log-history-for-greping",
-    "href": "git.html#view-git-log-history-for-greping",
+    "objectID": "git.html#nice-git-log-history-for-greping",
+    "href": "git.html#nice-git-log-history-for-greping",
     "title": "Git",
-    "section": "View git log history for greping",
-    "text": "View git log history for greping\n# Commit-id,name,date,descr\ngit log --format=\"%h (%an, %cs): %s\"\n# Filenames\ngit log --name-only --oneline"
+    "section": "Nice git log history for greping",
+    "text": "Nice git log history for greping\n# Commit-id,name,date,descr\ngit log --format=\"%h (%an, %cs): %s\"\n# Filenames\ngit log --name-only --oneline"
   },
   {
     "objectID": "git.html#git-delete-local-branch-that-is-not-online-anymore",
@@ -39,7 +46,7 @@
     "href": "git.html#show-only-files-that-changed-on-previous-commit",
     "title": "Git",
     "section": "Show only files that changed on previous commit",
-    "text": "Show only files that changed on previous commit\ngit show --pretty=\"\" --name-only"
+    "text": "Show only files that changed on previous commit\ngit diff-tree --no-commit-id --name-only -r HEAD\n# instead of HEAD, can use specific &lt;commit-hash&gt;"
   },
   {
     "objectID": "git.html#remove-tag-localremote",

@@ -1,5 +1,13 @@
 # Git
 
+## checkout locally someones PR
+
+```bash
+git fetch origin pull/ID/head:BRANCH_NAME
+git switch BRANCH_NAME
+git push origin BRANCH_NAME
+```
+
 ## Revert last commit
 
 ```bash
@@ -14,7 +22,7 @@ Message: "fatal: Not possible to fast-forward, aborting."
 git pull --rebase
 ```
 
-## View **git log** history for greping
+## Nice **git log** history for greping
 
 ```bash
 # Commit-id,name,date,descr
@@ -33,7 +41,8 @@ git fetch origin --prune
 ## Show only files that changed on previous commit
 
 ```bash
-git show --pretty="" --name-only
+git diff-tree --no-commit-id --name-only -r HEAD
+# instead of HEAD, can use specific <commit-hash>
 ```
 
 ## Remove tag (local+remote)

@@ -191,9 +191,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#revert-last-commit" id="toc-revert-last-commit" class="nav-link active" data-scroll-target="#revert-last-commit">Revert last commit</a></li>
+  <li><a href="#checkout-locally-someones-pr" id="toc-checkout-locally-someones-pr" class="nav-link active" data-scroll-target="#checkout-locally-someones-pr">checkout locally someones PR</a></li>
+  <li><a href="#revert-last-commit" id="toc-revert-last-commit" class="nav-link" data-scroll-target="#revert-last-commit">Revert last commit</a></li>
   <li><a href="#fast-forward-issue" id="toc-fast-forward-issue" class="nav-link" data-scroll-target="#fast-forward-issue">Fast-forward issue</a></li>
-  <li><a href="#view-git-log-history-for-greping" id="toc-view-git-log-history-for-greping" class="nav-link" data-scroll-target="#view-git-log-history-for-greping">View <strong>git log</strong> history for greping</a></li>
+  <li><a href="#nice-git-log-history-for-greping" id="toc-nice-git-log-history-for-greping" class="nav-link" data-scroll-target="#nice-git-log-history-for-greping">Nice <strong>git log</strong> history for greping</a></li>
   <li><a href="#git-delete-local-branch-that-is-not-online-anymore" id="toc-git-delete-local-branch-that-is-not-online-anymore" class="nav-link" data-scroll-target="#git-delete-local-branch-that-is-not-online-anymore">Git delete local branch that is not “online” anymore</a></li>
   <li><a href="#show-only-files-that-changed-on-previous-commit" id="toc-show-only-files-that-changed-on-previous-commit" class="nav-link" data-scroll-target="#show-only-files-that-changed-on-previous-commit">Show only files that changed on previous commit</a></li>
   <li><a href="#remove-tag-localremote" id="toc-remove-tag-localremote" class="nav-link" data-scroll-target="#remove-tag-localremote">Remove tag (local+remote)</a></li>
@@ -220,39 +221,46 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
+<section id="checkout-locally-someones-pr" class="level2">
+<h2 class="anchored" data-anchor-id="checkout-locally-someones-pr">checkout locally someones PR</h2>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> fetch origin pull/ID/head:BRANCH_NAME</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> switch BRANCH_NAME</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push origin BRANCH_NAME</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
 <section id="revert-last-commit" class="level2">
 <h2 class="anchored" data-anchor-id="revert-last-commit">Revert last commit</h2>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> reset HEAD^</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> reset HEAD^</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="fast-forward-issue" class="level2">
 <h2 class="anchored" data-anchor-id="fast-forward-issue">Fast-forward issue</h2>
 <p>Message: “fatal: Not possible to fast-forward, aborting.”</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> pull <span class="at">--rebase</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> pull <span class="at">--rebase</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="view-git-log-history-for-greping" class="level2">
-<h2 class="anchored" data-anchor-id="view-git-log-history-for-greping">View <strong>git log</strong> history for greping</h2>
-<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Commit-id,name,date,descr</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> log <span class="at">--format</span><span class="op">=</span><span class="st">"%h (%an, %cs): %s"</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Filenames</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> log <span class="at">--name-only</span> <span class="at">--oneline</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="nice-git-log-history-for-greping" class="level2">
+<h2 class="anchored" data-anchor-id="nice-git-log-history-for-greping">Nice <strong>git log</strong> history for greping</h2>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Commit-id,name,date,descr</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> log <span class="at">--format</span><span class="op">=</span><span class="st">"%h (%an, %cs): %s"</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Filenames</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> log <span class="at">--name-only</span> <span class="at">--oneline</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="git-delete-local-branch-that-is-not-online-anymore" class="level2">
 <h2 class="anchored" data-anchor-id="git-delete-local-branch-that-is-not-online-anymore">Git delete local branch that is not “online” anymore</h2>
-<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> branch <span class="at">-d</span> <span class="op">&lt;</span>branch-name<span class="op">&gt;</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> fetch origin <span class="at">--prune</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> branch <span class="at">-d</span> <span class="op">&lt;</span>branch-name<span class="op">&gt;</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> fetch origin <span class="at">--prune</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="show-only-files-that-changed-on-previous-commit" class="level2">
 <h2 class="anchored" data-anchor-id="show-only-files-that-changed-on-previous-commit">Show only files that changed on previous commit</h2>
-<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> show <span class="at">--pretty</span><span class="op">=</span><span class="st">""</span> <span class="at">--name-only</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> diff-tree <span class="at">--no-commit-id</span> <span class="at">--name-only</span> <span class="at">-r</span> HEAD</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="co"># instead of HEAD, can use specific &lt;commit-hash&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="remove-tag-localremote" class="level2">
 <h2 class="anchored" data-anchor-id="remove-tag-localremote">Remove tag (local+remote)</h2>
-<div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># create</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> tag <span class="at">-a</span> v1.0.2 <span class="at">-m</span> <span class="st">"My new version!"</span></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="co"># delete everywhere</span></span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> tag <span class="at">-d</span> v1.0.2</span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push origin :refs/tags/v1.0.2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># create</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> tag <span class="at">-a</span> v1.0.2 <span class="at">-m</span> <span class="st">"My new version!"</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="co"># delete everywhere</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> tag <span class="at">-d</span> v1.0.2</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push origin :refs/tags/v1.0.2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 
 </section>
