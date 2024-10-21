@@ -1,5 +1,11 @@
 # Git
 
+## git cache password for specified time in secs
+
+```bash
+git config credential.helper 'cache --timeout=3600'
+```
+
 ## checkout locally someones PR
 
 ```bash

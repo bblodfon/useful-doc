@@ -7,6 +7,13 @@
     "text": "Preface\nVarious coding stuff :)"
   },
   {
+    "objectID": "git.html#git-cache-password-for-specified-time-in-secs",
+    "href": "git.html#git-cache-password-for-specified-time-in-secs",
+    "title": "Git",
+    "section": "git cache password for specified time in secs",
+    "text": "git cache password for specified time in secs\ngit config credential.helper 'cache --timeout=3600'"
+  },
+  {
     "objectID": "git.html#checkout-locally-someones-pr",
     "href": "git.html#checkout-locally-someones-pr",
     "title": "Git",
