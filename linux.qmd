@@ -35,8 +35,7 @@ Single commands:
 # CPU: how many CPU/cores
 top -b -n1 -u $(whoami) | awk 'NR>7 {sum+=$9} END {print sum/100, "cores"}'
 # MEM: how many GB? (RES)
-top -b -n1 -u $(whoami) | awk 'NR>7 {sum+=$6} END {print sum/(1024*1024), "GB"}'
-# top -b -n1 -u `whoami` | sed 1,7d | awk '{i +=  $9} END {print i/100}' # old way
+ps -u $(whoami) --no-headers -o rss | awk '{sum+=$1} END {print sum/(1024*1024) " GB"}'
 ```
 
 Using `watch`:
@@ -45,10 +44,10 @@ Using `watch`:
 
 watch -n 1 '
 # CPU usage
-cpu=$(top -b -n1 -u $(whoami) | awk "NR>7 {sum+=\$9} END {print sum/100, \"cores\"}")
+cpu=$(top -b -n1 -u $(whoami) | awk '"'"'NR>7 {sum+=$9} END {print sum/100, "cores"}'"'"')
 
 # MEM (RES) usage
-mem=$(top -b -n1 -u $(whoami) | awk "NR>7 {sum+=\$6} END {print sum/(1024*1024), \"GB\"}")
+mem=$(ps -u $(whoami) --no-headers -o rss | awk '"'"'{sum+=$1} END {print sum/(1024*1024) " GB"}'"'"')
 
 # Output the results
 echo -e "CPU Usage: $cpu\nMemory Usage: $mem"

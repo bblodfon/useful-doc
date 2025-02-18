@@ -134,7 +134,7 @@
     "href": "linux.html#cpu-and-mem-usage-top",
     "title": "Linux",
     "section": "CPU and MEM usage (top)",
-    "text": "CPU and MEM usage (top)\n# CPU: how many CPU/cores\ntop -b -n1 -u $(whoami) | awk 'NR&gt;7 {sum+=$9} END {print sum/100, \"cores\"}'\n# MEM: how many GB? (RES)\ntop -b -n1 -u $(whoami) | awk 'NR&gt;7 {sum+=$6} END {print sum/(1024*1024), \"GB\"}'\n# top -b -n1 -u `whoami` | sed 1,7d | awk '{i +=  $9} END {print i/100}' # old way",
+    "text": "CPU and MEM usage (top)\nSingle commands:\n# CPU: how many CPU/cores\ntop -b -n1 -u $(whoami) | awk 'NR&gt;7 {sum+=$9} END {print sum/100, \"cores\"}'\n# MEM: how many GB? (RES)\nps -u $(whoami) --no-headers -o rss | awk '{sum+=$1} END {print sum/(1024*1024) \" GB\"}'\nUsing watch:\n#!/bin/bash\n\nwatch -n 1 '\n# CPU usage\ncpu=$(top -b -n1 -u $(whoami) | awk '\"'\"'NR&gt;7 {sum+=$9} END {print sum/100, \"cores\"}'\"'\"')\n\n# MEM (RES) usage\nmem=$(ps -u $(whoami) --no-headers -o rss | awk '\"'\"'{sum+=$1} END {print sum/(1024*1024) \" GB\"}'\"'\"')\n\n# Output the results\necho -e \"CPU Usage: $cpu\\nMemory Usage: $mem\"\n'",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Linux</span>"
     ]
