@@ -4,615 +4,939 @@
     "href": "index.html",
     "title": "Useful CMD Commands",
     "section": "",
-    "text": "Preface\nVarious coding stuff :)"
+    "text": "Preface\nVarious coding stuff :)",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "git.html",
+    "href": "git.html",
+    "title": "Git",
+    "section": "",
+    "text": "git cache password for specified time in secs",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Git</span>"
+    ]
   },
   {
     "objectID": "git.html#git-cache-password-for-specified-time-in-secs",
     "href": "git.html#git-cache-password-for-specified-time-in-secs",
     "title": "Git",
-    "section": "git cache password for specified time in secs",
-    "text": "git cache password for specified time in secs\ngit config credential.helper 'cache --timeout=3600'"
+    "section": "",
+    "text": "git config credential.helper 'cache --timeout=3600'",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Git</span>"
+    ]
   },
   {
     "objectID": "git.html#checkout-locally-someones-pr",
     "href": "git.html#checkout-locally-someones-pr",
     "title": "Git",
     "section": "checkout locally someones PR",
-    "text": "checkout locally someones PR\ngit fetch origin pull/ID/head:BRANCH_NAME\ngit switch BRANCH_NAME\ngit push origin BRANCH_NAME\nor simple:\ngh pr checkout &lt;ID&gt;"
+    "text": "checkout locally someones PR\ngit fetch origin pull/ID/head:BRANCH_NAME\ngit switch BRANCH_NAME\ngit push origin BRANCH_NAME\nor simple:\ngh pr checkout &lt;ID&gt;",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Git</span>"
+    ]
   },
   {
     "objectID": "git.html#revert-last-commit",
     "href": "git.html#revert-last-commit",
     "title": "Git",
     "section": "Revert last commit",
-    "text": "Revert last commit\ngit reset HEAD^"
+    "text": "Revert last commit\ngit reset HEAD^",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Git</span>"
+    ]
   },
   {
     "objectID": "git.html#fast-forward-issue",
     "href": "git.html#fast-forward-issue",
     "title": "Git",
     "section": "Fast-forward issue",
-    "text": "Fast-forward issue\nMessage: “fatal: Not possible to fast-forward, aborting.”\ngit pull --rebase"
+    "text": "Fast-forward issue\nMessage: “fatal: Not possible to fast-forward, aborting.”\ngit pull --rebase",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Git</span>"
+    ]
   },
   {
     "objectID": "git.html#nice-git-log-history-for-greping",
     "href": "git.html#nice-git-log-history-for-greping",
     "title": "Git",
     "section": "Nice git log history for greping",
-    "text": "Nice git log history for greping\n# Commit-id,name,date,descr\ngit log --format=\"%h (%an, %cs): %s\"\n# Filenames\ngit log --name-only --oneline"
+    "text": "Nice git log history for greping\n# Commit-id,name,date,descr\ngit log --format=\"%h (%an, %cs): %s\"\n# Filenames\ngit log --name-only --oneline",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Git</span>"
+    ]
   },
   {
     "objectID": "git.html#git-delete-local-branch-that-is-not-online-anymore",
     "href": "git.html#git-delete-local-branch-that-is-not-online-anymore",
     "title": "Git",
     "section": "Git delete local branch that is not “online” anymore",
-    "text": "Git delete local branch that is not “online” anymore\ngit branch -d &lt;branch-name&gt;\ngit fetch origin --prune"
+    "text": "Git delete local branch that is not “online” anymore\ngit branch -d &lt;branch-name&gt;\ngit fetch origin --prune",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Git</span>"
+    ]
   },
   {
     "objectID": "git.html#show-only-files-that-changed-on-previous-commit",
     "href": "git.html#show-only-files-that-changed-on-previous-commit",
     "title": "Git",
     "section": "Show only files that changed on previous commit",
-    "text": "Show only files that changed on previous commit\ngit diff-tree --no-commit-id --name-only -r HEAD\n# instead of HEAD, can use specific &lt;commit-hash&gt;"
+    "text": "Show only files that changed on previous commit\ngit diff-tree --no-commit-id --name-only -r HEAD\n# instead of HEAD, can use specific &lt;commit-hash&gt;",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Git</span>"
+    ]
   },
   {
     "objectID": "git.html#remove-tag-localremote",
     "href": "git.html#remove-tag-localremote",
     "title": "Git",
     "section": "Remove tag (local+remote)",
-    "text": "Remove tag (local+remote)\n# create\ngit tag -a v1.0.2 -m \"My new version!\"\n\n# delete everywhere\ngit tag -d v1.0.2\ngit push origin :refs/tags/v1.0.2"
+    "text": "Remove tag (local+remote)\n# create\ngit tag -a v1.0.2 -m \"My new version!\"\n\n# delete everywhere\ngit tag -d v1.0.2\ngit push origin :refs/tags/v1.0.2",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Git</span>"
+    ]
   },
   {
-    "objectID": "linux.html#set-rstudio-theme",
-    "href": "linux.html#set-rstudio-theme",
+    "objectID": "linux.html",
+    "href": "linux.html",
     "title": "Linux",
-    "section": "Set Rstudio theme",
-    "text": "Set Rstudio theme\nSee Rstudio theme file."
+    "section": "",
+    "text": "Set Rstudio theme\nSee Rstudio theme file.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Linux</span>"
+    ]
   },
   {
     "objectID": "linux.html#increase-swap-space",
     "href": "linux.html#increase-swap-space",
     "title": "Linux",
     "section": "Increase swap space",
-    "text": "Increase swap space\nhttps://askubuntu.com/questions/178712/how-to-increase-swap-space"
+    "text": "Increase swap space\nhttps://askubuntu.com/questions/178712/how-to-increase-swap-space",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Linux</span>"
+    ]
   },
   {
     "objectID": "linux.html#encryptdecrypt-files",
     "href": "linux.html#encryptdecrypt-files",
     "title": "Linux",
     "section": "Encrypt/Decrypt files",
-    "text": "Encrypt/Decrypt files\ngpg -c filename\ngpg -d filename.gpg\nDon’t ever cache the password:\nvim ~/.gnupg/gpg-agent.conf\n\n# copy-paste following two lines\ndefault-cache-ttl 1\nmax-cache-ttl 1\n\necho RELOADAGENT | gpg-connect-agent"
+    "text": "Encrypt/Decrypt files\ngpg -c filename\ngpg -d filename.gpg\nDon’t ever cache the password:\nvim ~/.gnupg/gpg-agent.conf\n\n# copy-paste following two lines\ndefault-cache-ttl 1\nmax-cache-ttl 1\n\necho RELOADAGENT | gpg-connect-agent",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Linux</span>"
+    ]
   },
   {
-    "objectID": "linux.html#cpu-average-usage-top",
-    "href": "linux.html#cpu-average-usage-top",
+    "objectID": "linux.html#cpu-and-mem-usage-top",
+    "href": "linux.html#cpu-and-mem-usage-top",
     "title": "Linux",
-    "section": "CPU average usage (top)",
-    "text": "CPU average usage (top)\ntop -b -n1 -u `whoami` | sed 1,7d | awk '{i +=  $9} END {print i/100}'"
+    "section": "CPU and MEM usage (top)",
+    "text": "CPU and MEM usage (top)\n# CPU: how many CPU/cores\ntop -b -n1 -u $(whoami) | awk 'NR&gt;7 {sum+=$9} END {print sum/100, \"cores\"}'\n# MEM: how many GB? (RES)\ntop -b -n1 -u $(whoami) | awk 'NR&gt;7 {sum+=$6} END {print sum/(1024*1024), \"GB\"}'\n# top -b -n1 -u `whoami` | sed 1,7d | awk '{i +=  $9} END {print i/100}' # old way",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Linux</span>"
+    ]
   },
   {
     "objectID": "linux.html#break-paragraph-to-multiple-sentences-each-in-a-new-line",
     "href": "linux.html#break-paragraph-to-multiple-sentences-each-in-a-new-line",
     "title": "Linux",
     "section": "Break paragraph to multiple sentences, each in a new line",
-    "text": "Break paragraph to multiple sentences, each in a new line\nParagraph is like: AAaa. Bbbbb. Cccc.. What you get is: AAaa.\\nBbbbb.\\nCccc.\nsed -i 's/\\. /\\.\\n/g' test.txt"
+    "text": "Break paragraph to multiple sentences, each in a new line\nParagraph is like: AAaa. Bbbbb. Cccc.. What you get is: AAaa.\\nBbbbb.\\nCccc.\nsed -i 's/\\. /\\.\\n/g' test.txt",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Linux</span>"
+    ]
   },
   {
     "objectID": "linux.html#find-start-time-of-a-long-running-process",
     "href": "linux.html#find-start-time-of-a-long-running-process",
     "title": "Linux",
     "section": "Find start time of a long-running process",
-    "text": "Find start time of a long-running process\nps -eo pid,lstart,cmd | grep process_name"
+    "text": "Find start time of a long-running process\nps -eo pid,lstart,cmd | grep process_name",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Linux</span>"
+    ]
   },
   {
     "objectID": "linux.html#find-pattern-in-files-and-retrieve-file-name-as-well",
     "href": "linux.html#find-pattern-in-files-and-retrieve-file-name-as-well",
     "title": "Linux",
     "section": "Find pattern in files and retrieve file name as well",
-    "text": "Find pattern in files and retrieve file name as well\nFind in all .html files inside a directory, the mentions of string xaxa:\nfind . -name \\*.html -print0 | xargs -0 grep -n -H xaxa"
+    "text": "Find pattern in files and retrieve file name as well\nFind in all .html files inside a directory, the mentions of string xaxa:\nfind . -name \\*.html -print0 | xargs -0 grep -n -H xaxa",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Linux</span>"
+    ]
   },
   {
     "objectID": "linux.html#find-pattern-recursively-in-directories-and-files",
     "href": "linux.html#find-pattern-recursively-in-directories-and-files",
     "title": "Linux",
     "section": "Find pattern recursively in directories and files",
-    "text": "Find pattern recursively in directories and files\nE.g. my current directory has multiple directories that each one has multiple files which I want to cat and find a pattern:\nfind . -type f -exec cat {} + | grep stable | wc -l"
+    "text": "Find pattern recursively in directories and files\nE.g. my current directory has multiple directories that each one has multiple files which I want to cat and find a pattern:\nfind . -type f -exec cat {} + | grep stable | wc -l",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Linux</span>"
+    ]
   },
   {
     "objectID": "linux.html#rename-files",
     "href": "linux.html#rename-files",
     "title": "Linux",
     "section": "Rename files",
-    "text": "Rename files\nLet’s say I have many files in a directory which have the sub-string _rand_ and I want to change that sub-string to _whatever_. Run inside the directory:\nfor file in `ls | grep \"_rand_\"`; do mv \"$file\" \"${file/_rand_/_whatever_}\"; done"
+    "text": "Rename files\nLet’s say I have many files in a directory which have the sub-string _rand_ and I want to change that sub-string to _whatever_. Run inside the directory:\nfor file in `ls | grep \"_rand_\"`; do mv \"$file\" \"${file/_rand_/_whatever_}\"; done",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Linux</span>"
+    ]
   },
   {
     "objectID": "linux.html#symbolic-links",
     "href": "linux.html#symbolic-links",
     "title": "Linux",
     "section": "Symbolic links",
-    "text": "Symbolic links\n# Create symbolic link\nln -s /full_path_to/real_exe_file_target /full_path_to/link\n\n# Delete a symbolic link\nunlink /path_to/link"
+    "text": "Symbolic links\n# Create symbolic link\nln -s /full_path_to/real_exe_file_target /full_path_to/link\n\n# Delete a symbolic link\nunlink /path_to/link",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Linux</span>"
+    ]
   },
   {
     "objectID": "linux.html#mount-external-disk",
     "href": "linux.html#mount-external-disk",
     "title": "Linux",
     "section": "Mount external disk",
-    "text": "Mount external disk\nsudo fdisk -l\n# usually it's on `/dev/sdb1` partition\nmkdir /media/disk\nsudo mount /dev/sdb1 /media/disk\nAfter you are done, run:\nsudo umount /media/disk"
+    "text": "Mount external disk\nsudo fdisk -l\n# usually it's on `/dev/sdb1` partition\nmkdir /media/disk\nsudo mount /dev/sdb1 /media/disk\nAfter you are done, run:\nsudo umount /media/disk",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Linux</span>"
+    ]
   },
   {
     "objectID": "linux.html#add-command-path-permanently",
     "href": "linux.html#add-command-path-permanently",
     "title": "Linux",
     "section": "Add command path permanently",
-    "text": "Add command path permanently\ncd /etc/profile.d\nvim test.sh\n\n# add lines\nEXEC_HOME=/usr/bin/my-exetutable\nexport EXEC_HOME\n\n# test\necho $EXEC_HOME"
+    "text": "Add command path permanently\ncd /etc/profile.d\nvim test.sh\n\n# add lines\nEXEC_HOME=/usr/bin/my-exetutable\nexport EXEC_HOME\n\n# test\necho $EXEC_HOME",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Linux</span>"
+    ]
   },
   {
     "objectID": "linux.html#counter-with-dots",
     "href": "linux.html#counter-with-dots",
     "title": "Linux",
     "section": "Counter with dots",
-    "text": "Counter with dots\nTo see an incremental counter:\ni=0; while true; do sleep 1; echo $i; i=$((i+1)); done\nTo see dots (server connection awaiting!):\nwhile true; do echo -n .; sleep 1; done"
+    "text": "Counter with dots\nTo see an incremental counter:\ni=0; while true; do sleep 1; echo $i; i=$((i+1)); done\nTo see dots (server connection awaiting!):\nwhile true; do echo -n .; sleep 1; done",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Linux</span>"
+    ]
   },
   {
     "objectID": "linux.html#ubuntu-text-scaling",
     "href": "linux.html#ubuntu-text-scaling",
     "title": "Linux",
     "section": "Ubuntu text scaling",
-    "text": "Ubuntu text scaling\nMake all text bigger/smaller:\n# big\n/usr/bin/gsettings set org.gnome.desktop.interface text-scaling-factor 1.5\n# small\n/usr/bin/gsettings set org.gnome.desktop.interface text-scaling-factor 1.1"
+    "text": "Ubuntu text scaling\nMake all text bigger/smaller:\n# big\n/usr/bin/gsettings set org.gnome.desktop.interface text-scaling-factor 1.5\n# small\n/usr/bin/gsettings set org.gnome.desktop.interface text-scaling-factor 1.1",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Linux</span>"
+    ]
   },
   {
     "objectID": "linux.html#nice-bash-aliases",
     "href": "linux.html#nice-bash-aliases",
     "title": "Linux",
     "section": "Nice bash aliases",
-    "text": "Nice bash aliases\n# choose file to put the aliases\nvim ~/.bashrc \nvim ~/.bash_aliases # better\n\nalias 'com'='git commit'\nalias 'cam'='git commit --amend'\nalias 'gt'='git status'\nalias 'updocs'='git add docs; git commit -m \"update docs\"'\nalias 'disk'='df -h | grep -v loop'\nalias 'l'='ls -ltrh'\nalias 'off'='sudo poweroff'\nalias 'useful'='cd ~/repos/useful'\nalias 'p8'='ping 8.8.8.8'\nalias 'renet'='sudo service network-manager restart; i=0; while [[ $i &lt; 6 ]]; do echo -n .; sleep 1; let i=i+1; done; echo \"\";'\nalias 'ssh-server'='ssh name@server'\nalias 'ssh-server'='ssh -J name@proxy-server name@main-server'"
+    "text": "Nice bash aliases\n# choose file to put the aliases\nvim ~/.bashrc \nvim ~/.bash_aliases # better\n\nalias 'com'='git commit'\nalias 'cam'='git commit --amend'\nalias 'gt'='git status'\nalias 'updocs'='git add docs; git commit -m \"update docs\"'\nalias 'disk'='df -h | grep -v loop'\nalias 'l'='ls -ltrh'\nalias 'off'='sudo poweroff'\nalias 'useful'='cd ~/repos/useful'\nalias 'p8'='ping 8.8.8.8'\nalias 'renet'='sudo service network-manager restart; i=0; while [[ $i &lt; 6 ]]; do echo -n .; sleep 1; let i=i+1; done; echo \"\";'\nalias 'ssh-server'='ssh name@server'\nalias 'ssh-server'='ssh -J name@proxy-server name@main-server'",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Linux</span>"
+    ]
   },
   {
     "objectID": "linux.html#change-terminal-prompt-look",
     "href": "linux.html#change-terminal-prompt-look",
     "title": "Linux",
     "section": "Change terminal prompt look",
-    "text": "Change terminal prompt look\nAdd to ~/.bashrc this line:\nexport PS1='\\[\\033[01;32m\\]\\u\\[\\033[00m\\]:\\[\\033[01;34m\\]~\\[\\033[00m\\]\\$ '\nor this one that includes the name of the current working dir:\nexport PS1='\\[\\033[01;32m\\]\\u\\[\\033[00m\\]:\\[\\033[01;36m\\][\\W]\\[\\033[00m\\]\\$ '\nNotes:\n\n32m =&gt; green, 00m =&gt; white, 34m =&gt; blue, 36m =&gt; Cyan\n\\u =&gt; user, \\W =&gt; working dir"
+    "text": "Change terminal prompt look\nAdd to ~/.bashrc this line:\nexport PS1='\\[\\033[01;32m\\]\\u\\[\\033[00m\\]:\\[\\033[01;34m\\]~\\[\\033[00m\\]\\$ '\nor this one that includes the name of the current working dir:\nexport PS1='\\[\\033[01;32m\\]\\u\\[\\033[00m\\]:\\[\\033[01;36m\\][\\W]\\[\\033[00m\\]\\$ '\nNotes:\n\n32m =&gt; green, 00m =&gt; white, 34m =&gt; blue, 36m =&gt; Cyan\n\\u =&gt; user, \\W =&gt; working dir",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Linux</span>"
+    ]
   },
   {
     "objectID": "linux.html#extract-specific-characters-from-each-line-in-a-file",
     "href": "linux.html#extract-specific-characters-from-each-line-in-a-file",
     "title": "Linux",
     "section": "Extract specific characters from each line in a file",
-    "text": "Extract specific characters from each line in a file\ncut -c 1-30 filename"
+    "text": "Extract specific characters from each line in a file\ncut -c 1-30 filename",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Linux</span>"
+    ]
   },
   {
     "objectID": "linux.html#do-something-on-many-files-in-a-dir",
     "href": "linux.html#do-something-on-many-files-in-a-dir",
     "title": "Linux",
     "section": "Do something on many files in a dir",
-    "text": "Do something on many files in a dir\nSomething can be: rendering notebooks to HTML or checking if the files are the same as other files for example\n#!/bin/bash\n\nfiles=`ls`\ndir=\"/somewhere/over/the/rainbow\"\nrmd_files=`ls | grep Rmd`\n\nfor file in ${rmd_files}; do\n  filename_no_extension=\"$(basename \"${file}\" .Rmd)\"\n  diff -s $dir$file $file\n  Rscript -e \"library(rmarkdown); rmarkdown::render(\\\"./$file\\\",\\\"html_document\\\")\"\ndone"
+    "text": "Do something on many files in a dir\nSomething can be: rendering notebooks to HTML or checking if the files are the same as other files for example\n#!/bin/bash\n\nfiles=`ls`\ndir=\"/somewhere/over/the/rainbow\"\nrmd_files=`ls | grep Rmd`\n\nfor file in ${rmd_files}; do\n  filename_no_extension=\"$(basename \"${file}\" .Rmd)\"\n  diff -s $dir$file $file\n  Rscript -e \"library(rmarkdown); rmarkdown::render(\\\"./$file\\\",\\\"html_document\\\")\"\ndone",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Linux</span>"
+    ]
   },
   {
     "objectID": "linux.html#make-desktop-icons-appear-and-disappear",
     "href": "linux.html#make-desktop-icons-appear-and-disappear",
     "title": "Linux",
     "section": "Make desktop icons appear and disappear",
-    "text": "Make desktop icons appear and disappear\n/usr/bingsettings set org.gnome.desktop.background show-desktop-icons false"
+    "text": "Make desktop icons appear and disappear\n/usr/bingsettings set org.gnome.desktop.background show-desktop-icons false",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Linux</span>"
+    ]
   },
   {
     "objectID": "linux.html#find-total-mb-of-files-in-a-dir",
     "href": "linux.html#find-total-mb-of-files-in-a-dir",
     "title": "Linux",
     "section": "Find total MB of files in a dir",
-    "text": "Find total MB of files in a dir\nls | xargs stat --format=%s | awk '{s+=$1} END {print s/(1024*1024)}'"
+    "text": "Find total MB of files in a dir\nls | xargs stat --format=%s | awk '{s+=$1} END {print s/(1024*1024)}'",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Linux</span>"
+    ]
   },
   {
     "objectID": "linux.html#count-lines-of-source-code",
     "href": "linux.html#count-lines-of-source-code",
     "title": "Linux",
     "section": "Count lines of source code",
-    "text": "Count lines of source code\nfind . -name '*.php' | xargs wc -l\n# or use cloc: \napt-get install cloc"
+    "text": "Count lines of source code\nfind . -name '*.php' | xargs wc -l\n# or use cloc: \napt-get install cloc",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Linux</span>"
+    ]
   },
   {
     "objectID": "linux.html#delete-files-fast",
     "href": "linux.html#delete-files-fast",
     "title": "Linux",
     "section": "Delete files fast",
-    "text": "Delete files fast\nfind . -maxdepth 1 -name \"something*\" -print0 | xargs -0 rm"
+    "text": "Delete files fast\nfind . -maxdepth 1 -name \"something*\" -print0 | xargs -0 rm",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Linux</span>"
+    ]
   },
   {
     "objectID": "linux.html#list-files-in-a-dir-efficiently",
     "href": "linux.html#list-files-in-a-dir-efficiently",
     "title": "Linux",
     "section": "List files in a dir efficiently",
-    "text": "List files in a dir efficiently\nCopy the listdir.c file. Then:\ngcc listdir.c -o listdir\n./listdir /dirWithTooManyFiles"
+    "text": "List files in a dir efficiently\nCopy the listdir.c file. Then:\ngcc listdir.c -o listdir\n./listdir /dirWithTooManyFiles",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Linux</span>"
+    ]
   },
   {
     "objectID": "linux.html#count-and-change-the-reserved-space-in-an-ext4-partition-online",
     "href": "linux.html#count-and-change-the-reserved-space-in-an-ext4-partition-online",
     "title": "Linux",
     "section": "Count and change the reserved space in an ext4 partition ‘ONLINE’",
-    "text": "Count and change the reserved space in an ext4 partition ‘ONLINE’\nChange the reserved space to 1%:\ntune2fs -m 1 /dev/sdb1\nCount the percentage:\na=$(tune2fs -l /dev/sdb1 | grep -i 'Reserved block count' | awk '{ print $4 }')\nb=$(tune2fs -l /dev/sdb1 | grep 'Block count' | awk  '{ print $3 }')\necho \"scale=5; ($a/$b)*100\" | bc # this is the percentage of the reserved space"
+    "text": "Count and change the reserved space in an ext4 partition ‘ONLINE’\nChange the reserved space to 1%:\ntune2fs -m 1 /dev/sdb1\nCount the percentage:\na=$(tune2fs -l /dev/sdb1 | grep -i 'Reserved block count' | awk '{ print $4 }')\nb=$(tune2fs -l /dev/sdb1 | grep 'Block count' | awk  '{ print $3 }')\necho \"scale=5; ($a/$b)*100\" | bc # this is the percentage of the reserved space",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Linux</span>"
+    ]
   },
   {
     "objectID": "linux.html#kill-many-processes-at-once-that-match-a-pattern",
     "href": "linux.html#kill-many-processes-at-once-that-match-a-pattern",
     "title": "Linux",
     "section": "Kill many processes at once (that match a pattern)",
-    "text": "Kill many processes at once (that match a pattern)\nps aux | grep -v grep | grep -i patternToMatch | awk '{print $2}' | xargs kill -9"
+    "text": "Kill many processes at once (that match a pattern)\nps aux | grep -v grep | grep -i patternToMatch | awk '{print $2}' | xargs kill -9",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Linux</span>"
+    ]
   },
   {
     "objectID": "linux.html#deleting-file-descriptors",
     "href": "linux.html#deleting-file-descriptors",
     "title": "Linux",
     "section": "Deleting file descriptors",
-    "text": "Deleting file descriptors\nAfter deleting many files, the space is not freed and you need to delete the file descriptors:\nfind /proc/*/fd -ls 2&gt; /dev/null | awk '/deleted/ {print $11}' | xargs -p -n 1 truncate -s 0"
+    "text": "Deleting file descriptors\nAfter deleting many files, the space is not freed and you need to delete the file descriptors:\nfind /proc/*/fd -ls 2&gt; /dev/null | awk '/deleted/ {print $11}' | xargs -p -n 1 truncate -s 0",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Linux</span>"
+    ]
   },
   {
     "objectID": "linux.html#find-number-of-cpus-and-model",
     "href": "linux.html#find-number-of-cpus-and-model",
     "title": "Linux",
     "section": "Find number of CPUs and model",
-    "text": "Find number of CPUs and model\ngrep -c processor /proc/cpuinfo\nlscpu\nnproc\ncat /proc/cpuinfo | grep name | tail -n1"
+    "text": "Find number of CPUs and model\ngrep -c processor /proc/cpuinfo\nlscpu\nnproc\ncat /proc/cpuinfo | grep name | tail -n1",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Linux</span>"
+    ]
   },
   {
     "objectID": "linux.html#dynamic-linking",
     "href": "linux.html#dynamic-linking",
     "title": "Linux",
     "section": "Dynamic linking",
-    "text": "Dynamic linking\nldd &lt;executable_name&gt;\nif you see not found for some library, put the &lt;something&gt;.so.x.x.x file in: /usr/local/lib\nln -s &lt;something&gt;.so.x.x.x &lt;something&gt;.so.x` # or whatever is needed\nldconfig -v\n\nldd &lt;executable_name&gt; # should be OK now"
+    "text": "Dynamic linking\nldd &lt;executable_name&gt;\nif you see not found for some library, put the &lt;something&gt;.so.x.x.x file in: /usr/local/lib\nln -s &lt;something&gt;.so.x.x.x &lt;something&gt;.so.x` # or whatever is needed\nldconfig -v\n\nldd &lt;executable_name&gt; # should be OK now",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Linux</span>"
+    ]
   },
   {
     "objectID": "linux.html#change-hostname",
     "href": "linux.html#change-hostname",
     "title": "Linux",
     "section": "Change hostname",
-    "text": "Change hostname\n# Stop MySQL if it is running\nservice mysql stop\nold hostname = old-name\nnew hostname = new-name\nIn the next 2 files change old-name to new-name:\nvim /etc/hosts\nvim /etc/hostname\nand execute:\nhostname new-name\n# check\nhostname\nRestart MySQL (if needed):\nservice mysql start"
+    "text": "Change hostname\n# Stop MySQL if it is running\nservice mysql stop\nold hostname = old-name\nnew hostname = new-name\nIn the next 2 files change old-name to new-name:\nvim /etc/hosts\nvim /etc/hostname\nand execute:\nhostname new-name\n# check\nhostname\nRestart MySQL (if needed):\nservice mysql start",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Linux</span>"
+    ]
   },
   {
     "objectID": "linux.html#service-tag",
     "href": "linux.html#service-tag",
     "title": "Linux",
     "section": "Service tag",
-    "text": "Service tag\ndmidecode -t system"
+    "text": "Service tag\ndmidecode -t system",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Linux</span>"
+    ]
   },
   {
     "objectID": "linux.html#see-cached-files-info-in-the-pwd",
     "href": "linux.html#see-cached-files-info-in-the-pwd",
     "title": "Linux",
     "section": "See cached files info in the pwd",
-    "text": "See cached files info in the pwd\nlinux-fincore --pages=false --summarize --only-cached *"
+    "text": "See cached files info in the pwd\nlinux-fincore --pages=false --summarize --only-cached *",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Linux</span>"
+    ]
   },
   {
     "objectID": "linux.html#clean-cached-memory",
     "href": "linux.html#clean-cached-memory",
     "title": "Linux",
     "section": "Clean cached memory",
-    "text": "Clean cached memory\nsudo sysctl vm.drop_caches=3\nsync && echo 3 | tee /proc/sys/vm/drop_caches"
+    "text": "Clean cached memory\nsudo sysctl vm.drop_caches=3\nsync && echo 3 | tee /proc/sys/vm/drop_caches",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Linux</span>"
+    ]
   },
   {
     "objectID": "linux.html#build-an-ext4-filesystem-on-a-disk-partition",
     "href": "linux.html#build-an-ext4-filesystem-on-a-disk-partition",
     "title": "Linux",
     "section": "Build an ext4 filesystem on a disk partition",
-    "text": "Build an ext4 filesystem on a disk partition\ncat /etc/fstab\nfdisk -l\ncfdisk /dev/sdc\nmkfs.ext4 /dev/sdc1\nmount -a\ndf -h"
+    "text": "Build an ext4 filesystem on a disk partition\ncat /etc/fstab\nfdisk -l\ncfdisk /dev/sdc\nmkfs.ext4 /dev/sdc1\nmount -a\ndf -h",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Linux</span>"
+    ]
+  },
+  {
+    "objectID": "formats.html",
+    "href": "formats.html",
+    "title": "File Formats",
+    "section": "",
+    "text": "Convert many PDF files to EPS",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>File Formats</span>"
+    ]
   },
   {
     "objectID": "formats.html#convert-many-pdf-files-to-eps",
     "href": "formats.html#convert-many-pdf-files-to-eps",
     "title": "File Formats",
-    "section": "Convert many PDF files to EPS",
-    "text": "Convert many PDF files to EPS\n#!/bin/bash\n\npdf_files=`ls | grep pdf`\n\nfor file in ${pdf_files}; do\n  name=\"$(basename \"${file}\" .pdf)\"\n  echo $name\n  #gs -q -dNOCACHE -dNOPAUSE -dBATCH -dSAFER -sDEVICE=eps2write -sOutputFile=$name.eps $file\n  # better quality\n  inkscape $file --export-eps=$name.eps\ndone"
+    "section": "",
+    "text": "#!/bin/bash\n\npdf_files=`ls | grep pdf`\n\nfor file in ${pdf_files}; do\n  name=\"$(basename \"${file}\" .pdf)\"\n  echo $name\n  #gs -q -dNOCACHE -dNOPAUSE -dBATCH -dSAFER -sDEVICE=eps2write -sOutputFile=$name.eps $file\n  # better quality\n  inkscape $file --export-eps=$name.eps\ndone",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>File Formats</span>"
+    ]
   },
   {
     "objectID": "formats.html#shrinkoptimize-pdf",
     "href": "formats.html#shrinkoptimize-pdf",
     "title": "File Formats",
     "section": "Shrink/optimize PDF",
-    "text": "Shrink/optimize PDF\n\nUsing a script: http://www.alfredklomp.com/programming/shrinkpdf/\nUsing ps2pdf:\n\nps2pdf -dPDFSETTINGS=/printer ags.pdf out.pdf\nVarious pdf settings for different output qualities:\n-dPDFSETTINGS=/screen   (screen-view-only quality, 72 dpi images)\n-dPDFSETTINGS=/ebook    (low quality, 150 dpi images)\n-dPDFSETTINGS=/printer  (high quality, 300 dpi images)\n-dPDFSETTINGS=/prepress (high quality, color preserving, 300 dpi imgs)\n-dPDFSETTINGS=/default  (almost identical to /screen)"
+    "text": "Shrink/optimize PDF\n\nUsing a script: http://www.alfredklomp.com/programming/shrinkpdf/\nUsing ps2pdf:\n\nps2pdf -dPDFSETTINGS=/printer ags.pdf out.pdf\nVarious pdf settings for different output qualities:\n-dPDFSETTINGS=/screen   (screen-view-only quality, 72 dpi images)\n-dPDFSETTINGS=/ebook    (low quality, 150 dpi images)\n-dPDFSETTINGS=/printer  (high quality, 300 dpi images)\n-dPDFSETTINGS=/prepress (high quality, color preserving, 300 dpi imgs)\n-dPDFSETTINGS=/default  (almost identical to /screen)",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>File Formats</span>"
+    ]
   },
   {
     "objectID": "formats.html#rotate-pdf",
     "href": "formats.html#rotate-pdf",
     "title": "File Formats",
     "section": "Rotate PDF",
-    "text": "Rotate PDF\nqpdf in.pdf out.pdf --rotate=90"
+    "text": "Rotate PDF\nqpdf in.pdf out.pdf --rotate=90",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>File Formats</span>"
+    ]
   },
   {
     "objectID": "formats.html#crop-pdf",
     "href": "formats.html#crop-pdf",
     "title": "File Formats",
     "section": "Crop PDF",
-    "text": "Crop PDF\nRemember, margins are (left, right, top, bottom). The next command will leave only the top-right part of the input pdf:\npdfcrop --margins '-280 0 0 -600' in.pdf out.pdf"
+    "text": "Crop PDF\nRemember, margins are (left, right, top, bottom). The next command will leave only the top-right part of the input pdf:\npdfcrop --margins '-280 0 0 -600' in.pdf out.pdf",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>File Formats</span>"
+    ]
   },
   {
     "objectID": "formats.html#svg-to-pdf",
     "href": "formats.html#svg-to-pdf",
     "title": "File Formats",
     "section": "SVG to PDF",
-    "text": "SVG to PDF\ncairosvg in.svg -o out.pdf"
+    "text": "SVG to PDF\ncairosvg in.svg -o out.pdf",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>File Formats</span>"
+    ]
   },
   {
     "objectID": "formats.html#svg-to-png",
     "href": "formats.html#svg-to-png",
     "title": "File Formats",
     "section": "SVG to PNG",
-    "text": "SVG to PNG\nSee svg2png file."
+    "text": "SVG to PNG\nSee svg2png file.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>File Formats</span>"
+    ]
   },
   {
     "objectID": "formats.html#pdf-to-pngsvg",
     "href": "formats.html#pdf-to-pngsvg",
     "title": "File Formats",
     "section": "PDF to PNG/SVG",
-    "text": "PDF to PNG/SVG\nSee pdf2png file for all following commands in one script.\nLet’s say you have a (1-page) pdf: test.pdf that contains an image or diagram and you want to put it in a presentation/article/word etc in an appropriate format and with decent quality.\nFirst crop it:\npdfcrop --margins 10 test.pdf test_crop.pdf\nThen convert it to the format you like:\n# PNG, 600 ppi\npdftoppm -png -r 600 test_crop.pdf test\n\n# SVG\npdf2svg test_crop.pdf test.svg"
+    "text": "PDF to PNG/SVG\nSee pdf2png file for all following commands in one script.\nLet’s say you have a (1-page) pdf: test.pdf that contains an image or diagram and you want to put it in a presentation/article/word etc in an appropriate format and with decent quality.\nFirst crop it:\npdfcrop --margins 10 test.pdf test_crop.pdf\nThen convert it to the format you like:\n# PNG, 600 ppi\npdftoppm -png -r 600 test_crop.pdf test\n\n# SVG\npdf2svg test_crop.pdf test.svg",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>File Formats</span>"
+    ]
   },
   {
     "objectID": "formats.html#jpg-to-pdf",
     "href": "formats.html#jpg-to-pdf",
     "title": "File Formats",
     "section": "JPG to PDF",
-    "text": "JPG to PDF\nconvert ticket_1.jpg ticket_2.jpg ticket.pdf"
+    "text": "JPG to PDF\nconvert ticket_1.jpg ticket_2.jpg ticket.pdf",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>File Formats</span>"
+    ]
   },
   {
     "objectID": "formats.html#reduce-size-of-scanned-pdf",
     "href": "formats.html#reduce-size-of-scanned-pdf",
     "title": "File Formats",
     "section": "Reduce size of scanned PDF",
-    "text": "Reduce size of scanned PDF\npdf2ps input.pdf output.ps\nps2pdf output.ps -dPDFSETTINGS=/ebook output.pdf\nSee also this askubuntu question for more pdf options."
+    "text": "Reduce size of scanned PDF\npdf2ps input.pdf output.ps\nps2pdf output.ps -dPDFSETTINGS=/ebook output.pdf\nSee also this askubuntu question for more pdf options.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>File Formats</span>"
+    ]
   },
   {
     "objectID": "formats.html#decrypt-pdf",
     "href": "formats.html#decrypt-pdf",
     "title": "File Formats",
     "section": "Decrypt PDF",
-    "text": "Decrypt PDF\nFile in.pdf is password-protected:\nqpdf --decrypt in.pdf out.pdf"
+    "text": "Decrypt PDF\nFile in.pdf is password-protected:\nqpdf --decrypt in.pdf out.pdf",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>File Formats</span>"
+    ]
   },
   {
     "objectID": "formats.html#select-pages-from-pdf",
     "href": "formats.html#select-pages-from-pdf",
     "title": "File Formats",
     "section": "Select pages from PDF",
-    "text": "Select pages from PDF\npdftk test.pdf cat 2-4 output out.pdf"
+    "text": "Select pages from PDF\npdftk test.pdf cat 2-4 output out.pdf",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>File Formats</span>"
+    ]
   },
   {
     "objectID": "formats.html#resize-pdf",
     "href": "formats.html#resize-pdf",
     "title": "File Formats",
     "section": "Resize PDF",
-    "text": "Resize PDF\npdfjam --outfile out.pdf --papersize '{6.125in,9.250in}' in.pdf"
+    "text": "Resize PDF\npdfjam --outfile out.pdf --papersize '{6.125in,9.250in}' in.pdf",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>File Formats</span>"
+    ]
   },
   {
     "objectID": "formats.html#get-pdf-info",
     "href": "formats.html#get-pdf-info",
     "title": "File Formats",
     "section": "Get PDF info",
-    "text": "Get PDF info\npdfinfo .pdf"
+    "text": "Get PDF info\npdfinfo .pdf",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>File Formats</span>"
+    ]
   },
   {
     "objectID": "formats.html#merge-2-or-more-pdfs",
     "href": "formats.html#merge-2-or-more-pdfs",
     "title": "File Formats",
     "section": "Merge 2 or more PDFs",
-    "text": "Merge 2 or more PDFs\npdftk file1.pdf file2.pdf cat output mergedfile.pdf"
+    "text": "Merge 2 or more PDFs\npdftk file1.pdf file2.pdf cat output mergedfile.pdf",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>File Formats</span>"
+    ]
   },
   {
     "objectID": "formats.html#markdown-to-htmldocx-pandoc",
     "href": "formats.html#markdown-to-htmldocx-pandoc",
     "title": "File Formats",
     "section": "Markdown to HTML/DOCX (pandoc)",
-    "text": "Markdown to HTML/DOCX (pandoc)\npandoc test.md -f markdown -t html -s -o test.html\npandoc test.md -f markdown -t docx -o test.docx"
+    "text": "Markdown to HTML/DOCX (pandoc)\npandoc test.md -f markdown -t html -s -o test.html\npandoc test.md -f markdown -t docx -o test.docx",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>File Formats</span>"
+    ]
   },
   {
     "objectID": "formats.html#latex-to-mathjax-for-html-use",
     "href": "formats.html#latex-to-mathjax-for-html-use",
     "title": "File Formats",
     "section": "Latex to MathJax for HTML use",
-    "text": "Latex to MathJax for HTML use\nmath.text file has equations like $a=b+c$\npandoc math.text -s --mathjax -o mathMathJax.html"
+    "text": "Latex to MathJax for HTML use\nmath.text file has equations like $a=b+c$\npandoc math.text -s --mathjax -o mathMathJax.html",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>File Formats</span>"
+    ]
+  },
+  {
+    "objectID": "vim.html",
+    "href": "vim.html",
+    "title": "VIM",
+    "section": "",
+    "text": "Go to dir listing after ‘quiting’ file in vim",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>VIM</span>"
+    ]
   },
   {
     "objectID": "vim.html#go-to-dir-listing-after-quiting-file-in-vim",
     "href": "vim.html#go-to-dir-listing-after-quiting-file-in-vim",
     "title": "VIM",
-    "section": "Go to dir listing after ‘quiting’ file in vim",
-    "text": "Go to dir listing after ‘quiting’ file in vim\n:b#"
+    "section": "",
+    "text": ":b#",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>VIM</span>"
+    ]
   },
   {
     "objectID": "vim.html#remove-trailing-whitespaces",
     "href": "vim.html#remove-trailing-whitespaces",
     "title": "VIM",
     "section": "Remove trailing whitespaces",
-    "text": "Remove trailing whitespaces\n:%s/\\v\\s+$//\n:%s/\\s\\+$//e"
+    "text": "Remove trailing whitespaces\n:%s/\\v\\s+$//\n:%s/\\s\\+$//e",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>VIM</span>"
+    ]
   },
   {
     "objectID": "vim.html#remove-everything-after-first-tab",
     "href": "vim.html#remove-everything-after-first-tab",
     "title": "VIM",
     "section": "Remove everything after first tab",
-    "text": "Remove everything after first tab\n:%s/\\t.*//"
+    "text": "Remove everything after first tab\n:%s/\\t.*//",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>VIM</span>"
+    ]
   },
   {
     "objectID": "vim.html#remove-everything-up-to-first-comma",
     "href": "vim.html#remove-everything-up-to-first-comma",
     "title": "VIM",
     "section": "Remove everything up to first comma",
-    "text": "Remove everything up to first comma\n:%s/^[^,]*,//"
+    "text": "Remove everything up to first comma\n:%s/^[^,]*,//",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>VIM</span>"
+    ]
   },
   {
     "objectID": "vim.html#add-80-character-colomn-bar",
     "href": "vim.html#add-80-character-colomn-bar",
     "title": "VIM",
     "section": "Add 80-character colomn bar",
-    "text": "Add 80-character colomn bar\nvim /etc/vim/vimrc\n\n# add line\nset colorcolumn=80"
+    "text": "Add 80-character colomn bar\nvim /etc/vim/vimrc\n\n# add line\nset colorcolumn=80",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>VIM</span>"
+    ]
   },
   {
     "objectID": "vim.html#change-comment-color",
     "href": "vim.html#change-comment-color",
     "title": "VIM",
     "section": "Change comment color",
-    "text": "Change comment color\ncd /usr/share/vim/vim80/colors\n# copy a file with a nice color scheme\ncp ron.vim zobo.vim\n\nvim zobo.vim \n# change lines:\nlet g:colors_name = \"zobo\"\nhi comment ctermfg=green guifg=green\n\nvim /etc/vim/vimrc\n# add line somewhere\ncolor zobo"
+    "text": "Change comment color\ncd /usr/share/vim/vim80/colors\n# copy a file with a nice color scheme\ncp ron.vim zobo.vim\n\nvim zobo.vim \n# change lines:\nlet g:colors_name = \"zobo\"\nhi comment ctermfg=green guifg=green\n\nvim /etc/vim/vimrc\n# add line somewhere\ncolor zobo",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>VIM</span>"
+    ]
+  },
+  {
+    "objectID": "tar.html",
+    "href": "tar.html",
+    "title": "TAR",
+    "section": "",
+    "text": "Archiving",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>TAR</span>"
+    ]
   },
   {
     "objectID": "tar.html#archiving",
     "href": "tar.html#archiving",
     "title": "TAR",
-    "section": "Archiving",
-    "text": "Archiving\ntar -czvf filename.tar.gz /path/to/dir1"
+    "section": "",
+    "text": "tar -czvf filename.tar.gz /path/to/dir1",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>TAR</span>"
+    ]
   },
   {
     "objectID": "tar.html#extracting",
     "href": "tar.html#extracting",
     "title": "TAR",
     "section": "Extracting",
-    "text": "Extracting\ntar -xzvf filename.tar.gz"
+    "text": "Extracting\ntar -xzvf filename.tar.gz",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>TAR</span>"
+    ]
   },
   {
     "objectID": "tar.html#extract-to-another-dir",
     "href": "tar.html#extract-to-another-dir",
     "title": "TAR",
     "section": "Extract to another dir",
-    "text": "Extract to another dir\nmkdir new-dir\ntar -C new-dir -xzvf filename.tar.gz"
+    "text": "Extract to another dir\nmkdir new-dir\ntar -C new-dir -xzvf filename.tar.gz",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>TAR</span>"
+    ]
   },
   {
     "objectID": "tar.html#extract-one-file-only",
     "href": "tar.html#extract-one-file-only",
     "title": "TAR",
     "section": "Extract one file only",
-    "text": "Extract one file only\ntar -xf example.tar.gz &lt;file-name&gt;"
+    "text": "Extract one file only\ntar -xf example.tar.gz &lt;file-name&gt;",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>TAR</span>"
+    ]
   },
   {
     "objectID": "tar.html#list-file-contents-with-depth",
     "href": "tar.html#list-file-contents-with-depth",
     "title": "TAR",
     "section": "List file contents with depth",
-    "text": "List file contents with depth\nDownload perl script: treeify and run:\ntar -tf &lt;file&gt;.tar.gz | treeify -d 2"
+    "text": "List file contents with depth\nDownload perl script: treeify and run:\ntar -tf &lt;file&gt;.tar.gz | treeify -d 2",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>TAR</span>"
+    ]
+  },
+  {
+    "objectID": "databases.html",
+    "href": "databases.html",
+    "title": "MySQL",
+    "section": "",
+    "text": "Size of a MyISAM table in GB",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>MySQL</span>"
+    ]
   },
   {
     "objectID": "databases.html#size-of-a-myisam-table-in-gb",
     "href": "databases.html#size-of-a-myisam-table-in-gb",
     "title": "MySQL",
-    "section": "Size of a MyISAM table in GB",
-    "text": "Size of a MyISAM table in GB\nls /var/lib/mysql/database/tableName.* | xargs stat --format=%s | awk '{s+=$1}\nEND {print s/(1024*1024*1024)}'"
+    "section": "",
+    "text": "ls /var/lib/mysql/database/tableName.* | xargs stat --format=%s | awk '{s+=$1}\nEND {print s/(1024*1024*1024)}'",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>MySQL</span>"
+    ]
   },
   {
     "objectID": "databases.html#drop-many-tables-matching-a-pattern",
     "href": "databases.html#drop-many-tables-matching-a-pattern",
     "title": "MySQL",
     "section": "Drop many tables matching a pattern",
-    "text": "Drop many tables matching a pattern\nSELECT CONCAT( 'DROP TABLE ', GROUP_CONCAT(table_name) , ';' ) AS statement\nFROM information_schema.tables WHERE table_name LIKE 'patternToMatch%';"
+    "text": "Drop many tables matching a pattern\nSELECT CONCAT( 'DROP TABLE ', GROUP_CONCAT(table_name) , ';' ) AS statement\nFROM information_schema.tables WHERE table_name LIKE 'patternToMatch%';",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>MySQL</span>"
+    ]
   },
   {
     "objectID": "databases.html#count-rows-and-size-of-myisam-tables-that-have-the-date-in-their-name",
     "href": "databases.html#count-rows-and-size-of-myisam-tables-that-have-the-date-in-their-name",
     "title": "MySQL",
     "section": "Count rows and size of MyISAM tables that have the date in their name",
-    "text": "Count rows and size of MyISAM tables that have the date in their name\n#!/bin/bash\n\ndate=`date -d 'Oct 13 14:00:00 2020' +%s` ;\nend_date=`date -d 'Nov 27 00:00:00 2020' +%s`;\n\nwhile [ $date -lt $end_date ];\n  do date -d @$date +%Y%m%d;\n  date=$(expr $date + 86400) ;\n  done |\n\nwhile read x ;\ndo\n        echo quering count: $x\n        table=tableSuffix$x\n        rows=`mysql -u username -p password -e \"select count(*) from $table\\G\"|tail -n 1|awk '{print $2}'`\n        size=`du -ch /var/lib/mysql/databaseName/$table* | tail -n1 | awk '{print $1}' | sed 's/G//'`\n        echo $x,$rows,$size &gt;&gt; output.txt\ndone"
+    "text": "Count rows and size of MyISAM tables that have the date in their name\n#!/bin/bash\n\ndate=`date -d 'Oct 13 14:00:00 2020' +%s` ;\nend_date=`date -d 'Nov 27 00:00:00 2020' +%s`;\n\nwhile [ $date -lt $end_date ];\n  do date -d @$date +%Y%m%d;\n  date=$(expr $date + 86400) ;\n  done |\n\nwhile read x ;\ndo\n        echo quering count: $x\n        table=tableSuffix$x\n        rows=`mysql -u username -p password -e \"select count(*) from $table\\G\"|tail -n 1|awk '{print $2}'`\n        size=`du -ch /var/lib/mysql/databaseName/$table* | tail -n1 | awk '{print $1}' | sed 's/G//'`\n        echo $x,$rows,$size &gt;&gt; output.txt\ndone",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>MySQL</span>"
+    ]
+  },
+  {
+    "objectID": "network.html",
+    "href": "network.html",
+    "title": "Network",
+    "section": "",
+    "text": "WiFi commands\nLocal network-related devices status:\nIs WiFi on? Turn it on (or off)!\nAvailable WiFi networks:\nConnect to a specific WiFi:",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Network</span>"
+    ]
   },
   {
     "objectID": "network.html#wifi-commands",
     "href": "network.html#wifi-commands",
     "title": "Network",
-    "section": "WiFi commands",
-    "text": "WiFi commands\nLocal network-related devices status:\nnmcli dev status\nIs WiFi on? Turn it on (or off)!\nnmcli radio wifi\nnmcli radio wifi on\nAvailable WiFi networks:\nnmcli dev wifi list\nConnect to a specific WiFi:\nsudo nmcli dev wifi connect &lt;network-ssid&gt;"
+    "section": "",
+    "text": "nmcli dev status\n\nnmcli radio wifi\nnmcli radio wifi on\n\nnmcli dev wifi list\n\nsudo nmcli dev wifi connect &lt;network-ssid&gt;",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Network</span>"
+    ]
   },
   {
     "objectID": "network.html#find-monitor-model",
     "href": "network.html#find-monitor-model",
     "title": "Network",
     "section": "Find monitor model",
-    "text": "Find monitor model\nsudo apt-get install read-edid\nsudo get-edid | parse-edid"
+    "text": "Find monitor model\nsudo apt-get install read-edid\nsudo get-edid | parse-edid",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Network</span>"
+    ]
   },
   {
     "objectID": "network.html#ssh-linux-server-without-password",
     "href": "network.html#ssh-linux-server-without-password",
     "title": "Network",
     "section": "ssh linux server without password",
-    "text": "ssh linux server without password\nUsually you do: ssh username@IP and enter a password. We want to do just ssh IP or ssh name.com (name.com translates to the global IP).\ncd ~/.ssh\n# create public and private key\nssh-keygen -o\n# your public key\ncat id_rsa.pub\n# copy it to the server\ncat id_rsa.pub | ssh username@IP 'cat &gt;&gt; .ssh/authorized_keys'"
+    "text": "ssh linux server without password\nUsually you do: ssh username@IP and enter a password. We want to do just ssh IP or ssh name.com (name.com translates to the global IP).\ncd ~/.ssh\n# create public and private key\nssh-keygen -o\n# your public key\ncat id_rsa.pub\n# copy it to the server\ncat id_rsa.pub | ssh username@IP 'cat &gt;&gt; .ssh/authorized_keys'",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Network</span>"
+    ]
   },
   {
     "objectID": "network.html#allow-only-sftp-user-access-to-a-specific-dir",
     "href": "network.html#allow-only-sftp-user-access-to-a-specific-dir",
     "title": "Network",
     "section": "Allow only sftp user access to a specific dir",
-    "text": "Allow only sftp user access to a specific dir\nCheck here\naddgroup exchangefiles\nmkdir /home/exchangefiles/ (create also any subsequent folders)\nchgrp -R exchangefiles /home/exchangefiles/\nvim /etc/ssh/sshd_config\nAdd in the end of the file:\nMatch Group exchangefiles\n  # Force the connection to use SFTP and chroot to the required directory.\n  ForceCommand internal-sftp\n  ChrootDirectory /home/exchangefiles\n  # Disable tunneling, authentication agent, TCP and X11 forwarding.\n  PermitTunnel no\n  AllowAgentForwarding no\n  AllowTcpForwarding no\n  X11Forwarding no\nadduser --ingroup exchangefiles testfiles\nservice ssh restart\nCheck:\nsftp testfiles@serverIP (OK)\nssh testfiles@serverIP (REFUSED)"
+    "text": "Allow only sftp user access to a specific dir\nCheck here\naddgroup exchangefiles\nmkdir /home/exchangefiles/ (create also any subsequent folders)\nchgrp -R exchangefiles /home/exchangefiles/\nvim /etc/ssh/sshd_config\nAdd in the end of the file:\nMatch Group exchangefiles\n  # Force the connection to use SFTP and chroot to the required directory.\n  ForceCommand internal-sftp\n  ChrootDirectory /home/exchangefiles\n  # Disable tunneling, authentication agent, TCP and X11 forwarding.\n  PermitTunnel no\n  AllowAgentForwarding no\n  AllowTcpForwarding no\n  X11Forwarding no\nadduser --ingroup exchangefiles testfiles\nservice ssh restart\nCheck:\nsftp testfiles@serverIP (OK)\nssh testfiles@serverIP (REFUSED)",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Network</span>"
+    ]
   },
   {
     "objectID": "network.html#manual-ntp",
     "href": "network.html#manual-ntp",
     "title": "Network",
     "section": "Manual NTP",
-    "text": "Manual NTP\nFirst, execute\nservice ntp stop\nOpen file:\nvim /etc/ntp.conf\n# add line\nserver &lt;host&gt;\nThen execute:\nsudo ntpdate &lt;host&gt;\nCheck connectivity with the server on udp ntp port 123 with:\nnc -u &lt;host&gt; &lt;port&gt;\nservice ntp start"
+    "text": "Manual NTP\nFirst, execute\nservice ntp stop\nOpen file:\nvim /etc/ntp.conf\n# add line\nserver &lt;host&gt;\nThen execute:\nsudo ntpdate &lt;host&gt;\nCheck connectivity with the server on udp ntp port 123 with:\nnc -u &lt;host&gt; &lt;port&gt;\nservice ntp start",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Network</span>"
+    ]
   },
   {
     "objectID": "network.html#dns-problem",
     "href": "network.html#dns-problem",
     "title": "Network",
     "section": "DNS problem",
-    "text": "DNS problem\nReproduce the problem:\n\nChange/add the dns-nameservers x.x.x.x in /etc/network/interfaces\nservice networking restart DOES NOT WORK, which means that:\nvim /etc/resolv.conf doesn’t have the new address: nameserver x.x.x.x\n\nIf the setup was something like this:\niface IIII FFFF static\n    address ...\n    ...\n    dns-nameservers X.X.X.X Y.Y.Y.Y\n    dns-search SSSS\nthen do (the spaces are needed):\necho \"nameserver X.X.X.X\nnameserver Y.Y.Y.Y\nsearch SSSS\" | sudo resolvconf -a IIII.FFFF\ncheck the /etc/resolv.conf, the changes must have been applied there."
+    "text": "DNS problem\nReproduce the problem:\n\nChange/add the dns-nameservers x.x.x.x in /etc/network/interfaces\nservice networking restart DOES NOT WORK, which means that:\nvim /etc/resolv.conf doesn’t have the new address: nameserver x.x.x.x\n\nIf the setup was something like this:\niface IIII FFFF static\n    address ...\n    ...\n    dns-nameservers X.X.X.X Y.Y.Y.Y\n    dns-search SSSS\nthen do (the spaces are needed):\necho \"nameserver X.X.X.X\nnameserver Y.Y.Y.Y\nsearch SSSS\" | sudo resolvconf -a IIII.FFFF\ncheck the /etc/resolv.conf, the changes must have been applied there.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Network</span>"
+    ]
   },
   {
     "objectID": "network.html#force-a-gateway-in-a-route-table",
     "href": "network.html#force-a-gateway-in-a-route-table",
     "title": "Network",
     "section": "Force a Gateway in a route table",
-    "text": "Force a Gateway in a route table\nvim /etc/network/interfaces\n# add line\nup route add -net 204.16.0.0 netmask 255.255.0.0 (gw 62.133.78.129) dev eth12\nUsing the terminal:\nroute add -net 3.3.3.0 netmask 255.255.255.0 dev eth13\n/etc/init.d/networking restart; ifup eth10\n(whichever ethX has the ip address you have sshed’ to get to the machine)"
+    "text": "Force a Gateway in a route table\nvim /etc/network/interfaces\n# add line\nup route add -net 204.16.0.0 netmask 255.255.0.0 (gw 62.133.78.129) dev eth12\nUsing the terminal:\nroute add -net 3.3.3.0 netmask 255.255.255.0 dev eth13\n/etc/init.d/networking restart; ifup eth10\n(whichever ethX has the ip address you have sshed’ to get to the machine)",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Network</span>"
+    ]
   },
   {
     "objectID": "network.html#list-fibre-ports",
     "href": "network.html#list-fibre-ports",
     "title": "Network",
     "section": "List FIBRE ports",
-    "text": "List FIBRE ports\nlspci -v | grep 10-G -A8"
+    "text": "List FIBRE ports\nlspci -v | grep 10-G -A8",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Network</span>"
+    ]
   },
   {
     "objectID": "network.html#check-all-ips-in-the-local-network",
     "href": "network.html#check-all-ips-in-the-local-network",
     "title": "Network",
     "section": "Check all IPs in the local network",
-    "text": "Check all IPs in the local network\nnmap -sP 192.168.1.*"
+    "text": "Check all IPs in the local network\nnmap -sP 192.168.1.*",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Network</span>"
+    ]
   },
   {
     "objectID": "network.html#create-a-network-bridge-between-two-interfaces",
     "href": "network.html#create-a-network-bridge-between-two-interfaces",
     "title": "Network",
     "section": "Create a network bridge between two interfaces",
-    "text": "Create a network bridge between two interfaces\napt-get install bridge-utils\n\nbrctl addbr br0\nbrctl stp br0 on\nifconfig eth0 0.0.0.0 down\nifconfig eth1 0.0.0.0 down\nbrctl addif br0 eth0\nbrctl addif br0 eth1\n\nifconfig eth0 up\nifconfig eth1 up\nifconfig br0 up\nFor the bridge to have an IP also, run:\nifconfig br0 192.168.1.173\n# to remove this IP\nifconfig br0 0.0.0.0"
+    "text": "Create a network bridge between two interfaces\napt-get install bridge-utils\n\nbrctl addbr br0\nbrctl stp br0 on\nifconfig eth0 0.0.0.0 down\nifconfig eth1 0.0.0.0 down\nbrctl addif br0 eth0\nbrctl addif br0 eth1\n\nifconfig eth0 up\nifconfig eth1 up\nifconfig br0 up\nFor the bridge to have an IP also, run:\nifconfig br0 192.168.1.173\n# to remove this IP\nifconfig br0 0.0.0.0",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Network</span>"
+    ]
   },
   {
     "objectID": "network.html#checking-firewall-rules-from-a-to-b",
     "href": "network.html#checking-firewall-rules-from-a-to-b",
     "title": "Network",
     "section": "Checking Firewall Rules (from A to B)",
-    "text": "Checking Firewall Rules (from A to B)\nA (IPA, PortA) —–&gt; B (IPB, PortB)\n\nTesting ssh (port 22): ssh IPB\nTesting port 3306 (mysql-related): telnet IPB 3306\nFrom all ports of A to a specific port on B:\n\nB: nc -l PortB\nA: nc -u IPB PortB (-u tests udp, without it you test TCP connectivity) and write stuff there, you should see them on B… or you can do a trace on B to make sure you got the packets: tshark -i any udp port portB\n\nFrom a specific port of A to a specific port on B:\n\nB: nc -l portB\nA: nc -u IPB PortB -p PortA (you should see them on B… or you can do a trace on B to make sure you got the packets: tshark -i any udp   port portB)\n\nFrom a specific port of A to a specific port on B:\n\nB: nc -l portB\nA: nc -u IPB PortB -p PortA"
+    "text": "Checking Firewall Rules (from A to B)\nA (IPA, PortA) —–&gt; B (IPB, PortB)\n\nTesting ssh (port 22): ssh IPB\nTesting port 3306 (mysql-related): telnet IPB 3306\nFrom all ports of A to a specific port on B:\n\nB: nc -l PortB\nA: nc -u IPB PortB (-u tests udp, without it you test TCP connectivity) and write stuff there, you should see them on B… or you can do a trace on B to make sure you got the packets: tshark -i any udp port portB\n\nFrom a specific port of A to a specific port on B:\n\nB: nc -l portB\nA: nc -u IPB PortB -p PortA (you should see them on B… or you can do a trace on B to make sure you got the packets: tshark -i any udp   port portB)\n\nFrom a specific port of A to a specific port on B:\n\nB: nc -l portB\nA: nc -u IPB PortB -p PortA",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Network</span>"
+    ]
   },
   {
     "objectID": "network.html#capture-lte-and-2g3g-traffic",
     "href": "network.html#capture-lte-and-2g3g-traffic",
     "title": "Network",
     "section": "Capture LTE and 2G3G traffic",
-    "text": "Capture LTE and 2G3G traffic\n\nLTE traffic (with VLAN)\n\ntcpdump -i any \"ether[27]==0 and ((ether[49] &lt; 0x26 and ether[49] &gt; 0x1F) or\n(ether[49] &lt; 0x65 and ether[49] &gt; 0x62) or (ether[49] &gt; 0xa9 and ether[49] &lt;\n0xac))\" -w out.pcap\n\nLTE traffic (no VLAN)\n\ntcpdump -i any \"ether[23]==0 and ((ether[45] &lt; 0x26 and ether[45] &gt; 0x1F) or\n(ether[45] &lt; 0x65 and ether[45] &gt; 0x62) or (ether[45] &gt; 0xa9 and ether[45] &lt;\n0xac))\" -w out.pcap\n\n2G3G traffic (with VLAN)\n\ntshark -i any \"ether[49] &lt; 0x16 and ether[27]==0 and ether[49] &gt; 0x0e\" -w out.pcap\n\n2G3G traffic (no VLAN)\n\ntshark -i any \"ether[45] &lt; 0x16 and ether[23]==0 and ether[45] &gt; 0x0e\" -w out.pcap"
+    "text": "Capture LTE and 2G3G traffic\n\nLTE traffic (with VLAN)\n\ntcpdump -i any \"ether[27]==0 and ((ether[49] &lt; 0x26 and ether[49] &gt; 0x1F) or\n(ether[49] &lt; 0x65 and ether[49] &gt; 0x62) or (ether[49] &gt; 0xa9 and ether[49] &lt;\n0xac))\" -w out.pcap\n\nLTE traffic (no VLAN)\n\ntcpdump -i any \"ether[23]==0 and ((ether[45] &lt; 0x26 and ether[45] &gt; 0x1F) or\n(ether[45] &lt; 0x65 and ether[45] &gt; 0x62) or (ether[45] &gt; 0xa9 and ether[45] &lt;\n0xac))\" -w out.pcap\n\n2G3G traffic (with VLAN)\n\ntshark -i any \"ether[49] &lt; 0x16 and ether[27]==0 and ether[49] &gt; 0x0e\" -w out.pcap\n\n2G3G traffic (no VLAN)\n\ntshark -i any \"ether[45] &lt; 0x16 and ether[23]==0 and ether[45] &gt; 0x0e\" -w out.pcap",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Network</span>"
+    ]
   },
   {
     "objectID": "network.html#change-.pcap-files-content",
     "href": "network.html#change-.pcap-files-content",
     "title": "Network",
     "section": "Change .pcap files content",
-    "text": "Change .pcap files content\ntcprewrite --enet-vlan=add --enet-vlan-tag=110 --enet-vlan-cfi=1\n--enet-vlan-pri=4 --infile=GTPv1_noVLAN.pcap --outfile=GTPv1_withVLAN110.pcap"
+    "text": "Change .pcap files content\ntcprewrite --enet-vlan=add --enet-vlan-tag=110 --enet-vlan-cfi=1\n--enet-vlan-pri=4 --infile=GTPv1_noVLAN.pcap --outfile=GTPv1_withVLAN110.pcap",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Network</span>"
+    ]
   },
   {
     "objectID": "network.html#use-tcpreplay",
     "href": "network.html#use-tcpreplay",
     "title": "Network",
     "section": "Use tcpreplay",
-    "text": "Use tcpreplay\ntcpreplay -i eth2 -K -l0 --topspeed replayfiles/file.pcap"
+    "text": "Use tcpreplay\ntcpreplay -i eth2 -K -l0 --topspeed replayfiles/file.pcap",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Network</span>"
+    ]
   },
   {
     "objectID": "network.html#vlan-ids-of-the-captured-packets",
     "href": "network.html#vlan-ids-of-the-captured-packets",
     "title": "Network",
     "section": "VLAN ids of the captured packets",
-    "text": "VLAN ids of the captured packets\ntshark -i any -Tfields -e vlan.id"
+    "text": "VLAN ids of the captured packets\ntshark -i any -Tfields -e vlan.id",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Network</span>"
+    ]
   },
   {
     "objectID": "cpu.html",
     "href": "cpu.html",
     "title": "CPU Benchmark",
     "section": "",
-    "text": "Scenario: You want to test which CPU is better between some Linux machines.\n\nDownload the (small) repository mini-nbody:\n\ngit clone https://github.com/harrism/mini-nbody\nor alternately, copy the nbody.c and and timer.h files to the servers you want to test, inside e.g. ~/nbody-mini directory.\n\nAdd the following line at the end of the main() function of the nbody.c file:\n\nprintf(\"Total time: %0.3f secs\\n\", totalTime);\n\n\n\n\n\n\nImportant\n\n\n\nIf you don’t want this benchmark to stress all the CPUs - which is enabled by default (e.g. a machine with 8 cores will show 800% in top command if you run this program) you MUST COMMENT this line that uses the OpenMP standard as is below:\n//  #pragma omp parallel for schedule(dynamic)\nThus, with the above comment the nbody program will reach 100% (one core only full utilization) and will not bring a production system to its knees by using all the available CPUs!\n\n\n\nExecute:\n\nSRC=nbody.c\nEXE=nbody\ngcc -std=c99 -O3 -fopenmp -DSHMOO -o $EXE $SRC -lm -D_DEFAULT_SOURCE\n./nbody\n\n\n\n\n\n\nNote\n\n\n\n\nBy default nbody.c takes as an argument nbodies=30000, so if you want to test for more time, use it as such: ./nbody 40000 (the larger the value of nbodies, more calculations are needed, so more CPU time)\nBe careful to compare the same number of nbodies between different servers with different CPUs.\nLess totalTime for one Core means better CPU (so you can safely say which server is the faster one :)"
+    "text": "Scenario: You want to test which CPU is better between some Linux machines.\n\nDownload the (small) repository mini-nbody:\n\ngit clone https://github.com/harrism/mini-nbody\nor alternately, copy the nbody.c and and timer.h files to the servers you want to test, inside e.g. ~/nbody-mini directory.\n\nAdd the following line at the end of the main() function of the nbody.c file:\n\nprintf(\"Total time: %0.3f secs\\n\", totalTime);\n\n\n\n\n\n\nImportant\n\n\n\nIf you don’t want this benchmark to stress all the CPUs - which is enabled by default (e.g. a machine with 8 cores will show 800% in top command if you run this program) you MUST COMMENT this line that uses the OpenMP standard as is below:\n//  #pragma omp parallel for schedule(dynamic)\nThus, with the above comment the nbody program will reach 100% (one core only full utilization) and will not bring a production system to its knees by using all the available CPUs!\n\n\n\nExecute:\n\nSRC=nbody.c\nEXE=nbody\ngcc -std=c99 -O3 -fopenmp -DSHMOO -o $EXE $SRC -lm -D_DEFAULT_SOURCE\n./nbody\n\n\n\n\n\n\nNote\n\n\n\n\nBy default nbody.c takes as an argument nbodies=30000, so if you want to test for more time, use it as such: ./nbody 40000 (the larger the value of nbodies, more calculations are needed, so more CPU time)\nBe careful to compare the same number of nbodies between different servers with different CPUs.\nLess totalTime for one Core means better CPU (so you can safely say which server is the faster one :)",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>CPU Benchmark</span>"
+    ]
   }
 ]
