@@ -450,11 +450,11 @@
     ]
   },
   {
-    "objectID": "formats.html#shrinkoptimize-pdf",
-    "href": "formats.html#shrinkoptimize-pdf",
+    "objectID": "formats.html#shrinkoptimizecompress-pdf",
+    "href": "formats.html#shrinkoptimizecompress-pdf",
     "title": "File Formats",
-    "section": "Shrink/optimize PDF",
-    "text": "Shrink/optimize PDF\n\nUsing a script: http://www.alfredklomp.com/programming/shrinkpdf/\nUsing ps2pdf:\n\nps2pdf -dPDFSETTINGS=/printer ags.pdf out.pdf\nVarious pdf settings for different output qualities:\n-dPDFSETTINGS=/screen   (screen-view-only quality, 72 dpi images)\n-dPDFSETTINGS=/ebook    (low quality, 150 dpi images)\n-dPDFSETTINGS=/printer  (high quality, 300 dpi images)\n-dPDFSETTINGS=/prepress (high quality, color preserving, 300 dpi imgs)\n-dPDFSETTINGS=/default  (almost identical to /screen)",
+    "section": "Shrink/optimize/compress PDF",
+    "text": "Shrink/optimize/compress PDF\n\nUse online service: https://www.ilovepdf.com/compress_pdf\nUsing a script: http://www.alfredklomp.com/programming/shrinkpdf\nUsing ps2pdf:\n\nps2pdf -dPDFSETTINGS=/printer ags.pdf out.pdf\nVarious pdf settings for different output qualities:\n-dPDFSETTINGS=/screen   (screen-view-only quality, 72 dpi images)\n-dPDFSETTINGS=/ebook    (low quality, 150 dpi images)\n-dPDFSETTINGS=/printer  (high quality, 300 dpi images)\n-dPDFSETTINGS=/prepress (high quality, color preserving, 300 dpi imgs)\n-dPDFSETTINGS=/default  (almost identical to /screen)",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>File Formats</span>"
     ]

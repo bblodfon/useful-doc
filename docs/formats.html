@@ -200,7 +200,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
    
   <ul>
   <li><a href="#convert-many-pdf-files-to-eps" id="toc-convert-many-pdf-files-to-eps" class="nav-link active" data-scroll-target="#convert-many-pdf-files-to-eps">Convert many PDF files to EPS</a></li>
-  <li><a href="#shrinkoptimize-pdf" id="toc-shrinkoptimize-pdf" class="nav-link" data-scroll-target="#shrinkoptimize-pdf">Shrink/optimize PDF</a></li>
+  <li><a href="#shrinkoptimizecompress-pdf" id="toc-shrinkoptimizecompress-pdf" class="nav-link" data-scroll-target="#shrinkoptimizecompress-pdf">Shrink/optimize/compress PDF</a></li>
   <li><a href="#rotate-pdf" id="toc-rotate-pdf" class="nav-link" data-scroll-target="#rotate-pdf">Rotate PDF</a></li>
   <li><a href="#crop-pdf" id="toc-crop-pdf" class="nav-link" data-scroll-target="#crop-pdf">Crop PDF</a></li>
   <li><a href="#svg-to-pdf" id="toc-svg-to-pdf" class="nav-link" data-scroll-target="#svg-to-pdf">SVG to PDF</a></li>
@@ -254,10 +254,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>  <span class="ex">inkscape</span> <span class="va">$file</span> <span class="at">--export-eps</span><span class="op">=</span><span class="va">$name</span>.eps</span>
 <span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="cf">done</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="shrinkoptimize-pdf" class="level2">
-<h2 class="anchored" data-anchor-id="shrinkoptimize-pdf">Shrink/optimize PDF</h2>
+<section id="shrinkoptimizecompress-pdf" class="level2">
+<h2 class="anchored" data-anchor-id="shrinkoptimizecompress-pdf">Shrink/optimize/compress PDF</h2>
 <ul>
-<li>Using a script: http://www.alfredklomp.com/programming/shrinkpdf/</li>
+<li>Use online service: https://www.ilovepdf.com/compress_pdf</li>
+<li>Using a script: http://www.alfredklomp.com/programming/shrinkpdf</li>
 <li>Using <code>ps2pdf</code>:</li>
 </ul>
 <div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ps2pdf</span> <span class="at">-dPDFSETTINGS</span><span class="op">=</span>/printer ags.pdf out.pdf</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
