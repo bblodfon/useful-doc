@@ -16,9 +16,10 @@ for file in ${pdf_files}; do
 done
 ```
 
-## Shrink/optimize PDF
+## Shrink/optimize/compress PDF
 
-- Using a script: http://www.alfredklomp.com/programming/shrinkpdf/
+- Use online service: https://www.ilovepdf.com/compress_pdf
+- Using a script: http://www.alfredklomp.com/programming/shrinkpdf
 - Using `ps2pdf`:
 
 ```bash
